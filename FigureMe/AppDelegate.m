@@ -15,6 +15,9 @@
     // Override point for customization after application launch.
     
      [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+    
     //Bhavesh
     // Handle launching from a notification
    /* application.applicationIconBadgeNumber = 0;
@@ -55,6 +58,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Push Notification Delegation methods
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo NS_AVAILABLE_IOS(3_0)
+{
+    
+}
+
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     UIApplicationState state = [application applicationState];
@@ -77,6 +87,27 @@
     
     // Set icon badge number to zero
     application.applicationIconBadgeNumber = 0;
+}
+
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken
+{
+    //const void *devTokenBytes = [devToken bytes];
+    //NSLog(@"%@",devTokenBytes);
+    
+    NSString *token = [[devToken description] stringByTrimmingCharactersInSet: [NSCharacterSet characterSetWithCharactersInString:@"<>"]];
+    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSLog(@"content---%@", token);
+    
+    [[NSUserDefaults standardUserDefaults] setValue:token forKey:kDeviceTokenKey];
+    
+    //self.registered = YES;
+    //[self sendProviderDeviceToken:devTokenBytes]; // this will send token to your server's database
+}
+
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err
+{
+    NSLog(@"Error in registration. Error: %@", err);
 }
 
 @end

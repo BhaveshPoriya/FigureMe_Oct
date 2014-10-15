@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *btnSeeAll;
 
+@property (strong, nonatomic) IBOutlet UIView *spinnerOverlay;
+@property (strong, nonatomic) UIActivityIndicatorView *spinner;
 
 - (IBAction)btnSeeAllClicked:(id)sender;
 

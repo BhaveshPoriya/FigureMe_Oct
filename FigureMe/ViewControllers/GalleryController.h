@@ -12,6 +12,9 @@
 
 @interface GalleryController : UIViewController <IIIFlowViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UIView *spinnerOverlay;
+@property (strong, nonatomic) UIActivityIndicatorView *spinner;
+
 @property (strong, nonatomic) IIIFlowView *galleryFlowview;
 @property (strong, nonatomic)NSMutableArray *dataSource;
 @property (strong, nonatomic)NSMutableArray *testA;

@@ -26,10 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view.
     self.navigationController.navigationBarHidden = NO;
     
-    CGRect f = CGRectMake(10, 105, 300, 450);
+    CGRect f;
+    if(IS_IPHONE)
+        f = CGRectMake(10, 105, 300, 450);
+    else if(IS_IPAD)
+        f =CGRectMake(10, 105, 750, 900);
     self.galleryFlowview = [[IIIFlowView alloc] initWithFrame:f];
     self.galleryFlowview.flowDelegate = self;
     
@@ -41,61 +46,66 @@
     [self.galleryFlowview.layer setShadowRadius:10.0];
     [self.galleryFlowview.layer setShadowOffset:CGSizeMake(5.0, 5.0)];
     
-    // First init datasource.
-    IIIBaseData *d;
-    self.dataSource = [NSMutableArray arrayWithCapacity:0];
+    [self addOverLay];
     
-    d = [[IIIBaseData alloc] init];
-    d.score = 100;
-    d.web_url = @"http://2.bp.blogspot.com/-kjgWqZo8vpc/UX8hbpshnJI/AAAAAAAAMCA/FX5bpHvRzsk/s1600/KT2_4112_pp_distressed.jpg";
-    [self.dataSource addObject:d];
+    NSMutableURLRequest *_request = [CommanFunctions getGalleryRequest:@"12"];
+    _request.timeoutInterval = 30;
     
-    //http://121clicks.com/wp-content/uploads/2012/04/portrait_eyes_14.jpg
-    d = [[IIIBaseData alloc] init];
-    d.score = 120;
-    d.web_url = @"http://www.westoverld.com/images/sideimage_2.jpg";
-    [self.dataSource addObject:d];
     
-    d = [[IIIBaseData alloc] init];
-    d.score = 150;
-    d.web_url = @"http://landscapearchitecturemag.files.wordpress.com/2012/10/peter-walker-photo.jpg";
-    [self.dataSource addObject:d];
-    
-    d = [[IIIBaseData alloc] init];
-    d.score = 150;
-    d.web_url = @"http://digital-photography-school.com/wp-content/uploads/2012/06/Portrait-Photography-Next-Level-04.jpg";
-    [self.dataSource addObject:d];
-    
-    d = [[IIIBaseData alloc] init];
-    d.score = 90;
-    d.web_url = @"http://www.studioreflections.com.au/wp/wp-content/gallery/portrait_1/studio-reflections-portrait-child_-1.jpg";
-    [self.dataSource addObject:d];
-    
-    d = [[IIIBaseData alloc] init];
-    d.score = 100;
-    d.web_url = @"http://public.media.smithsonianmag.com/legacy_blog/npg_portraits_nicholson_jack_2002.jpg";
-    [self.dataSource addObject:d];
-    
-    d = [[IIIBaseData alloc] init];
-    d.score = 150;
-    d.web_url = @"http://www.goldennumber.net/wp-content/uploads/2013/08/florence-colgate-england-most-beautiful-face.jpg";
-    [self.dataSource addObject:d];
-    
-    d = [[IIIBaseData alloc] init];
-    d.score = 150;
-    d.web_url = @"http://keithgreenough.files.wordpress.com/2013/01/detail-from-mona-lisa.jpg";
-    [self.dataSource addObject:d];
-    
-    d = [[IIIBaseData alloc] init];
-    d.score = 150;
-    d.web_url = @"http://i1.wp.com/indiandigitalartists.com/wp-content/uploads/2013/09/Ansel-Adams-1.jpg?fit=1024%2C1024";
-    [self.dataSource addObject:d];
-    
-    [self.galleryFlowview reloadData];
-    
-    self.galleryFlowview.tag = 1001;
-    
-    [self.view addSubview:self.galleryFlowview];
+    [NSURLConnection sendAsynchronousRequest:_request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response,
+                                               NSData *data, NSError *connectionError)
+     {
+         if (data.length > 0 && connectionError == nil)
+         {
+             NSDictionary *greeting = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+             NSString *status = [[greeting objectForKey:@"data"] objectForKey:@"status"];
+             if([status isEqualToString:@"success"])
+             {
+                 [self removeOverLay];
+                 
+                 self.dataSource = [NSMutableArray arrayWithCapacity:0];
+                 
+                 NSDictionary *dicGallery = [[greeting objectForKey:@"data"] objectForKey:@"galary"];
+                 
+                 for (NSString *key in dicGallery)
+                 {
+                     NSDictionary *dicGalleryObject = [dicGallery objectForKey:key];
+                     
+                     NSString *testPicUrl = [dicGalleryObject objectForKey:@"Test_picture"];
+                     
+                     IIIBaseData *d = [[IIIBaseData alloc] init];
+                     d.score = [[dicGalleryObject objectForKey:@"Score"] integerValue];
+                     d.web_url = testPicUrl;
+                     
+                     [self.dataSource addObject:d];
+                 }
+                 
+                 [self.galleryFlowview reloadData];
+                 
+                 self.galleryFlowview.tag = 1001;
+                 
+                 [self.view addSubview:self.galleryFlowview];
+             }
+             else
+             {
+                 
+                 NSString *message = [[greeting objectForKey:@"data"] objectForKey:@"message"];
+                 NSLog(@"%@",message);
+                 
+                 [self removeOverLay];
+                 
+                 UIAlertView *failAlert = [[UIAlertView alloc] initWithTitle:@"" message:@"Server is unavaiable" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+                 [failAlert show];
+                 
+             }
+         }
+         else
+         {
+             [self removeOverLay];
+         }
+     }];
     
 }
 
@@ -105,6 +115,30 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Custom Delegates
+
+- (void)addOverLay
+{
+    self.spinnerOverlay = [[UIView alloc] initWithFrame:self.view.frame];
+    self.spinnerOverlay.backgroundColor = [UIColor blackColor];
+    self.spinnerOverlay.alpha = 0.50f;
+    
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [self.spinner setCenter:CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)];
+    [self.spinnerOverlay addSubview:self.spinner];
+    [self.spinner startAnimating];
+    
+    [self.view addSubview:self.spinnerOverlay];
+    [self.view bringSubviewToFront:self.spinnerOverlay];
+}
+
+- (void)removeOverLay
+{
+    [self.spinner stopAnimating];
+    [self.spinnerOverlay removeFromSuperview];
+}
+
 
 #pragma mark - IIIFlowView delegate required methods
 

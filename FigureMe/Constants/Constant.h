@@ -25,6 +25,9 @@
 #define IS_IPHONE_35 ([[UIScreen mainScreen] bounds].size.height == 480)
 #define IS_IPHONE_40 ([[UIScreen mainScreen] bounds].size.height == 568)
 
+#pragma mark - Push Notification
+
+#define kDeviceTokenKey @"kDeviceTokenKey"
 
 #pragma mark - API
 

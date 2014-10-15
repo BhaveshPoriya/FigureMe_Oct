@@ -52,15 +52,22 @@ static CGFloat _cellPadding;
         
         self.scoreImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"galler-scrore-count"]];
         
-        self.scoreImage.frame = CGRectMake(self.image.frame.size.width-50, self.image.frame.size.height- 50,50, 50);
-        
+        if(IS_IPHONE)
+        {
+            self.scoreImage.frame = CGRectMake(self.image.frame.size.width-50, self.image.frame.size.height- 50,50, 50);
+            self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 36, 20, 15)];
+            self.scoreLabel.font = [UIFont fontWithName:@"OpenSans-Semibold" size:9];
+        }
+        else if(IS_IPAD)
+        {
+            self.scoreImage.frame = CGRectMake(self.image.frame.size.width-100, self.image.frame.size.height- 100,100, 100);
+            self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 73, 40, 30)];
+            self.scoreLabel.font = [UIFont fontWithName:@"OpenSans-Semibold" size:18];
+        }
         [self.image addSubview:self.scoreImage];
         
-        
-        self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 36, 20, 15)];
         self.scoreLabel.textAlignment = NSTextAlignmentCenter;
         self.scoreLabel.text = [NSString stringWithFormat:@"%ld",(long)Score];
-        self.scoreLabel.font = [UIFont fontWithName:@"OpenSans-Semibold" size:9];
         self.scoreLabel.textColor= [UIColor whiteColor];
         
         [self.scoreImage addSubview:self.scoreLabel];
