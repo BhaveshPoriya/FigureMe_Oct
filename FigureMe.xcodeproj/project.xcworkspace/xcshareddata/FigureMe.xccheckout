@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5EC1F2AE-CA36-43ED-AC0F-2C1EE5691C9A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FigureMe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1BD57E48-C28F-4B9C-B7BA-3CB8C13DD54B</key>
+		<string>https://github.com/BhaveshPoriya/FigureMe_local.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FigureMe.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1BD57E48-C28F-4B9C-B7BA-3CB8C13DD54B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/BhaveshPoriya/FigureMe_local.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1BD57E48-C28F-4B9C-B7BA-3CB8C13DD54B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1BD57E48-C28F-4B9C-B7BA-3CB8C13DD54B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FigureMe_local</string>
+		</dict>
+	</array>
+</dict>
+</plist>
