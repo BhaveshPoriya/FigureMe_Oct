@@ -29,6 +29,9 @@
 #import "AMSlideMenuContentSegue.h"
 #import "AMSlideMenuLeftMenuSegue.h"
 #import "AMSlideMenuRightMenuSegue.h"
+#import "AMSlideMenuRightTableViewController.h"
+#import "RightMenuVC.h"
+
 
 #define kPanMinTranslationX 15.0f
 
@@ -637,6 +640,29 @@ static NSMutableArray *allInstances;
 
 - (void)openNotifications
 {
+    UITableView *tableview = self.rightMenu.tableView;
+    
+    AMSlideMenuRightTableViewController *tabController = [[AMSlideMenuRightTableViewController alloc] init];
+    [tabController resetAllMenuCell:tableview];
+    
+    RightMenuVC *rightMenu = [[RightMenuVC alloc] init];
+    UIColor *highlightedColor = [UIColor colorWithRed:72./255. green:218./255. blue:33./255. alpha:1.0f];
+    UITableViewCell *cell = rightMenu.cellNotification;
+    cell.backgroundColor = highlightedColor;
+    
+    UIImageView *imgView;
+    UILabel *textLable;
+    
+    for (UIView *vw in cell.contentView.subviews) {
+        if(vw.tag == 100)
+            imgView = (UIImageView*)vw;
+        else if (vw.tag ==101)
+            textLable = (UILabel*)vw;
+    }
+    
+    textLable.textColor = [UIColor whiteColor];
+    imgView.image = [UIImage imageNamed:@"notificatrion-hover"];
+    
     [self.rightMenu performSegueWithIdentifier:@"notification" sender:self.rightMenu];
 }
 

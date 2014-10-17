@@ -14,20 +14,14 @@
 {
     // Override point for customization after application launch.
     
-     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
     
-    //Bhavesh
     // Handle launching from a notification
-   /* application.applicationIconBadgeNumber = 0;
+     //[[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
+    application.applicationIconBadgeNumber = 0;
 
-    UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (locationNotification) {
-        // Set icon badge number to zero
-        application.applicationIconBadgeNumber = 0;
-    }
-    */
     return YES;
 }
 
@@ -51,6 +45,8 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if(application.applicationIconBadgeNumber > 0)
+        application.applicationIconBadgeNumber = application.applicationIconBadgeNumber-1;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -60,20 +56,38 @@
 
 #pragma mark - Push Notification Delegation methods
 
+/*
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    NSLog(@"Fetching...");
+    [UIApplication sharedApplication].applicationIconBadgeNumber = [UIApplication sharedApplication].applicationIconBadgeNumber+1;
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+*/
+
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo NS_AVAILABLE_IOS(3_0)
 {
     
+    if([[UIApplication sharedApplication] applicationState] == UIApplicationStateBackground)
+    {
+        NSLog(@"Background");
+    }
+    else if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateInactive)
+    {
+        NSLog(@"Inactive");
+    }
+    else if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateActive)
+    {
+        NSLog(@"Active");
+    }
+    
+    //NSLog(@"%@",userInfo);
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     UIApplicationState state = [application applicationState];
     if (state == UIApplicationStateActive) {
-        /*UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Reminder"
-                                                        message:notification.alertBody
-                                                       delegate:self cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];*/
         
         UIView *customView = [[UIView alloc] initWithFrame:self.window.frame];
         customView.backgroundColor = [UIColor blackColor];
@@ -92,17 +106,11 @@
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken
 {
-    //const void *devTokenBytes = [devToken bytes];
-    //NSLog(@"%@",devTokenBytes);
-    
     NSString *token = [[devToken description] stringByTrimmingCharactersInSet: [NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSLog(@"content---%@", token);
+    NSLog(@"token: %@", token);
     
     [[NSUserDefaults standardUserDefaults] setValue:token forKey:kDeviceTokenKey];
-    
-    //self.registered = YES;
-    //[self sendProviderDeviceToken:devTokenBytes]; // this will send token to your server's database
 }
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err

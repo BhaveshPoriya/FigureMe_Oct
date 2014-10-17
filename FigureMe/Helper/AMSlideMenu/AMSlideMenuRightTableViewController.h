@@ -33,5 +33,5 @@
 @property (weak, nonatomic) AMSlideMenuMainViewController *mainVC;
 
 - (void)openContentNavigationController:(UINavigationController *)nvc;
-
+- (void)resetAllMenuCell:(UITableView*)tableview;
 @end

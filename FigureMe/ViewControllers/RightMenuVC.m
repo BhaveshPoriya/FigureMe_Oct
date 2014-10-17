@@ -36,9 +36,17 @@ cellNotification = _cellNotification,
 cellBump = _cellBump,
 cellLogout = _cellLogout;
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
-    NSLog(@"----->once");
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menu-main-bg"]];

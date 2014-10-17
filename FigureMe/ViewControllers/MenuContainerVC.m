@@ -103,8 +103,17 @@
     frame = CGRectMake(10, 8, 30, 24);
     button.frame = frame;
     button.backgroundColor = [UIColor clearColor];
-    //[button setTitleEdgeInsets:UIEdgeInsetsMake(20.0, -65.0, 5.0, 5.0)];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, 20, 0, 0)];
+    
+    button.titleLabel.frame = CGRectMake(20, 0, 10, 10);
+    button.titleLabel.backgroundColor = [UIColor yellowColor];
+    button.titleLabel.text = @"1";
+    
+    
     //[button setTitle:[NSString stringWithFormat:@"%d",1] forState:UIControlStateNormal];
+    //[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    //button.titleLabel.font = [UIFont fontWithName:@"string" size:12];
+    
     button.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [button setImage:[UIImage imageNamed:@"notification"] forState:UIControlStateNormal];
 }

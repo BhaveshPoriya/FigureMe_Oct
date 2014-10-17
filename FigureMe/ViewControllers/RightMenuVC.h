@@ -51,4 +51,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblBump;
 @property (weak, nonatomic) IBOutlet UILabel *lblLogout;
 
+- (id)init;
+
 @end

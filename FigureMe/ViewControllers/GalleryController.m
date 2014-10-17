@@ -69,10 +69,8 @@
                  
                  NSDictionary *dicGallery = [[greeting objectForKey:@"data"] objectForKey:@"galary"];
                  
-                 for (NSString *key in dicGallery)
+                 for (NSDictionary *dicGalleryObject in dicGallery)
                  {
-                     NSDictionary *dicGalleryObject = [dicGallery objectForKey:key];
-                     
                      NSString *testPicUrl = [dicGalleryObject objectForKey:@"Test_picture"];
                      
                      IIIBaseData *d = [[IIIBaseData alloc] init];
@@ -80,6 +78,7 @@
                      d.web_url = testPicUrl;
                      
                      [self.dataSource addObject:d];
+                     
                  }
                  
                  [self.galleryFlowview reloadData];
