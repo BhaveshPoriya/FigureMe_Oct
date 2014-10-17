@@ -56,8 +56,31 @@
 		C3BC2F0A19E8170700295626 /* scrore.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BC2F0819E8170700295626 /* scrore.png */; };
 		C3BC2F0C19E8178A00295626 /* your-scrore-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BC2F0B19E8178A00295626 /* your-scrore-hover.png */; };
 		C3BC2F0D19E8178A00295626 /* your-scrore-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BC2F0B19E8178A00295626 /* your-scrore-hover.png */; };
+		C3BCFEE019EE724F004B1181 /* PTO.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEDF19EE724F004B1181 /* PTO.png */; };
+		C3BCFEE119EE724F004B1181 /* PTO.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEDF19EE724F004B1181 /* PTO.png */; };
+		C3BCFEE519EE878D004B1181 /* screen-shot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEE219EE878D004B1181 /* screen-shot1.jpg */; };
+		C3BCFEE619EE878D004B1181 /* screen-shot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEE219EE878D004B1181 /* screen-shot1.jpg */; };
+		C3BCFEE719EE878D004B1181 /* social-usre-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEE319EE878D004B1181 /* social-usre-bg.png */; };
+		C3BCFEE819EE878D004B1181 /* social-usre-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEE319EE878D004B1181 /* social-usre-bg.png */; };
+		C3BCFEE919EE878D004B1181 /* social-usre.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEE419EE878D004B1181 /* social-usre.png */; };
+		C3BCFEEA19EE878D004B1181 /* social-usre.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEE419EE878D004B1181 /* social-usre.png */; };
+		C3BCFEEF19EE9054004B1181 /* gray-bg-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */; };
+		C3BCFEF019EE9054004B1181 /* gray-bg-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */; };
+		C3BCFEF219EEA3E9004B1181 /* pino.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEF119EEA3E9004B1181 /* pino.jpeg */; };
+		C3BCFEF319EEA3E9004B1181 /* pino.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEF119EEA3E9004B1181 /* pino.jpeg */; };
+		C3BCFEF519EEA616004B1181 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BCFEF419EEA616004B1181 /* QuartzCore.framework */; };
 		C3CD542F19EBE08200C62E51 /* StatYourScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CD542E19EBE08200C62E51 /* StatYourScore.m */; };
 		C3CD543019EBE08200C62E51 /* StatYourScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CD542E19EBE08200C62E51 /* StatYourScore.m */; };
+		C3E1E3E619EE61D700528AF8 /* DeletedFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E1E3E519EE61D700528AF8 /* DeletedFriendsController.m */; };
+		C3E1E3E719EE61D700528AF8 /* DeletedFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E1E3E519EE61D700528AF8 /* DeletedFriendsController.m */; };
+		C3E1E3EC19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3E819EE635200528AF8 /* Iphone-deleted-friends-hover.png */; };
+		C3E1E3ED19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3E819EE635200528AF8 /* Iphone-deleted-friends-hover.png */; };
+		C3E1E3EE19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3E919EE635200528AF8 /* Iphone-deleted-friends.png */; };
+		C3E1E3EF19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3E919EE635200528AF8 /* Iphone-deleted-friends.png */; };
+		C3E1E3F019EE635200528AF8 /* MyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3EA19EE635200528AF8 /* MyIcon.png */; };
+		C3E1E3F119EE635200528AF8 /* MyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3EA19EE635200528AF8 /* MyIcon.png */; };
+		C3E1E3F219EE635200528AF8 /* score.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3EB19EE635200528AF8 /* score.png */; };
+		C3E1E3F319EE635200528AF8 /* score.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3EB19EE635200528AF8 /* score.png */; };
 		F43FAD4A19DD3C2300C620E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43FAD4919DD3C2300C620E8 /* Foundation.framework */; };
 		F43FAD4C19DD3C2300C620E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43FAD4B19DD3C2300C620E8 /* CoreGraphics.framework */; };
 		F43FAD4E19DD3C2300C620E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43FAD4D19DD3C2300C620E8 /* UIKit.framework */; };
@@ -276,8 +299,21 @@
 		C3BC2F0319E8133A00295626 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Score.m; path = Models/Score.m; sourceTree = "<group>"; };
 		C3BC2F0819E8170700295626 /* scrore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scrore.png; sourceTree = "<group>"; };
 		C3BC2F0B19E8178A00295626 /* your-scrore-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "your-scrore-hover.png"; sourceTree = "<group>"; };
+		C3BCFEDF19EE724F004B1181 /* PTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PTO.png; sourceTree = "<group>"; };
+		C3BCFEE219EE878D004B1181 /* screen-shot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "screen-shot1.jpg"; sourceTree = "<group>"; };
+		C3BCFEE319EE878D004B1181 /* social-usre-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-usre-bg.png"; sourceTree = "<group>"; };
+		C3BCFEE419EE878D004B1181 /* social-usre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-usre.png"; sourceTree = "<group>"; };
+		C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-bg-iphone.png"; sourceTree = "<group>"; };
+		C3BCFEF119EEA3E9004B1181 /* pino.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pino.jpeg; path = ../../../../../pino.jpeg; sourceTree = "<group>"; };
+		C3BCFEF419EEA616004B1181 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C3CD542D19EBE08200C62E51 /* StatYourScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatYourScore.h; path = ViewControllers/StatYourScore.h; sourceTree = "<group>"; };
 		C3CD542E19EBE08200C62E51 /* StatYourScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatYourScore.m; path = ViewControllers/StatYourScore.m; sourceTree = "<group>"; };
+		C3E1E3E419EE61D700528AF8 /* DeletedFriendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeletedFriendsController.h; path = ViewControllers/DeletedFriendsController.h; sourceTree = "<group>"; };
+		C3E1E3E519EE61D700528AF8 /* DeletedFriendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeletedFriendsController.m; path = ViewControllers/DeletedFriendsController.m; sourceTree = "<group>"; };
+		C3E1E3E819EE635200528AF8 /* Iphone-deleted-friends-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Iphone-deleted-friends-hover.png"; sourceTree = "<group>"; };
+		C3E1E3E919EE635200528AF8 /* Iphone-deleted-friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Iphone-deleted-friends.png"; sourceTree = "<group>"; };
+		C3E1E3EA19EE635200528AF8 /* MyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon.png; sourceTree = "<group>"; };
+		C3E1E3EB19EE635200528AF8 /* score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score.png; sourceTree = "<group>"; };
 		F43FAD4619DD3C2300C620E8 /* FigureMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigureMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43FAD4919DD3C2300C620E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F43FAD4B19DD3C2300C620E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -425,6 +461,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BCFEF519EEA616004B1181 /* QuartzCore.framework in Frameworks */,
 				F43FAD4C19DD3C2300C620E8 /* CoreGraphics.framework in Frameworks */,
 				F43FAD4E19DD3C2300C620E8 /* UIKit.framework in Frameworks */,
 				F43FAD4A19DD3C2300C620E8 /* Foundation.framework in Frameworks */,
@@ -488,6 +525,7 @@
 		C3BC2F0619E8170700295626 /* Iphone */ = {
 			isa = PBXGroup;
 			children = (
+				C3BCFEDE19EE723C004B1181 /* Profile-Iphone */,
 				C3BC2F0719E8170700295626 /* stat-Iphone */,
 			);
 			name = Iphone;
@@ -497,15 +535,32 @@
 		C3BC2F0719E8170700295626 /* stat-Iphone */ = {
 			isa = PBXGroup;
 			children = (
+				C3E1E3E819EE635200528AF8 /* Iphone-deleted-friends-hover.png */,
+				C3E1E3E919EE635200528AF8 /* Iphone-deleted-friends.png */,
+				C3E1E3EA19EE635200528AF8 /* MyIcon.png */,
+				C3E1E3EB19EE635200528AF8 /* score.png */,
 				C3BC2F0B19E8178A00295626 /* your-scrore-hover.png */,
 				C3BC2F0819E8170700295626 /* scrore.png */,
 			);
 			path = "stat-Iphone";
 			sourceTree = "<group>";
 		};
+		C3BCFEDE19EE723C004B1181 /* Profile-Iphone */ = {
+			isa = PBXGroup;
+			children = (
+				C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */,
+				C3BCFEE219EE878D004B1181 /* screen-shot1.jpg */,
+				C3BCFEE319EE878D004B1181 /* social-usre-bg.png */,
+				C3BCFEE419EE878D004B1181 /* social-usre.png */,
+				C3BCFEDF19EE724F004B1181 /* PTO.png */,
+			);
+			path = "Profile-Iphone";
+			sourceTree = "<group>";
+		};
 		F43FAD3D19DD3C2300C620E8 = {
 			isa = PBXGroup;
 			children = (
+				C3BCFEF119EEA3E9004B1181 /* pino.jpeg */,
 				F43FAD4F19DD3C2300C620E8 /* FigureMe */,
 				F43FAD6819DD3C2400C620E8 /* FigureMeTests */,
 				F43FAD4819DD3C2300C620E8 /* Frameworks */,
@@ -525,6 +580,7 @@
 		F43FAD4819DD3C2300C620E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3BCFEF419EEA616004B1181 /* QuartzCore.framework */,
 				F43FAD4919DD3C2300C620E8 /* Foundation.framework */,
 				F43FAD4B19DD3C2300C620E8 /* CoreGraphics.framework */,
 				F43FAD4D19DD3C2300C620E8 /* UIKit.framework */,
@@ -622,6 +678,8 @@
 		F43FAD9719DD506600C620E8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C3E1E3E419EE61D700528AF8 /* DeletedFriendsController.h */,
+				C3E1E3E519EE61D700528AF8 /* DeletedFriendsController.m */,
 				C3CD542D19EBE08200C62E51 /* StatYourScore.h */,
 				C3CD542E19EBE08200C62E51 /* StatYourScore.m */,
 				F43FADD819DD983000C620E8 /* MenuContainerVC.h */,
@@ -949,12 +1007,14 @@
 			files = (
 				F4A9E5C519ED2CEB003865F5 /* bump-hover.png in Resources */,
 				C32FDBA119E7D30D00CD60BE /* cross.png in Resources */,
+				C3E1E3F019EE635200528AF8 /* MyIcon.png in Resources */,
 				F4CC9E7C19E5286C00B3388A /* header-logo.png in Resources */,
 				F44C5F8619EC03CB00712016 /* home.png in Resources */,
 				F4CC9EC919E5762500B3388A /* see-all.png in Resources */,
 				F440B00819E2B5C4008F7566 /* email.png in Resources */,
 				F4CC9E8219E53D5000B3388A /* gray-bg.png in Resources */,
 				C3235A9319E2DD3800263F98 /* bg.png in Resources */,
+				C3E1E3EE19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */,
 				F4C04CD519E6C30C00556BA5 /* OpenSans-BoldItalic.ttf in Resources */,
 				F4A9E5BE19ED283C003865F5 /* my-profile-hover.png in Resources */,
 				C32FDBBB19E7E92A00CD60BE /* header-part.png in Resources */,
@@ -973,10 +1033,14 @@
 				F4C04CE119E6C30C00556BA5 /* OpenSans-Regular.ttf in Resources */,
 				C3235A8119E2C68C00263F98 /* login-username.png in Resources */,
 				F4C04CD919E6C30C00556BA5 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				C3BCFEE019EE724F004B1181 /* PTO.png in Resources */,
+				C3BCFEEF19EE9054004B1181 /* gray-bg-iphone.png in Resources */,
+				C3E1E3F219EE635200528AF8 /* score.png in Resources */,
 				F440AFF019E2B5B7008F7566 /* password-hint.png in Resources */,
 				F44C5F8819EC03CB00712016 /* logout.png in Resources */,
 				F4B6966419E429180065BF4F /* screen-shot.png in Resources */,
 				C32FDBC319E7E92A00CD60BE /* score-hover.png in Resources */,
+				C3BCFEF219EEA3E9004B1181 /* pino.jpeg in Resources */,
 				F440AFEE19E2B5B7008F7566 /* logo.png in Resources */,
 				F44C5F8E19EC03CB00712016 /* stats.png in Resources */,
 				F4CC9E7119E51D6F00B3388A /* menu.png in Resources */,
@@ -992,6 +1056,8 @@
 				F4C04CDF19E6C30C00556BA5 /* OpenSans-LightItalic.ttf in Resources */,
 				F43FAD5419DD3C2400C620E8 /* InfoPlist.strings in Resources */,
 				F4FBF1E019EC0C1200F51D4F /* notification.png in Resources */,
+				C3BCFEE919EE878D004B1181 /* social-usre.png in Resources */,
+				C3E1E3EC19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */,
 				F4CC9E7F19E53AF000B3388A /* header-part.png in Resources */,
 				C32FDBC119E7E92A00CD60BE /* middle-johndoe-bg.png in Resources */,
 				F440B01819E2B5C4008F7566 /* username.png in Resources */,
@@ -1017,7 +1083,9 @@
 				F4B6965F19E413700065BF4F /* right.png in Resources */,
 				F440B01019E2B5C4008F7566 /* reapeat-password.png in Resources */,
 				C3235A9619E2DD8C00263F98 /* bgBump.png in Resources */,
+				C3BCFEE519EE878D004B1181 /* screen-shot1.jpg in Resources */,
 				F440B01219E2B5C4008F7566 /* register.png in Resources */,
+				C3BCFEE719EE878D004B1181 /* social-usre-bg.png in Resources */,
 				F440B00A19E2B5C4008F7566 /* header-part.png in Resources */,
 				F4A9E5BC19ED283C003865F5 /* logout-hover.png in Resources */,
 				F4C04CE319E6C30C00556BA5 /* OpenSans-Semibold.ttf in Resources */,
@@ -1037,10 +1105,13 @@
 				F4A9E5C619ED2CEB003865F5 /* bump-hover.png in Resources */,
 				F4CC9E8319E53D5000B3388A /* gray-bg.png in Resources */,
 				C32FDBC819E7E92A00CD60BE /* scroll.png in Resources */,
+				C3E1E3ED19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */,
 				C32FDBB219E7E92A00CD60BE /* deleted-friends-hover.png in Resources */,
 				F4C04CDE19E6C30C00556BA5 /* OpenSans-Light.ttf in Resources */,
 				C32FDBBC19E7E92A00CD60BE /* header-part.png in Resources */,
+				C3BCFEE619EE878D004B1181 /* screen-shot1.jpg in Resources */,
 				C3235A9419E2DD3800263F98 /* bg.png in Resources */,
+				C3E1E3F119EE635200528AF8 /* MyIcon.png in Resources */,
 				C3235A9719E2DD8C00263F98 /* bgBump.png in Resources */,
 				C32FDBC419E7E92A00CD60BE /* score-hover.png in Resources */,
 				F4C04CC719E6AA4C00556BA5 /* galler-scrore-count.png in Resources */,
@@ -1051,6 +1122,7 @@
 				F4C04CE019E6C30C00556BA5 /* OpenSans-LightItalic.ttf in Resources */,
 				F440B01919E2B5C4008F7566 /* username.png in Resources */,
 				F440B00719E2B5C4008F7566 /* cancel.png in Resources */,
+				C3E1E3EF19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */,
 				F440AFED19E2B5B7008F7566 /* login.png in Resources */,
 				C32FDBC019E7E92A00CD60BE /* johndoe-last-nav.png in Resources */,
 				F4FBF1E119EC0C1200F51D4F /* notification.png in Resources */,
@@ -1059,21 +1131,25 @@
 				F4C04CDC19E6C30C00556BA5 /* OpenSans-Italic.ttf in Resources */,
 				F440B01319E2B5C4008F7566 /* register.png in Resources */,
 				F440AFF119E2B5B7008F7566 /* password-hint.png in Resources */,
+				C3BCFEF019EE9054004B1181 /* gray-bg-iphone.png in Resources */,
 				F4C1E5B219DE7C16003C108A /* Storyboard-iPad.storyboard in Resources */,
 				F4B6966219E413700065BF4F /* wrong.png in Resources */,
 				C3BC2F0A19E8170700295626 /* scrore.png in Resources */,
 				C32FDBB819E7E92A00CD60BE /* footer-hover-bg.png in Resources */,
 				C32FDBB619E7E92A00CD60BE /* footer-bg.png in Resources */,
 				F44C5F8F19EC03CB00712016 /* stats.png in Resources */,
+				C3BCFEEA19EE878D004B1181 /* social-usre.png in Resources */,
 				F44C5F8D19EC03CB00712016 /* my-profile.png in Resources */,
 				F43FAD6D19DD3C2400C620E8 /* InfoPlist.strings in Resources */,
 				F4A9E5BF19ED283C003865F5 /* my-profile-hover.png in Resources */,
+				C3BCFEE819EE878D004B1181 /* social-usre-bg.png in Resources */,
 				F4CC9ECA19E5762500B3388A /* see-all.png in Resources */,
 				F4CC9E7D19E5286C00B3388A /* header-logo.png in Resources */,
 				F440B01119E2B5C4008F7566 /* reapeat-password.png in Resources */,
 				F4C04CE419E6C30C00556BA5 /* OpenSans-Semibold.ttf in Resources */,
 				F4C04CD419E6C30C00556BA5 /* OpenSans-Bold.ttf in Resources */,
 				C32FDBBE19E7E92A00CD60BE /* johndoe-bg.png in Resources */,
+				C3BCFEF319EEA3E9004B1181 /* pino.jpeg in Resources */,
 				F440AFF719E2B5B7008F7566 /* screen-shot.jpg in Resources */,
 				F43FAD9319DD500100C620E8 /* Storyboard.storyboard in Resources */,
 				F4B6966019E413700065BF4F /* right.png in Resources */,
@@ -1089,9 +1165,11 @@
 				F4A9E5BB19ED283C003865F5 /* home-hover.png in Resources */,
 				F44C5F8719EC03CB00712016 /* home.png in Resources */,
 				F4C04CD819E6C30C00556BA5 /* OpenSans-ExtraBold.ttf in Resources */,
+				C3E1E3F319EE635200528AF8 /* score.png in Resources */,
 				C32FDBC619E7E92A00CD60BE /* screen-shot.jpg in Resources */,
 				F44C5F8B19EC03CB00712016 /* menu-main-bg.png in Resources */,
 				F4A9E5C319ED283C003865F5 /* stats-hover.png in Resources */,
+				C3BCFEE119EE724F004B1181 /* PTO.png in Resources */,
 				F440B00919E2B5C4008F7566 /* email.png in Resources */,
 				F4C04CE219E6C30C00556BA5 /* OpenSans-Regular.ttf in Resources */,
 				F4C04CE619E6C30C00556BA5 /* OpenSans-SemiboldItalic.ttf in Resources */,
@@ -1119,6 +1197,7 @@
 				F4CC9EDB19E5868D00B3388A /* IIIFlowView.m in Sources */,
 				F4C1E5D019DEC587003C108A /* TestController.m in Sources */,
 				F4CC9EF619E586FE00B3388A /* SDWebImageDownloader.m in Sources */,
+				C3E1E3E619EE61D700528AF8 /* DeletedFriendsController.m in Sources */,
 				F4CC9EDD19E5868D00B3388A /* SDImageCache+IIIThumb.m in Sources */,
 				F4CC9ED919E5868D00B3388A /* IIIFlowCell.m in Sources */,
 				F43FAD5619DD3C2400C620E8 /* main.m in Sources */,
@@ -1188,6 +1267,7 @@
 				F43FADDB19DD983000C620E8 /* MenuContainerVC.m in Sources */,
 				F43FAD9C19DD558300C620E8 /* LoginController.m in Sources */,
 				F4CC9EF519E586FE00B3388A /* SDWebImageDecoder.m in Sources */,
+				C3E1E3E719EE61D700528AF8 /* DeletedFriendsController.m in Sources */,
 				F43FADA019DD55A700C620E8 /* RegisterController.m in Sources */,
 				F4CC9EDE19E5868D00B3388A /* SDImageCache+IIIThumb.m in Sources */,
 				F4CC9E8819E54ADD00B3388A /* GalleryPhotoCell.m in Sources */,

@@ -8,14 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "IIIFlowView.h"
+#import <QuartzCore/QuartzCore.h>
 
+@interface ProfileController : UIViewController<UITextViewDelegate>
 
-@interface ProfileController : UIViewController
 
 
 
 @property (weak, nonatomic) IBOutlet UIButton *btnEditProfile;
 
+@property (strong, nonatomic) IBOutlet UIImageView *imgViewProfilePic;
+@property (strong, nonatomic) IBOutlet UILabel *lblLocationDetail;
+@property (strong, nonatomic) IBOutlet UILabel *lblDateOfBirthDetail;
+@property (strong, nonatomic) IBOutlet UILabel *lblScoreDetail;
+@property (strong, nonatomic) IBOutlet UITextView *txtViewAboutMeDetail;
 
 - (IBAction)btnEditProfileClicked:(id)sender;
 
