@@ -179,13 +179,6 @@ const CGFloat INDICATOR_SIZE = 20;
  */
 - (void)reloadData {
     
-    /*
-     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"hh:mm:ss"];
-    NSLog(@"%@",[formatter stringFromDate:[NSDate date]]);
-    */
-    
-    
     // Check re-prepare
     if (_cellCount != [self.flowDelegate numberOfCells] ||
         _columnCount != [self.flowDelegate numberOfColumns]) {
@@ -344,7 +337,6 @@ const CGFloat INDICATOR_SIZE = 20;
                 //NSLog(@"+* %i: %f", i, p.y);
                 if (c.isDownloading)
                 {
-                    //NSLog(@"Downloading at : %f,%f",p.x,p.y);
                     [self showDownloadingPlaceholder:p size:c.frame.size];
                 }
                 break;
@@ -405,9 +397,13 @@ const CGFloat INDICATOR_SIZE = 20;
                     
                     _downloadQueueCount++;
                     
-                    [SDWebImageDownloader downloaderWithURL:[NSURL URLWithString:d.web_url] delegate:self userInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:index] forKey:INDEX_KEY] lowPriority:YES];
+                    
+                    NSString *strURL =[CommanFunctions URLEncodeString:d.web_url];
+                    NSURL *imgURL = [NSURL URLWithString:strURL];
+                    
+                    [SDWebImageDownloader downloaderWithURL:imgURL delegate:self userInfo:[NSDictionary dictionaryWithObject:[NSNumber numberWithInt:index] forKey:INDEX_KEY] lowPriority:YES];
                     // Mark this url as downloading, don't repeat requesting when next time check this cell.
-                    [_downloadingURLs setObject:[NSString stringWithFormat:@"%i", index] forKey:d.web_url];
+                    [_downloadingURLs setObject:[NSString stringWithFormat:@"%i", index] forKey:strURL];
                     cell.isDownloading = YES;
                 }
                 return NO;
@@ -488,8 +484,6 @@ const CGFloat INDICATOR_SIZE = 20;
     
     _downloadingIndicator.frame = CGRectMake(60, 40, INDICATOR_SIZE, INDICATOR_SIZE);
     [_downloadingIndicator startAnimating];
-    //[self sendSubviewToBack:_downloadingPlaceholder];
-    //NSLog(@"%f %f",_downloadingPlaceholder.frame.size.width,_downloadingPlaceholder.frame.size.height);
 }
 
 - (void)hideDownloadingPlaceholder {
@@ -595,6 +589,7 @@ const CGFloat INDICATOR_SIZE = 20;
 
 
 #pragma mark - SDWebImageDownloaderDelegate methods
+
 - (void)imageDownloader:(SDWebImageDownloader *)downloader didFinishWithImage:(UIImage *)image {
     
     int index = [[downloader.userInfo objectForKey:INDEX_KEY] intValue];

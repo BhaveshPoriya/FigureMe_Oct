@@ -103,8 +103,8 @@
     frame = CGRectMake(10, 8, 30, 24);
     button.frame = frame;
     button.backgroundColor = [UIColor clearColor];
-    [button setTitleEdgeInsets:UIEdgeInsetsMake(70.0, -150.0, 5.0, 5.0)];
-    [button setTitle:[NSString stringWithFormat:@"%d",10] forState:UIControlStateNormal];
+    //[button setTitleEdgeInsets:UIEdgeInsetsMake(20.0, -65.0, 5.0, 5.0)];
+    //[button setTitle:[NSString stringWithFormat:@"%d",1] forState:UIControlStateNormal];
     button.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [button setImage:[UIImage imageNamed:@"notification"] forState:UIControlStateNormal];
 }

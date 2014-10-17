@@ -12,7 +12,7 @@
 #import "CommanFunctions.h"
 
 // Padding width for thumbs
-#define iii_const_common_cell_padding 3.0f
+#define iii_const_common_cell_padding 5.0f
 //#define iii_const_common_bg_color [UIColor colorWithRed:160/225.0 green:160/225.0 blue:130/225.0 alpha:1.0]
 #define iii_const_common_bg_color [UIColor whiteColor]
 

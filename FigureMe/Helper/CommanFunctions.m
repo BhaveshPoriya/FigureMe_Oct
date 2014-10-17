@@ -10,7 +10,12 @@
 
 @implementation CommanFunctions
 
-
++(NSString *) URLEncodeString:(NSString *) str
+{
+    NSString* urlString = str;
+    NSString* trimmedUrlString = [urlString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return trimmedUrlString;
+}
 
 +(BOOL)IsValidEmail:(NSString *)checkString
 {
@@ -92,5 +97,14 @@
     
     return [self generateAPIRequest:_URL reqDist:reqDist];
 }
-
++(NSMutableURLRequest *)getGalleryRequest:(NSString *)UserId{
+    
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:@"get_galary" forKey:@"action"];
+    [reqDist setObject:UserId forKey:@"userid"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"%@/get_galary", @APIRootURL];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
 @end

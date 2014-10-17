@@ -57,8 +57,7 @@ txtRepeatPassword = _txtRepeatPassword;
 }
 - (IBAction)btnRegisterClicked:(id)sender{
     
-    //[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
-    /*
+    
     if(self.isValidUsername && self.isValidEmail && self.isValidPassword)
     {
         [self addOverLay];
@@ -108,7 +107,6 @@ txtRepeatPassword = _txtRepeatPassword;
         else if(!self.isValidPassword)
             [self.txtPassword becomeFirstResponder];
     }
-    */
     
 }
 
@@ -281,20 +279,5 @@ txtRepeatPassword = _txtRepeatPassword;
     }
 }
 
-#pragma mark - Push Notification Delegation methods
-
-- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken
-{
-    const void *devTokenBytes = [devToken bytes];
-    NSLog(@"%@",devTokenBytes);
-    
-    //self.registered = YES;
-    //[self sendProviderDeviceToken:devTokenBytes]; // this will send token to your server's database
-}
-
-- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err
-{
-    NSLog(@"Error in registration. Error: %@", err);
-}
-
+   
 @end
