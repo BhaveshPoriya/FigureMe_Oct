@@ -21,6 +21,8 @@
 @property (nonatomic,strong) OAToken* accessToken;
 @property (nonatomic, retain) IBOutlet UIWebView *webview;
 @property (nonatomic, retain) NSString *isLogin;
+@property (nonatomic) enum NetworkType network;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *btnClose;
 - (IBAction)btnCloseClicked:(id)sender;

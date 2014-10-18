@@ -40,5 +40,11 @@
 #define APIRootURL "http://www.ecsprojects.com/figureme/api"
 #define APIRootURL_LOCAL "http://192.168.1.116:82/figureme/api"
 
+enum NetworkType {
+    NetworkTypeFacebook = 0,
+    NetworkTypeTwitter = 1,
+    NetworkTypeInstaGram = 2,
+    NetworkTypeLinkedIn = 3
+};
 
 #endif

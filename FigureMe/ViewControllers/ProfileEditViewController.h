@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocialConnectController.h"
+#import "Constant.h"
 
 @interface ProfileEditViewController : UIViewController
 

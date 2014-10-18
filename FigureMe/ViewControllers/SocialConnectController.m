@@ -8,11 +8,12 @@
 
 #import "SocialConnectController.h"
 
-NSString *client_id = @"lPSvsJJPBb0SLsLWpvtDw790e";
-NSString *secret = @"LTZv7CLkJdnKj2zoH9HTisfN4ngA4069A8C803tRRJW3b1yGsI";
-
-NSString *callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
-
+NSString *client_id;
+NSString *secret;
+NSString *callback;
+NSString *strRequestTokenUrl;
+NSString *strAuthorizeUrl;
+NSString *strAccessTokenUrl;
 
 @interface SocialConnectController ()
 
@@ -34,8 +35,38 @@ NSString *callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+ 
+    switch (self.network) {
+        case NetworkTypeFacebook:
+            
+            break;
+            
+        case NetworkTypeTwitter:
+            
+            client_id = @"GJHVJl5s9tVIaQFWkSi64QTtd";
+            secret = @"qWvXsdSXNJlrn23KkRZQqEeVebx6BJ6mWkDfGaM8YIPDpSywsh";
+            callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
+            strRequestTokenUrl = @"https://api.twitter.com/oauth/request_token";
+            strAuthorizeUrl = @"https://api.twitter.com/oauth/authorize";
+            strAccessTokenUrl = @"https://api.twitter.com/oauth/access_token";
+            
+            break;
+            
+        case NetworkTypeInstaGram:
+            
+            break;
+            
+        case NetworkTypeLinkedIn:
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+    
     consumer = [[OAConsumer alloc] initWithKey:client_id secret:secret realm:nil];
-    NSURL* requestTokenUrl = [NSURL URLWithString:@"https://api.twitter.com/oauth/request_token"];
+    NSURL* requestTokenUrl = [NSURL URLWithString:strRequestTokenUrl];
     OAMutableURLRequest* requestTokenRequest = [[OAMutableURLRequest alloc] initWithURL:requestTokenUrl
                                                                                consumer:consumer
                                                                                   token:nil
@@ -68,7 +99,7 @@ NSString *callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
     NSString* httpBody = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     requestToken = [[OAToken alloc] initWithHTTPResponseBody:httpBody];
     
-    NSURL* authorizeUrl = [NSURL URLWithString:@"https://api.twitter.com/oauth/authorize"];
+    NSURL* authorizeUrl = [NSURL URLWithString:strAuthorizeUrl];
     OAMutableURLRequest* authorizeRequest = [[OAMutableURLRequest alloc] initWithURL:authorizeUrl
                                                                             consumer:nil
                                                                                token:nil
@@ -88,11 +119,12 @@ NSString *callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
     
     NSString *pdata = [NSString stringWithFormat:@"type=2&token=%@&secret=%@&login=%@", accessToken.key, accessToken.secret, self.isLogin];
     
-    NSLog(@"%@",accessToken.secret);
+    NSLog(@"Key %@",accessToken.key);
+    NSLog(@"Secret %@",accessToken.secret);
+    NSLog(@"Verifier %@",accessToken.verifier);
     
     [[NSUserDefaults standardUserDefaults] setValue:accessToken.key forKey:kTwitterTokenKey];
     [[NSUserDefaults standardUserDefaults] setValue:accessToken.secret forKey:kTwitterSecretKey];
-
     
     UIAlertView *alertView = [[UIAlertView alloc]
                               initWithTitle:@"Twitter Access Tooken"
@@ -100,8 +132,13 @@ NSString *callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
                               delegate:nil
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil];
-    [alertView show];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //[alertView show];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    
+    
+    
+    
+    
 }
 
 - (void)didFailOAuth:(OAServiceTicket*)ticket error:(NSError*)error {
@@ -134,7 +171,7 @@ NSString *callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
         }
         
         if (verifier) {
-            NSURL* accessTokenUrl = [NSURL URLWithString:@"https://api.twitter.com/oauth/access_token"];
+            NSURL* accessTokenUrl = [NSURL URLWithString:strAccessTokenUrl];
             OAMutableURLRequest* accessTokenRequest = [[OAMutableURLRequest alloc] initWithURL:accessTokenUrl consumer:consumer token:requestToken realm:nil signatureProvider:nil];
             OARequestParameter* verifierParam = [[OARequestParameter alloc] initWithName:@"oauth_verifier" value:verifier];
             [accessTokenRequest setHTTPMethod:@"POST"];
@@ -148,8 +185,6 @@ NSString *callback = @"http://www.ecsprojects.com/figureme/twitter/callback";
             // ERROR!
         }
         
-        //[webView removeFromSuperview];
-        //[self dismissViewControllerAnimated:YES completion:nil];
         return NO;
     }
     
