@@ -29,6 +29,12 @@
 
 #define kDeviceTokenKey @"kDeviceTokenKey"
 
+#pragma mark - Social Connect
+
+#define kTwitterTokenKey @"kTwitterTokenKey"
+#define kTwitterSecretKey @"kTwitterSecretKey"
+
+
 #pragma mark - API
 
 #define APIRootURL "http://www.ecsprojects.com/figureme/api"

@@ -38,4 +38,12 @@
 - (IBAction)btnSaveProfileClicked:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
+
+- (IBAction)btnFacebookClicked:(id)sender {
+    
+}
+
+- (IBAction)btnTwitterClicked:(id)sender {
+    [self performSegueWithIdentifier:@"modalSocialConnect" sender:self];
+}
 @end

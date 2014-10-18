@@ -27,15 +27,16 @@
 {
     [super viewDidLoad];
     
+    self.viewLocationContainer.layer.cornerRadius =
+    self.viewDOBContainer.layer.cornerRadius =
+    self.viewScoreContainer.layer.cornerRadius =
+    self.viewAboutMeContainer.layer.cornerRadius =5.0f;
     
     
     [lblScoreDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
     [lblDateOfBirthDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
     [lblLocationDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
     [txtViewAboutMeDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
-    
-    
-    
     
 }
 

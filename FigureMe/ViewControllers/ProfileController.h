@@ -13,6 +13,10 @@
 @interface ProfileController : UIViewController<UITextViewDelegate>
 
 
+@property (weak, nonatomic) IBOutlet UIView *viewLocationContainer;
+@property (weak, nonatomic) IBOutlet UIView *viewScoreContainer;
+@property (weak, nonatomic) IBOutlet UIView *viewDOBContainer;
+@property (weak, nonatomic) IBOutlet UIView *viewAboutMeContainer;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *btnEditProfile;
