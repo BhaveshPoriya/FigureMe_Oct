@@ -61,8 +61,6 @@
                  
                  self.imgViewProfilePic.layer.cornerRadius = self.imgViewProfilePic.frame.size.width / 2;
                  self.imgViewProfilePic.clipsToBounds = YES;
-               //  self.imgViewProfilePic.layer.borderWidth = 1.0f;
-//                self.imgViewProfilePic.layer.borderColor = [UIColor grayColor].CGColor;
                  self.imgViewProfilePic.backgroundColor = [UIColor whiteColor];
                  [self.imgViewProfilePic setContentMode:UIViewContentModeScaleAspectFill];
                 
