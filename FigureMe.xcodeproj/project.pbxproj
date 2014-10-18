@@ -66,8 +66,6 @@
 		C3BCFEEA19EE878D004B1181 /* social-usre.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEE419EE878D004B1181 /* social-usre.png */; };
 		C3BCFEEF19EE9054004B1181 /* gray-bg-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */; };
 		C3BCFEF019EE9054004B1181 /* gray-bg-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */; };
-		C3BCFEF219EEA3E9004B1181 /* pino.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEF119EEA3E9004B1181 /* pino.jpeg */; };
-		C3BCFEF319EEA3E9004B1181 /* pino.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3BCFEF119EEA3E9004B1181 /* pino.jpeg */; };
 		C3BCFEF519EEA616004B1181 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BCFEF419EEA616004B1181 /* QuartzCore.framework */; };
 		C3CD542F19EBE08200C62E51 /* StatYourScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CD542E19EBE08200C62E51 /* StatYourScore.m */; };
 		C3CD543019EBE08200C62E51 /* StatYourScore.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CD542E19EBE08200C62E51 /* StatYourScore.m */; };
@@ -81,6 +79,11 @@
 		C3E1E3F119EE635200528AF8 /* MyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3EA19EE635200528AF8 /* MyIcon.png */; };
 		C3E1E3F219EE635200528AF8 /* score.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3EB19EE635200528AF8 /* score.png */; };
 		C3E1E3F319EE635200528AF8 /* score.png in Resources */ = {isa = PBXBuildFile; fileRef = C3E1E3EB19EE635200528AF8 /* score.png */; };
+		C3EBB69519F2526D00214EF0 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EBB69419F2526D00214EF0 /* UIImageView+WebCache.m */; };
+		C3EBB69D19F27DD700214EF0 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3EBB69A19F27DD700214EF0 /* image3.jpg */; };
+		C3EBB69E19F27DD700214EF0 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3EBB69B19F27DD700214EF0 /* image1.jpg */; };
+		C3EBB69F19F27DD700214EF0 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3EBB69C19F27DD700214EF0 /* image2.jpg */; };
+		C3EBB6A119F2838900214EF0 /* pino.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3EBB6A019F2838900214EF0 /* pino.jpeg */; };
 		F43FAD4A19DD3C2300C620E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43FAD4919DD3C2300C620E8 /* Foundation.framework */; };
 		F43FAD4C19DD3C2300C620E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43FAD4B19DD3C2300C620E8 /* CoreGraphics.framework */; };
 		F43FAD4E19DD3C2300C620E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43FAD4D19DD3C2300C620E8 /* UIKit.framework */; };
@@ -304,7 +307,6 @@
 		C3BCFEE319EE878D004B1181 /* social-usre-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-usre-bg.png"; sourceTree = "<group>"; };
 		C3BCFEE419EE878D004B1181 /* social-usre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-usre.png"; sourceTree = "<group>"; };
 		C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-bg-iphone.png"; sourceTree = "<group>"; };
-		C3BCFEF119EEA3E9004B1181 /* pino.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pino.jpeg; path = ../../../../../pino.jpeg; sourceTree = "<group>"; };
 		C3BCFEF419EEA616004B1181 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C3CD542D19EBE08200C62E51 /* StatYourScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatYourScore.h; path = ViewControllers/StatYourScore.h; sourceTree = "<group>"; };
 		C3CD542E19EBE08200C62E51 /* StatYourScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatYourScore.m; path = ViewControllers/StatYourScore.m; sourceTree = "<group>"; };
@@ -314,6 +316,12 @@
 		C3E1E3E919EE635200528AF8 /* Iphone-deleted-friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Iphone-deleted-friends.png"; sourceTree = "<group>"; };
 		C3E1E3EA19EE635200528AF8 /* MyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon.png; sourceTree = "<group>"; };
 		C3E1E3EB19EE635200528AF8 /* score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score.png; sourceTree = "<group>"; };
+		C3EBB69319F2526D00214EF0 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "Helper/SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		C3EBB69419F2526D00214EF0 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "Helper/SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		C3EBB69A19F27DD700214EF0 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = ../../../../../image3.jpg; sourceTree = "<group>"; };
+		C3EBB69B19F27DD700214EF0 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = ../../../../../image1.jpg; sourceTree = "<group>"; };
+		C3EBB69C19F27DD700214EF0 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = ../../../../../image2.jpg; sourceTree = "<group>"; };
+		C3EBB6A019F2838900214EF0 /* pino.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pino.jpeg; path = ../../../../../pino.jpeg; sourceTree = "<group>"; };
 		F43FAD4619DD3C2300C620E8 /* FigureMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FigureMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43FAD4919DD3C2300C620E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F43FAD4B19DD3C2300C620E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -560,7 +568,10 @@
 		F43FAD3D19DD3C2300C620E8 = {
 			isa = PBXGroup;
 			children = (
-				C3BCFEF119EEA3E9004B1181 /* pino.jpeg */,
+				C3EBB6A019F2838900214EF0 /* pino.jpeg */,
+				C3EBB69A19F27DD700214EF0 /* image3.jpg */,
+				C3EBB69B19F27DD700214EF0 /* image1.jpg */,
+				C3EBB69C19F27DD700214EF0 /* image2.jpg */,
 				F43FAD4F19DD3C2300C620E8 /* FigureMe */,
 				F43FAD6819DD3C2400C620E8 /* FigureMeTests */,
 				F43FAD4819DD3C2300C620E8 /* Frameworks */,
@@ -904,6 +915,8 @@
 		F4CC9EE119E586AC00B3388A /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				C3EBB69319F2526D00214EF0 /* UIImageView+WebCache.h */,
+				C3EBB69419F2526D00214EF0 /* UIImageView+WebCache.m */,
 				F4CC9EE219E586FE00B3388A /* MKAnnotationView+WebCache.h */,
 				F4CC9EE319E586FE00B3388A /* MKAnnotationView+WebCache.m */,
 				F4CC9EE419E586FE00B3388A /* SDImageCache.h */,
@@ -1006,6 +1019,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A9E5C519ED2CEB003865F5 /* bump-hover.png in Resources */,
+				C3EBB69E19F27DD700214EF0 /* image1.jpg in Resources */,
 				C32FDBA119E7D30D00CD60BE /* cross.png in Resources */,
 				C3E1E3F019EE635200528AF8 /* MyIcon.png in Resources */,
 				F4CC9E7C19E5286C00B3388A /* header-logo.png in Resources */,
@@ -1015,6 +1029,7 @@
 				F4CC9E8219E53D5000B3388A /* gray-bg.png in Resources */,
 				C3235A9319E2DD3800263F98 /* bg.png in Resources */,
 				C3E1E3EE19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */,
+				C3EBB6A119F2838900214EF0 /* pino.jpeg in Resources */,
 				F4C04CD519E6C30C00556BA5 /* OpenSans-BoldItalic.ttf in Resources */,
 				F4A9E5BE19ED283C003865F5 /* my-profile-hover.png in Resources */,
 				C32FDBBB19E7E92A00CD60BE /* header-part.png in Resources */,
@@ -1040,11 +1055,11 @@
 				F44C5F8819EC03CB00712016 /* logout.png in Resources */,
 				F4B6966419E429180065BF4F /* screen-shot.png in Resources */,
 				C32FDBC319E7E92A00CD60BE /* score-hover.png in Resources */,
-				C3BCFEF219EEA3E9004B1181 /* pino.jpeg in Resources */,
 				F440AFEE19E2B5B7008F7566 /* logo.png in Resources */,
 				F44C5F8E19EC03CB00712016 /* stats.png in Resources */,
 				F4CC9E7119E51D6F00B3388A /* menu.png in Resources */,
 				F4B6966119E413700065BF4F /* wrong.png in Resources */,
+				C3EBB69F19F27DD700214EF0 /* image2.jpg in Resources */,
 				F440B00619E2B5C4008F7566 /* cancel.png in Resources */,
 				C32FDBB519E7E92A00CD60BE /* footer-bg.png in Resources */,
 				F4C04CDD19E6C30C00556BA5 /* OpenSans-Light.ttf in Resources */,
@@ -1081,6 +1096,7 @@
 				C3235A9919E2E00000263F98 /* passwordlogin.png in Resources */,
 				F43FAD5C19DD3C2400C620E8 /* Images.xcassets in Resources */,
 				F4B6965F19E413700065BF4F /* right.png in Resources */,
+				C3EBB69D19F27DD700214EF0 /* image3.jpg in Resources */,
 				F440B01019E2B5C4008F7566 /* reapeat-password.png in Resources */,
 				C3235A9619E2DD8C00263F98 /* bgBump.png in Resources */,
 				C3BCFEE519EE878D004B1181 /* screen-shot1.jpg in Resources */,
@@ -1149,7 +1165,6 @@
 				F4C04CE419E6C30C00556BA5 /* OpenSans-Semibold.ttf in Resources */,
 				F4C04CD419E6C30C00556BA5 /* OpenSans-Bold.ttf in Resources */,
 				C32FDBBE19E7E92A00CD60BE /* johndoe-bg.png in Resources */,
-				C3BCFEF319EEA3E9004B1181 /* pino.jpeg in Resources */,
 				F440AFF719E2B5B7008F7566 /* screen-shot.jpg in Resources */,
 				F43FAD9319DD500100C620E8 /* Storyboard.storyboard in Resources */,
 				F4B6966019E413700065BF4F /* right.png in Resources */,
@@ -1216,6 +1231,7 @@
 				F43FAD9B19DD558300C620E8 /* LoginController.m in Sources */,
 				F4CC9EF019E586FE00B3388A /* MKAnnotationView+WebCache.m in Sources */,
 				F43FADB219DD71A800C620E8 /* DashboardController.m in Sources */,
+				C3EBB69519F2526D00214EF0 /* UIImageView+WebCache.m in Sources */,
 				F4CC9EF219E586FE00B3388A /* SDImageCache.m in Sources */,
 				F43FADDA19DD983000C620E8 /* MenuContainerVC.m in Sources */,
 				F43FADCA19DD93AE00C620E8 /* AMSlideMenuLeftTableViewController.m in Sources */,

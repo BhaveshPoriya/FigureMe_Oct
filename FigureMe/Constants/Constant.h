@@ -11,7 +11,7 @@
 #import "AMSlideMenuMainViewController.h"
 #import "CommanFunctions.h"
 #import "IIIFlowView.h"
-
+#import "UIImageView+WebCache.h"
 #import "TPKeyboardAvoidingScrollView.h"
 @class TPKeyboardAvoidingScrollView;
 

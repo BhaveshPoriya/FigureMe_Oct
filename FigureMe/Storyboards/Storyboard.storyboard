@@ -788,8 +788,8 @@
                                 <rect key="frame" x="15" y="338" width="291" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-dT-Wa5">
-                                        <rect key="frame" x="4" y="30" width="283" height="150"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-dT-Wa5">
+                                        <rect key="frame" x="10" y="30" width="283" height="150"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <string key="text">ddfdfdfdfdfdfdffdfdfdffdffdfdfdfdfdfdfddsfldflkjdfdjhfdhfjkfhdjfhdjfhjdfhjdfhdjfhdjfhdjfhdjfhjdhfjdhfjdfhjdfhjdhfjdfhdjfhjdfhjdfhjdhfjfhdjfhjdhfdjhfjhfjdfhjdfhjdfhkjfhkjfhdkjfhjkfhjfkhjfhdjfhjdfhdjkhfjhldkfdkfhjkhfjhfjkhfjkhffjkhdjfkhdjkfhkljdfhfj</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -1048,6 +1048,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="btnInstanceHeadingStatYourScore" destination="Txf-pi-Dyg" id="aJW-nA-pNy"/>
+                        <outlet property="tabbarItemScore" destination="BOC-wP-kee" id="JrK-Cl-f1n"/>
                         <outlet property="tblViewStatYourScore" destination="0QV-ee-Vhb" id="zKV-nx-miZ"/>
                     </connections>
                 </viewController>

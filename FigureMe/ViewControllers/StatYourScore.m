@@ -8,13 +8,16 @@
 
 #import "StatYourScore.h"
 #import "StatInfoCell.h"
-
+#import "CommanFunctions.h"
+#import "Score.h"
 @interface StatYourScore ()
-
+{
+    NSMutableArray *arrScores;
+}
 @end
 
 @implementation StatYourScore
-@synthesize tblViewStatYourScore,btnInstanceHeadingStatYourScore;
+@synthesize tblViewStatYourScore,btnInstanceHeadingStatYourScore,tabbarItemScore;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,7 +31,47 @@
 {
     [super viewDidLoad];
     
-    [self.tblViewStatYourScore reloadData];
+    NSMutableURLRequest *_request = [CommanFunctions getScoreRequest:@"12"];
+    _request.timeoutInterval = 30;
+    
+    [NSURLConnection sendAsynchronousRequest:_request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response,
+                                               NSData *data, NSError *connectionError)
+     {
+         if (data.length > 0 && connectionError == nil)
+         {
+             NSDictionary *greeting = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+             NSString *status = [[greeting  objectForKey:@"data"] objectForKey:@"status"];
+             if([status isEqualToString:@"success"])
+                 
+             {
+                 arrScores = [[NSMutableArray alloc]init];
+                 NSDictionary *scores = [[greeting objectForKey:@"data"] objectForKey:@"score"];
+                 
+                 for(NSDictionary *_Score in scores)
+                     
+                 {
+                    // NSDictionary *tempDist = [scores objectForKey:_Score];
+                     
+                     Score *scoreDetail = [[Score alloc]init];
+                     
+                     
+                     NSString *strScore = [NSString stringWithFormat:@"%@",[_Score objectForKey:@"Score"]];
+                     scoreDetail.Score = strScore;
+                     scoreDetail.Name = [_Score objectForKey:@"Name"];
+                     scoreDetail.image = [_Score objectForKey:@"Test_picture"];
+                     [arrScores addObject:scoreDetail];
+                     
+                     
+                 }
+                 
+                 [self.tblViewStatYourScore reloadData];
+             }
+             
+             
+         }
+     }];
     
     [self.btnInstanceHeadingStatYourScore setTitle:@"Most Known Friends First" forState:UIControlStateNormal];
     
@@ -37,6 +80,21 @@
     self.tblViewStatYourScore.layer.masksToBounds = YES;
     
     self.tblViewStatYourScore.layer.cornerRadius = 5.0f;
+    
+    
+    
+    
+    UIImage *unselectedImage = [[UIImage imageNamed:@"score.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabbarItemScore.selectedImage = unselectedImage;
+    
+    
+    UIImage *selectedImage = [[UIImage imageNamed:@"score.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    tabbarItemScore.selectedImage = selectedImage;
+    
+    [tabbarItemScore setImage: [unselectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [tabbarItemScore setSelectedImage: selectedImage];
+    
+    
     
     // Do any additional setup after loading the view.
 }
@@ -50,7 +108,7 @@
 
 
 {
-    return 3;
+     return arrScores.count;
     
 }
 
@@ -66,9 +124,19 @@
         cell = [[StatInfoCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.imgviewStatInfoCell.image = [UIImage imageNamed:@"bgBump.png"];
-    cell.lblNameStatInfoCell.text = @"Joe Handsome";
-    cell.lblScoreStatInfoCell.text = @"120";
+   
+    
+    Score *score = [arrScores objectAtIndex:indexPath.row];
+    
+    NSString *strImageUrl = score.image;
+    
+    NSURL *urlStatImage = [NSURL URLWithString:strImageUrl];
+    [cell.imgviewStatInfoCell setImageWithURL:urlStatImage placeholderImage:[UIImage imageNamed:@"bgBump.png"]];
+    
+    
+    cell.lblNameStatInfoCell.text = score.Name;
+    cell.lblScoreStatInfoCell.text = score.Score;
+    
     
     
     [cell.lblNameStatInfoCell setFont:[UIFont fontWithName:@"OpenSans-Light" size:14.0]];
@@ -80,6 +148,7 @@
     
     
     return cell;
+
     
     
 }
@@ -103,6 +172,8 @@
 }
 */
 
-- (IBAction)btnActionHeadingStatYourScore:(id)sender {
+- (IBAction)btnActionHeadingStatYourScore:(id)sender
+{
+    NSLog(@"button tapped Index %@",sender);
 }
 @end

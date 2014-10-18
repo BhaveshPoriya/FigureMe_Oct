@@ -20,5 +20,6 @@
 +(NSMutableURLRequest *)getCheckUsernameRequest:(NSString *)Username;
 +(NSMutableURLRequest *)getCheckEmailRequest:(NSString *)Email;
 +(NSMutableURLRequest *)getGalleryRequest:(NSString *)UserId;
-
++(NSMutableURLRequest *)getScoreRequest:(NSString *)Score;
++(NSMutableURLRequest *)getProfileRequest:(NSString *)UserId;
 @end
