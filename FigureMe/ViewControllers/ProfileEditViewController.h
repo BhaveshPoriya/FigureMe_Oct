@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocialConnectController.h"
+#import "Constant.h"
 
 @interface ProfileEditViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIButton *btnSaveProfile;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnFacebook;
+@property (weak, nonatomic) IBOutlet UIButton *btnTwitter;
+
 - (IBAction)btnSaveProfileClicked:(id)sender;
+
+- (IBAction)btnFacebookClicked:(id)sender;
+- (IBAction)btnTwitterClicked:(id)sender;
+
 
 @end

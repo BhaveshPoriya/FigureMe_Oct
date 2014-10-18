@@ -160,6 +160,72 @@
 		F44C5F8D19EC03CB00712016 /* my-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F8219EC03CB00712016 /* my-profile.png */; };
 		F44C5F8E19EC03CB00712016 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F8319EC03CB00712016 /* stats.png */; };
 		F44C5F8F19EC03CB00712016 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = F44C5F8319EC03CB00712016 /* stats.png */; };
+		F477212F19F147A500C253B0 /* gray-bg-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212A19F147A500C253B0 /* gray-bg-iphone.png */; };
+		F477213019F147A500C253B0 /* gray-bg-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212A19F147A500C253B0 /* gray-bg-iphone.png */; };
+		F477213119F147A500C253B0 /* PTO.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212B19F147A500C253B0 /* PTO.png */; };
+		F477213219F147A500C253B0 /* PTO.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212B19F147A500C253B0 /* PTO.png */; };
+		F477213319F147A500C253B0 /* screen-shot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F477212C19F147A500C253B0 /* screen-shot1.jpg */; };
+		F477213419F147A500C253B0 /* screen-shot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F477212C19F147A500C253B0 /* screen-shot1.jpg */; };
+		F477213519F147A500C253B0 /* social-usre-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212D19F147A500C253B0 /* social-usre-bg.png */; };
+		F477213619F147A500C253B0 /* social-usre-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212D19F147A500C253B0 /* social-usre-bg.png */; };
+		F477213719F147A500C253B0 /* social-usre.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212E19F147A500C253B0 /* social-usre.png */; };
+		F477213819F147A500C253B0 /* social-usre.png in Resources */ = {isa = PBXBuildFile; fileRef = F477212E19F147A500C253B0 /* social-usre.png */; };
+		F477213F19F149CE00C253B0 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213919F149CE00C253B0 /* facebook.png */; };
+		F477214019F149CE00C253B0 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213919F149CE00C253B0 /* facebook.png */; };
+		F477214119F149CE00C253B0 /* google-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213A19F149CE00C253B0 /* google-plus.png */; };
+		F477214219F149CE00C253B0 /* google-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213A19F149CE00C253B0 /* google-plus.png */; };
+		F477214519F149CE00C253B0 /* instagramme.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213C19F149CE00C253B0 /* instagramme.png */; };
+		F477214619F149CE00C253B0 /* instagramme.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213C19F149CE00C253B0 /* instagramme.png */; };
+		F477214719F149CE00C253B0 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213D19F149CE00C253B0 /* twitter.png */; };
+		F477214819F149CE00C253B0 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213D19F149CE00C253B0 /* twitter.png */; };
+		F477214919F149CE00C253B0 /* you-tube.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213E19F149CE00C253B0 /* you-tube.png */; };
+		F477214A19F149CE00C253B0 /* you-tube.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213E19F149CE00C253B0 /* you-tube.png */; };
+		F477214C19F149E900C253B0 /* social-icon-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F477214B19F149E900C253B0 /* social-icon-bg.png */; };
+		F477214D19F149E900C253B0 /* social-icon-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F477214B19F149E900C253B0 /* social-icon-bg.png */; };
+		F477215019F15B6E00C253B0 /* SocialConnectController.m in Sources */ = {isa = PBXBuildFile; fileRef = F477214F19F15B6E00C253B0 /* SocialConnectController.m */; };
+		F477215119F15B6E00C253B0 /* SocialConnectController.m in Sources */ = {isa = PBXBuildFile; fileRef = F477214F19F15B6E00C253B0 /* SocialConnectController.m */; };
+		F477215B19F15E8700C253B0 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F477215619F15E8700C253B0 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477215C19F15E8700C253B0 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F477215619F15E8700C253B0 /* NSMutableURLRequest+Parameters.m */; };
+		F477215D19F15E8700C253B0 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F477215819F15E8700C253B0 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477215E19F15E8700C253B0 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F477215819F15E8700C253B0 /* NSString+URLEncoding.m */; };
+		F477215F19F15E8700C253B0 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = F477215A19F15E8700C253B0 /* NSURL+Base.m */; };
+		F477216019F15E8700C253B0 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = F477215A19F15E8700C253B0 /* NSURL+Base.m */; };
+		F477216719F15E9300C253B0 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = F477216119F15E9300C253B0 /* Base64Transcoder.c */; };
+		F477216819F15E9300C253B0 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = F477216119F15E9300C253B0 /* Base64Transcoder.c */; };
+		F477216919F15E9300C253B0 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = F477216319F15E9300C253B0 /* hmac.c */; };
+		F477216A19F15E9300C253B0 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = F477216319F15E9300C253B0 /* hmac.c */; };
+		F477216B19F15E9300C253B0 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = F477216519F15E9300C253B0 /* sha1.c */; };
+		F477216C19F15E9300C253B0 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = F477216519F15E9300C253B0 /* sha1.c */; };
+		F477218919F15EA100C253B0 /* OAAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = F477216E19F15EA100C253B0 /* OAAttachment.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477218A19F15EA100C253B0 /* OAAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = F477216E19F15EA100C253B0 /* OAAttachment.m */; };
+		F477218B19F15EA100C253B0 /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217019F15EA100C253B0 /* OACall.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477218C19F15EA100C253B0 /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217019F15EA100C253B0 /* OACall.m */; };
+		F477218D19F15EA100C253B0 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217219F15EA100C253B0 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477218E19F15EA100C253B0 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217219F15EA100C253B0 /* OAConsumer.m */; };
+		F477218F19F15EA100C253B0 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217419F15EA100C253B0 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477219019F15EA100C253B0 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217419F15EA100C253B0 /* OADataFetcher.m */; };
+		F477219119F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217619F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477219219F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217619F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m */; };
+		F477219319F15EA100C253B0 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217819F15EA100C253B0 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477219419F15EA100C253B0 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217819F15EA100C253B0 /* OAMutableURLRequest.m */; };
+		F477219519F15EA100C253B0 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217A19F15EA100C253B0 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477219619F15EA100C253B0 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217A19F15EA100C253B0 /* OAPlaintextSignatureProvider.m */; };
+		F477219719F15EA100C253B0 /* OAProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217C19F15EA100C253B0 /* OAProblem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477219819F15EA100C253B0 /* OAProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217C19F15EA100C253B0 /* OAProblem.m */; };
+		F477219919F15EA100C253B0 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217E19F15EA100C253B0 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477219A19F15EA100C253B0 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = F477217E19F15EA100C253B0 /* OARequestParameter.m */; };
+		F477219B19F15EA100C253B0 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = F477218019F15EA100C253B0 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F477219C19F15EA100C253B0 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = F477218019F15EA100C253B0 /* OAServiceTicket.m */; };
+		F477219D19F15EA100C253B0 /* OATestServer.rb in Resources */ = {isa = PBXBuildFile; fileRef = F477218219F15EA100C253B0 /* OATestServer.rb */; };
+		F477219E19F15EA100C253B0 /* OATestServer.rb in Resources */ = {isa = PBXBuildFile; fileRef = F477218219F15EA100C253B0 /* OATestServer.rb */; };
+		F477219F19F15EA100C253B0 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F477218419F15EA100C253B0 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47721A019F15EA100C253B0 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = F477218419F15EA100C253B0 /* OAToken.m */; };
+		F47721A119F15EA100C253B0 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F477218619F15EA100C253B0 /* OATokenManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F47721A219F15EA100C253B0 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F477218619F15EA100C253B0 /* OATokenManager.m */; };
+		F47721A319F15EA100C253B0 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F477218819F15EA100C253B0 /* README */; };
+		F47721A419F15EA100C253B0 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F477218819F15EA100C253B0 /* README */; };
+		F47721A619F15EC100C253B0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47721A519F15EC100C253B0 /* Security.framework */; };
+		F47721A819F15ED600C253B0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F47721A719F15ED600C253B0 /* libxml2.dylib */; };
 		F4A9E5B319ED092D003865F5 /* devider.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A9E5B219ED092D003865F5 /* devider.png */; };
 		F4A9E5B419ED092D003865F5 /* devider.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A9E5B219ED092D003865F5 /* devider.png */; };
 		F4A9E5BA19ED283C003865F5 /* home-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A9E5B519ED283C003865F5 /* home-hover.png */; };
@@ -385,6 +451,61 @@
 		F44C5F8119EC03CB00712016 /* menu-main-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-main-bg.png"; path = "Resources/images/SideMenu/menu-main-bg.png"; sourceTree = "<group>"; };
 		F44C5F8219EC03CB00712016 /* my-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "my-profile.png"; path = "Resources/images/SideMenu/my-profile.png"; sourceTree = "<group>"; };
 		F44C5F8319EC03CB00712016 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stats.png; path = Resources/images/SideMenu/stats.png; sourceTree = "<group>"; };
+		F477212A19F147A500C253B0 /* gray-bg-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gray-bg-iphone.png"; path = "Resources/images/Profile/gray-bg-iphone.png"; sourceTree = "<group>"; };
+		F477212B19F147A500C253B0 /* PTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PTO.png; path = Resources/images/Profile/PTO.png; sourceTree = "<group>"; };
+		F477212C19F147A500C253B0 /* screen-shot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "screen-shot1.jpg"; path = "Resources/images/Profile/screen-shot1.jpg"; sourceTree = "<group>"; };
+		F477212D19F147A500C253B0 /* social-usre-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-usre-bg.png"; path = "Resources/images/Profile/social-usre-bg.png"; sourceTree = "<group>"; };
+		F477212E19F147A500C253B0 /* social-usre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-usre.png"; path = "Resources/images/Profile/social-usre.png"; sourceTree = "<group>"; };
+		F477213919F149CE00C253B0 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Resources/images/Profile/facebook.png; sourceTree = "<group>"; };
+		F477213A19F149CE00C253B0 /* google-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "google-plus.png"; path = "Resources/images/Profile/google-plus.png"; sourceTree = "<group>"; };
+		F477213C19F149CE00C253B0 /* instagramme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagramme.png; path = Resources/images/Profile/instagramme.png; sourceTree = "<group>"; };
+		F477213D19F149CE00C253B0 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Resources/images/Profile/twitter.png; sourceTree = "<group>"; };
+		F477213E19F149CE00C253B0 /* you-tube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "you-tube.png"; path = "Resources/images/Profile/you-tube.png"; sourceTree = "<group>"; };
+		F477214B19F149E900C253B0 /* social-icon-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-icon-bg.png"; path = "Resources/images/Profile/social-icon-bg.png"; sourceTree = "<group>"; };
+		F477214E19F15B6E00C253B0 /* SocialConnectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialConnectController.h; path = ViewControllers/SocialConnectController.h; sourceTree = "<group>"; };
+		F477214F19F15B6E00C253B0 /* SocialConnectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialConnectController.m; path = ViewControllers/SocialConnectController.m; sourceTree = "<group>"; };
+		F477215519F15E8700C253B0 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Parameters.h"; path = "Helper/oauthconsumer-master/Categories/NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		F477215619F15E8700C253B0 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Parameters.m"; path = "Helper/oauthconsumer-master/Categories/NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		F477215719F15E8700C253B0 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "Helper/oauthconsumer-master/Categories/NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		F477215819F15E8700C253B0 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "Helper/oauthconsumer-master/Categories/NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		F477215919F15E8700C253B0 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+Base.h"; path = "Helper/oauthconsumer-master/Categories/NSURL+Base.h"; sourceTree = "<group>"; };
+		F477215A19F15E8700C253B0 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Base.m"; path = "Helper/oauthconsumer-master/Categories/NSURL+Base.m"; sourceTree = "<group>"; };
+		F477216119F15E9300C253B0 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Base64Transcoder.c; path = "Helper/oauthconsumer-master/Crypto/Base64Transcoder.c"; sourceTree = "<group>"; };
+		F477216219F15E9300C253B0 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64Transcoder.h; path = "Helper/oauthconsumer-master/Crypto/Base64Transcoder.h"; sourceTree = "<group>"; };
+		F477216319F15E9300C253B0 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hmac.c; path = "Helper/oauthconsumer-master/Crypto/hmac.c"; sourceTree = "<group>"; };
+		F477216419F15E9300C253B0 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "Helper/oauthconsumer-master/Crypto/hmac.h"; sourceTree = "<group>"; };
+		F477216519F15E9300C253B0 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = "Helper/oauthconsumer-master/Crypto/sha1.c"; sourceTree = "<group>"; };
+		F477216619F15E9300C253B0 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = "Helper/oauthconsumer-master/Crypto/sha1.h"; sourceTree = "<group>"; };
+		F477216D19F15EA100C253B0 /* OAAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAAttachment.h; path = "Helper/oauthconsumer-master/OAAttachment.h"; sourceTree = "<group>"; };
+		F477216E19F15EA100C253B0 /* OAAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAAttachment.m; path = "Helper/oauthconsumer-master/OAAttachment.m"; sourceTree = "<group>"; };
+		F477216F19F15EA100C253B0 /* OACall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OACall.h; path = "Helper/oauthconsumer-master/OACall.h"; sourceTree = "<group>"; };
+		F477217019F15EA100C253B0 /* OACall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OACall.m; path = "Helper/oauthconsumer-master/OACall.m"; sourceTree = "<group>"; };
+		F477217119F15EA100C253B0 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAConsumer.h; path = "Helper/oauthconsumer-master/OAConsumer.h"; sourceTree = "<group>"; };
+		F477217219F15EA100C253B0 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAConsumer.m; path = "Helper/oauthconsumer-master/OAConsumer.m"; sourceTree = "<group>"; };
+		F477217319F15EA100C253B0 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OADataFetcher.h; path = "Helper/oauthconsumer-master/OADataFetcher.h"; sourceTree = "<group>"; };
+		F477217419F15EA100C253B0 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OADataFetcher.m; path = "Helper/oauthconsumer-master/OADataFetcher.m"; sourceTree = "<group>"; };
+		F477217519F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAHMAC_SHA1SignatureProvider.h; path = "Helper/oauthconsumer-master/OAHMAC_SHA1SignatureProvider.h"; sourceTree = "<group>"; };
+		F477217619F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAHMAC_SHA1SignatureProvider.m; path = "Helper/oauthconsumer-master/OAHMAC_SHA1SignatureProvider.m"; sourceTree = "<group>"; };
+		F477217719F15EA100C253B0 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAMutableURLRequest.h; path = "Helper/oauthconsumer-master/OAMutableURLRequest.h"; sourceTree = "<group>"; };
+		F477217819F15EA100C253B0 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAMutableURLRequest.m; path = "Helper/oauthconsumer-master/OAMutableURLRequest.m"; sourceTree = "<group>"; };
+		F477217919F15EA100C253B0 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAPlaintextSignatureProvider.h; path = "Helper/oauthconsumer-master/OAPlaintextSignatureProvider.h"; sourceTree = "<group>"; };
+		F477217A19F15EA100C253B0 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAPlaintextSignatureProvider.m; path = "Helper/oauthconsumer-master/OAPlaintextSignatureProvider.m"; sourceTree = "<group>"; };
+		F477217B19F15EA100C253B0 /* OAProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAProblem.h; path = "Helper/oauthconsumer-master/OAProblem.h"; sourceTree = "<group>"; };
+		F477217C19F15EA100C253B0 /* OAProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAProblem.m; path = "Helper/oauthconsumer-master/OAProblem.m"; sourceTree = "<group>"; };
+		F477217D19F15EA100C253B0 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OARequestParameter.h; path = "Helper/oauthconsumer-master/OARequestParameter.h"; sourceTree = "<group>"; };
+		F477217E19F15EA100C253B0 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OARequestParameter.m; path = "Helper/oauthconsumer-master/OARequestParameter.m"; sourceTree = "<group>"; };
+		F477217F19F15EA100C253B0 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAServiceTicket.h; path = "Helper/oauthconsumer-master/OAServiceTicket.h"; sourceTree = "<group>"; };
+		F477218019F15EA100C253B0 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAServiceTicket.m; path = "Helper/oauthconsumer-master/OAServiceTicket.m"; sourceTree = "<group>"; };
+		F477218119F15EA100C253B0 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OASignatureProviding.h; path = "Helper/oauthconsumer-master/OASignatureProviding.h"; sourceTree = "<group>"; };
+		F477218219F15EA100C253B0 /* OATestServer.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = OATestServer.rb; path = "Helper/oauthconsumer-master/OATestServer.rb"; sourceTree = "<group>"; };
+		F477218319F15EA100C253B0 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAToken.h; path = "Helper/oauthconsumer-master/OAToken.h"; sourceTree = "<group>"; };
+		F477218419F15EA100C253B0 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAToken.m; path = "Helper/oauthconsumer-master/OAToken.m"; sourceTree = "<group>"; };
+		F477218519F15EA100C253B0 /* OATokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OATokenManager.h; path = "Helper/oauthconsumer-master/OATokenManager.h"; sourceTree = "<group>"; };
+		F477218619F15EA100C253B0 /* OATokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OATokenManager.m; path = "Helper/oauthconsumer-master/OATokenManager.m"; sourceTree = "<group>"; };
+		F477218719F15EA100C253B0 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuthConsumer.h; path = "Helper/oauthconsumer-master/OAuthConsumer.h"; sourceTree = "<group>"; };
+		F477218819F15EA100C253B0 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = "Helper/oauthconsumer-master/README"; sourceTree = "<group>"; };
+		F47721A519F15EC100C253B0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F47721A719F15ED600C253B0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		F4A9E5B219ED092D003865F5 /* devider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devider.png; path = Resources/images/SideMenu/devider.png; sourceTree = "<group>"; };
 		F4A9E5B519ED283C003865F5 /* home-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-hover.png"; path = "Resources/images/SideMenu/home-hover.png"; sourceTree = "<group>"; };
 		F4A9E5B619ED283C003865F5 /* logout-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logout-hover.png"; path = "Resources/images/SideMenu/logout-hover.png"; sourceTree = "<group>"; };
@@ -469,6 +590,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47721A819F15ED600C253B0 /* libxml2.dylib in Frameworks */,
+				F47721A619F15EC100C253B0 /* Security.framework in Frameworks */,
 				C3BCFEF519EEA616004B1181 /* QuartzCore.framework in Frameworks */,
 				F43FAD4C19DD3C2300C620E8 /* CoreGraphics.framework in Frameworks */,
 				F43FAD4E19DD3C2300C620E8 /* UIKit.framework in Frameworks */,
@@ -533,7 +656,6 @@
 		C3BC2F0619E8170700295626 /* Iphone */ = {
 			isa = PBXGroup;
 			children = (
-				C3BCFEDE19EE723C004B1181 /* Profile-Iphone */,
 				C3BC2F0719E8170700295626 /* stat-Iphone */,
 			);
 			name = Iphone;
@@ -551,18 +673,6 @@
 				C3BC2F0819E8170700295626 /* scrore.png */,
 			);
 			path = "stat-Iphone";
-			sourceTree = "<group>";
-		};
-		C3BCFEDE19EE723C004B1181 /* Profile-Iphone */ = {
-			isa = PBXGroup;
-			children = (
-				C3BCFEEE19EE9054004B1181 /* gray-bg-iphone.png */,
-				C3BCFEE219EE878D004B1181 /* screen-shot1.jpg */,
-				C3BCFEE319EE878D004B1181 /* social-usre-bg.png */,
-				C3BCFEE419EE878D004B1181 /* social-usre.png */,
-				C3BCFEDF19EE724F004B1181 /* PTO.png */,
-			);
-			path = "Profile-Iphone";
 			sourceTree = "<group>";
 		};
 		F43FAD3D19DD3C2300C620E8 = {
@@ -591,6 +701,8 @@
 		F43FAD4819DD3C2300C620E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F47721A719F15ED600C253B0 /* libxml2.dylib */,
+				F47721A519F15EC100C253B0 /* Security.framework */,
 				C3BCFEF419EEA616004B1181 /* QuartzCore.framework */,
 				F43FAD4919DD3C2300C620E8 /* Foundation.framework */,
 				F43FAD4B19DD3C2300C620E8 /* CoreGraphics.framework */,
@@ -715,6 +827,8 @@
 				F4CB48FB19EBD895000CC9D0 /* GalleryController.m */,
 				F4A9E5C719ED5A83003865F5 /* BumpController.h */,
 				F4A9E5C819ED5A83003865F5 /* BumpController.m */,
+				F477214E19F15B6E00C253B0 /* SocialConnectController.h */,
+				F477214F19F15B6E00C253B0 /* SocialConnectController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -731,6 +845,7 @@
 		F43FADA119DD714B00C620E8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F477215219F15E5300C253B0 /* oauthconsumer-master */,
 				F4CC9EE119E586AC00B3388A /* SDWebImage */,
 				F4CC9ECB19E5865600B3388A /* IIIThumbFlow */,
 				F4B6964C19E3D4E40065BF4F /* TPKeyboardAvoiding */,
@@ -803,6 +918,87 @@
 			name = register;
 			sourceTree = "<group>";
 		};
+		F477212919F1467A00C253B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F477214B19F149E900C253B0 /* social-icon-bg.png */,
+				F477213919F149CE00C253B0 /* facebook.png */,
+				F477213A19F149CE00C253B0 /* google-plus.png */,
+				F477213C19F149CE00C253B0 /* instagramme.png */,
+				F477213D19F149CE00C253B0 /* twitter.png */,
+				F477213E19F149CE00C253B0 /* you-tube.png */,
+				F477212A19F147A500C253B0 /* gray-bg-iphone.png */,
+				F477212B19F147A500C253B0 /* PTO.png */,
+				F477212C19F147A500C253B0 /* screen-shot1.jpg */,
+				F477212D19F147A500C253B0 /* social-usre-bg.png */,
+				F477212E19F147A500C253B0 /* social-usre.png */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		F477215219F15E5300C253B0 /* oauthconsumer-master */ = {
+			isa = PBXGroup;
+			children = (
+				F477216D19F15EA100C253B0 /* OAAttachment.h */,
+				F477216E19F15EA100C253B0 /* OAAttachment.m */,
+				F477216F19F15EA100C253B0 /* OACall.h */,
+				F477217019F15EA100C253B0 /* OACall.m */,
+				F477217119F15EA100C253B0 /* OAConsumer.h */,
+				F477217219F15EA100C253B0 /* OAConsumer.m */,
+				F477217319F15EA100C253B0 /* OADataFetcher.h */,
+				F477217419F15EA100C253B0 /* OADataFetcher.m */,
+				F477217519F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.h */,
+				F477217619F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m */,
+				F477217719F15EA100C253B0 /* OAMutableURLRequest.h */,
+				F477217819F15EA100C253B0 /* OAMutableURLRequest.m */,
+				F477217919F15EA100C253B0 /* OAPlaintextSignatureProvider.h */,
+				F477217A19F15EA100C253B0 /* OAPlaintextSignatureProvider.m */,
+				F477217B19F15EA100C253B0 /* OAProblem.h */,
+				F477217C19F15EA100C253B0 /* OAProblem.m */,
+				F477217D19F15EA100C253B0 /* OARequestParameter.h */,
+				F477217E19F15EA100C253B0 /* OARequestParameter.m */,
+				F477217F19F15EA100C253B0 /* OAServiceTicket.h */,
+				F477218019F15EA100C253B0 /* OAServiceTicket.m */,
+				F477218119F15EA100C253B0 /* OASignatureProviding.h */,
+				F477218219F15EA100C253B0 /* OATestServer.rb */,
+				F477218319F15EA100C253B0 /* OAToken.h */,
+				F477218419F15EA100C253B0 /* OAToken.m */,
+				F477218519F15EA100C253B0 /* OATokenManager.h */,
+				F477218619F15EA100C253B0 /* OATokenManager.m */,
+				F477218719F15EA100C253B0 /* OAuthConsumer.h */,
+				F477218819F15EA100C253B0 /* README */,
+				F477215419F15E6A00C253B0 /* Crypto */,
+				F477215319F15E6300C253B0 /* Categories */,
+			);
+			name = "oauthconsumer-master";
+			sourceTree = "<group>";
+		};
+		F477215319F15E6300C253B0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F477215519F15E8700C253B0 /* NSMutableURLRequest+Parameters.h */,
+				F477215619F15E8700C253B0 /* NSMutableURLRequest+Parameters.m */,
+				F477215719F15E8700C253B0 /* NSString+URLEncoding.h */,
+				F477215819F15E8700C253B0 /* NSString+URLEncoding.m */,
+				F477215919F15E8700C253B0 /* NSURL+Base.h */,
+				F477215A19F15E8700C253B0 /* NSURL+Base.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F477215419F15E6A00C253B0 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				F477216119F15E9300C253B0 /* Base64Transcoder.c */,
+				F477216219F15E9300C253B0 /* Base64Transcoder.h */,
+				F477216319F15E9300C253B0 /* hmac.c */,
+				F477216419F15E9300C253B0 /* hmac.h */,
+				F477216519F15E9300C253B0 /* sha1.c */,
+				F477216619F15E9300C253B0 /* sha1.h */,
+			);
+			name = Crypto;
+			sourceTree = "<group>";
+		};
 		F4B6964C19E3D4E40065BF4F /* TPKeyboardAvoiding */ = {
 			isa = PBXGroup;
 			children = (
@@ -845,6 +1041,7 @@
 		F4C1E5B319DE82A2003C108A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F477212919F1467A00C253B0 /* Profile */,
 				C3BC2F0619E8170700295626 /* Iphone */,
 				C32FDB9F19E7D30D00CD60BE /* stats */,
 				F4CC9EC719E5761700B3388A /* Dashboard */,
@@ -1031,25 +1228,27 @@
 				C3E1E3EE19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */,
 				C3EBB6A119F2838900214EF0 /* pino.jpeg in Resources */,
 				F4C04CD519E6C30C00556BA5 /* OpenSans-BoldItalic.ttf in Resources */,
+				F47721A319F15EA100C253B0 /* README in Resources */,
 				F4A9E5BE19ED283C003865F5 /* my-profile-hover.png in Resources */,
 				C32FDBBB19E7E92A00CD60BE /* header-part.png in Resources */,
 				C32FDBC519E7E92A00CD60BE /* screen-shot.jpg in Resources */,
 				C3235A8619E2CC5400263F98 /* registerlogin.png in Resources */,
+				F477214C19F149E900C253B0 /* social-icon-bg.png in Resources */,
 				C3BC2F0919E8170700295626 /* scrore.png in Resources */,
 				F44C5F8A19EC03CB00712016 /* menu-main-bg.png in Resources */,
 				C3235A8019E2C68C00263F98 /* login-userbg.png in Resources */,
 				F44C5F8C19EC03CB00712016 /* my-profile.png in Resources */,
 				F4A9E5BA19ED283C003865F5 /* home-hover.png in Resources */,
 				C32FDBBF19E7E92A00CD60BE /* johndoe-last-nav.png in Resources */,
+				F477213F19F149CE00C253B0 /* facebook.png in Resources */,
 				C32FDBB319E7E92A00CD60BE /* deleted-friends.png in Resources */,
 				C32FDBC919E7E92A00CD60BE /* your score.png in Resources */,
+				F477214519F149CE00C253B0 /* instagramme.png in Resources */,
 				C3BC2F0C19E8178A00295626 /* your-scrore-hover.png in Resources */,
 				F4C04CD319E6C30C00556BA5 /* OpenSans-Bold.ttf in Resources */,
 				F4C04CE119E6C30C00556BA5 /* OpenSans-Regular.ttf in Resources */,
 				C3235A8119E2C68C00263F98 /* login-username.png in Resources */,
 				F4C04CD919E6C30C00556BA5 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				C3BCFEE019EE724F004B1181 /* PTO.png in Resources */,
-				C3BCFEEF19EE9054004B1181 /* gray-bg-iphone.png in Resources */,
 				C3E1E3F219EE635200528AF8 /* score.png in Resources */,
 				F440AFF019E2B5B7008F7566 /* password-hint.png in Resources */,
 				F44C5F8819EC03CB00712016 /* logout.png in Resources */,
@@ -1063,15 +1262,19 @@
 				F440B00619E2B5C4008F7566 /* cancel.png in Resources */,
 				C32FDBB519E7E92A00CD60BE /* footer-bg.png in Resources */,
 				F4C04CDD19E6C30C00556BA5 /* OpenSans-Light.ttf in Resources */,
+				F477213119F147A500C253B0 /* PTO.png in Resources */,
+				F477213319F147A500C253B0 /* screen-shot1.jpg in Resources */,
 				F4A9E5C019ED283C003865F5 /* notificatrion-hover.png in Resources */,
+				F477219D19F15EA100C253B0 /* OATestServer.rb in Resources */,
 				F440B01619E2B5C4008F7566 /* username-bg.png in Resources */,
 				F4C04CC619E6AA4C00556BA5 /* galler-scrore-count.png in Resources */,
 				C32FDBCB19E7E92A00CD60BE /* your-score-hover.png in Resources */,
 				F440AFF619E2B5B7008F7566 /* screen-shot.jpg in Resources */,
+				F477212F19F147A500C253B0 /* gray-bg-iphone.png in Resources */,
 				F4C04CDF19E6C30C00556BA5 /* OpenSans-LightItalic.ttf in Resources */,
+				F477213719F147A500C253B0 /* social-usre.png in Resources */,
 				F43FAD5419DD3C2400C620E8 /* InfoPlist.strings in Resources */,
 				F4FBF1E019EC0C1200F51D4F /* notification.png in Resources */,
-				C3BCFEE919EE878D004B1181 /* social-usre.png in Resources */,
 				C3E1E3EC19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */,
 				F4CC9E7F19E53AF000B3388A /* header-part.png in Resources */,
 				C32FDBC119E7E92A00CD60BE /* middle-johndoe-bg.png in Resources */,
@@ -1095,13 +1298,13 @@
 				C32FDBB919E7E92A00CD60BE /* gray-texture-bg.png in Resources */,
 				C3235A9919E2E00000263F98 /* passwordlogin.png in Resources */,
 				F43FAD5C19DD3C2400C620E8 /* Images.xcassets in Resources */,
+				F477214119F149CE00C253B0 /* google-plus.png in Resources */,
 				F4B6965F19E413700065BF4F /* right.png in Resources */,
 				C3EBB69D19F27DD700214EF0 /* image3.jpg in Resources */,
 				F440B01019E2B5C4008F7566 /* reapeat-password.png in Resources */,
 				C3235A9619E2DD8C00263F98 /* bgBump.png in Resources */,
-				C3BCFEE519EE878D004B1181 /* screen-shot1.jpg in Resources */,
+				F477214919F149CE00C253B0 /* you-tube.png in Resources */,
 				F440B01219E2B5C4008F7566 /* register.png in Resources */,
-				C3BCFEE719EE878D004B1181 /* social-usre-bg.png in Resources */,
 				F440B00A19E2B5C4008F7566 /* header-part.png in Resources */,
 				F4A9E5BC19ED283C003865F5 /* logout-hover.png in Resources */,
 				F4C04CE319E6C30C00556BA5 /* OpenSans-Semibold.ttf in Resources */,
@@ -1117,57 +1320,66 @@
 				C32FDBBA19E7E92A00CD60BE /* gray-texture-bg.png in Resources */,
 				F440B01719E2B5C4008F7566 /* username-bg.png in Resources */,
 				F440AFEF19E2B5B7008F7566 /* logo.png in Resources */,
+				F477213419F147A500C253B0 /* screen-shot1.jpg in Resources */,
 				F4CC9E7219E51D6F00B3388A /* menu.png in Resources */,
 				F4A9E5C619ED2CEB003865F5 /* bump-hover.png in Resources */,
 				F4CC9E8319E53D5000B3388A /* gray-bg.png in Resources */,
 				C32FDBC819E7E92A00CD60BE /* scroll.png in Resources */,
 				C3E1E3ED19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */,
+				F477214619F149CE00C253B0 /* instagramme.png in Resources */,
+				F477219E19F15EA100C253B0 /* OATestServer.rb in Resources */,
 				C32FDBB219E7E92A00CD60BE /* deleted-friends-hover.png in Resources */,
 				F4C04CDE19E6C30C00556BA5 /* OpenSans-Light.ttf in Resources */,
 				C32FDBBC19E7E92A00CD60BE /* header-part.png in Resources */,
-				C3BCFEE619EE878D004B1181 /* screen-shot1.jpg in Resources */,
 				C3235A9419E2DD3800263F98 /* bg.png in Resources */,
 				C3E1E3F119EE635200528AF8 /* MyIcon.png in Resources */,
+				F477214219F149CE00C253B0 /* google-plus.png in Resources */,
 				C3235A9719E2DD8C00263F98 /* bgBump.png in Resources */,
 				C32FDBC419E7E92A00CD60BE /* score-hover.png in Resources */,
 				F4C04CC719E6AA4C00556BA5 /* galler-scrore-count.png in Resources */,
 				F4C04CDA19E6C30C00556BA5 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				C32FDBCA19E7E92A00CD60BE /* your score.png in Resources */,
 				C32FDBCC19E7E92A00CD60BE /* your-score-hover.png in Resources */,
+				F47721A419F15EA100C253B0 /* README in Resources */,
 				F4A9E5C119ED283C003865F5 /* notificatrion-hover.png in Resources */,
 				F4C04CE019E6C30C00556BA5 /* OpenSans-LightItalic.ttf in Resources */,
+				F477213019F147A500C253B0 /* gray-bg-iphone.png in Resources */,
 				F440B01919E2B5C4008F7566 /* username.png in Resources */,
 				F440B00719E2B5C4008F7566 /* cancel.png in Resources */,
 				C3E1E3EF19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */,
 				F440AFED19E2B5B7008F7566 /* login.png in Resources */,
+				F477213219F147A500C253B0 /* PTO.png in Resources */,
 				C32FDBC019E7E92A00CD60BE /* johndoe-last-nav.png in Resources */,
 				F4FBF1E119EC0C1200F51D4F /* notification.png in Resources */,
 				F44C5F8919EC03CB00712016 /* logout.png in Resources */,
 				F4CC9E8019E53AF000B3388A /* header-part.png in Resources */,
 				F4C04CDC19E6C30C00556BA5 /* OpenSans-Italic.ttf in Resources */,
+				F477213619F147A500C253B0 /* social-usre-bg.png in Resources */,
 				F440B01319E2B5C4008F7566 /* register.png in Resources */,
 				F440AFF119E2B5B7008F7566 /* password-hint.png in Resources */,
-				C3BCFEF019EE9054004B1181 /* gray-bg-iphone.png in Resources */,
 				F4C1E5B219DE7C16003C108A /* Storyboard-iPad.storyboard in Resources */,
 				F4B6966219E413700065BF4F /* wrong.png in Resources */,
 				C3BC2F0A19E8170700295626 /* scrore.png in Resources */,
 				C32FDBB819E7E92A00CD60BE /* footer-hover-bg.png in Resources */,
 				C32FDBB619E7E92A00CD60BE /* footer-bg.png in Resources */,
 				F44C5F8F19EC03CB00712016 /* stats.png in Resources */,
-				C3BCFEEA19EE878D004B1181 /* social-usre.png in Resources */,
 				F44C5F8D19EC03CB00712016 /* my-profile.png in Resources */,
 				F43FAD6D19DD3C2400C620E8 /* InfoPlist.strings in Resources */,
 				F4A9E5BF19ED283C003865F5 /* my-profile-hover.png in Resources */,
-				C3BCFEE819EE878D004B1181 /* social-usre-bg.png in Resources */,
 				F4CC9ECA19E5762500B3388A /* see-all.png in Resources */,
 				F4CC9E7D19E5286C00B3388A /* header-logo.png in Resources */,
 				F440B01119E2B5C4008F7566 /* reapeat-password.png in Resources */,
+				F477213819F147A500C253B0 /* social-usre.png in Resources */,
 				F4C04CE419E6C30C00556BA5 /* OpenSans-Semibold.ttf in Resources */,
 				F4C04CD419E6C30C00556BA5 /* OpenSans-Bold.ttf in Resources */,
 				C32FDBBE19E7E92A00CD60BE /* johndoe-bg.png in Resources */,
 				F440AFF719E2B5B7008F7566 /* screen-shot.jpg in Resources */,
 				F43FAD9319DD500100C620E8 /* Storyboard.storyboard in Resources */,
+				F477214019F149CE00C253B0 /* facebook.png in Resources */,
+				F477214A19F149CE00C253B0 /* you-tube.png in Resources */,
 				F4B6966019E413700065BF4F /* right.png in Resources */,
+				F477214D19F149E900C253B0 /* social-icon-bg.png in Resources */,
+				F477214819F149CE00C253B0 /* twitter.png in Resources */,
 				F4A9E5BD19ED283C003865F5 /* logout-hover.png in Resources */,
 				F4C04CD619E6C30C00556BA5 /* OpenSans-BoldItalic.ttf in Resources */,
 				F4A9E5B419ED092D003865F5 /* devider.png in Resources */,
@@ -1184,7 +1396,6 @@
 				C32FDBC619E7E92A00CD60BE /* screen-shot.jpg in Resources */,
 				F44C5F8B19EC03CB00712016 /* menu-main-bg.png in Resources */,
 				F4A9E5C319ED283C003865F5 /* stats-hover.png in Resources */,
-				C3BCFEE119EE724F004B1181 /* PTO.png in Resources */,
 				F440B00919E2B5C4008F7566 /* email.png in Resources */,
 				F4C04CE219E6C30C00556BA5 /* OpenSans-Regular.ttf in Resources */,
 				F4C04CE619E6C30C00556BA5 /* OpenSans-SemiboldItalic.ttf in Resources */,
@@ -1211,28 +1422,47 @@
 				F4C1E5C519DE880C003C108A /* NotificationController.m in Sources */,
 				F4CC9EDB19E5868D00B3388A /* IIIFlowView.m in Sources */,
 				F4C1E5D019DEC587003C108A /* TestController.m in Sources */,
+				F477218D19F15EA100C253B0 /* OAConsumer.m in Sources */,
+				F477219519F15EA100C253B0 /* OAPlaintextSignatureProvider.m in Sources */,
 				F4CC9EF619E586FE00B3388A /* SDWebImageDownloader.m in Sources */,
+				F477218919F15EA100C253B0 /* OAAttachment.m in Sources */,
 				C3E1E3E619EE61D700528AF8 /* DeletedFriendsController.m in Sources */,
 				F4CC9EDD19E5868D00B3388A /* SDImageCache+IIIThumb.m in Sources */,
 				F4CC9ED919E5868D00B3388A /* IIIFlowCell.m in Sources */,
+				F477215B19F15E8700C253B0 /* NSMutableURLRequest+Parameters.m in Sources */,
 				F43FAD5619DD3C2400C620E8 /* main.m in Sources */,
+				F477216919F15E9300C253B0 /* hmac.c in Sources */,
+				F477218F19F15EA100C253B0 /* OADataFetcher.m in Sources */,
 				C3CD542F19EBE08200C62E51 /* StatYourScore.m in Sources */,
+				F477219119F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
 				F43FADC619DD93AE00C620E8 /* AMSlideMenuContentSegue.m in Sources */,
 				C3BC2F0419E8133A00295626 /* Score.m in Sources */,
 				F4A9E5C919ED5A83003865F5 /* BumpController.m in Sources */,
+				F477215D19F15E8700C253B0 /* NSString+URLEncoding.m in Sources */,
+				F477219B19F15EA100C253B0 /* OAServiceTicket.m in Sources */,
 				C32FDB9919E7C33500CD60BE /* StatInfoCell.m in Sources */,
 				F4CC9EF419E586FE00B3388A /* SDWebImageDecoder.m in Sources */,
+				F477215019F15B6E00C253B0 /* SocialConnectController.m in Sources */,
 				F4CC9ED719E5868D00B3388A /* IIIBaseData.m in Sources */,
 				F4B6965519E3D4F50065BF4F /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				F477219F19F15EA100C253B0 /* OAToken.m in Sources */,
 				F43FADCE19DD93AE00C620E8 /* AMSlideMenuRightMenuSegue.m in Sources */,
+				F477215F19F15E8700C253B0 /* NSURL+Base.m in Sources */,
 				F440AFCD19E2A19D008F7566 /* CommanFunctions.m in Sources */,
+				F47721A119F15EA100C253B0 /* OATokenManager.m in Sources */,
+				F477219319F15EA100C253B0 /* OAMutableURLRequest.m in Sources */,
+				F477218B19F15EA100C253B0 /* OACall.m in Sources */,
 				F4CB48FC19EBD895000CC9D0 /* GalleryController.m in Sources */,
 				F4CC9EF819E586FE00B3388A /* SDWebImageManager.m in Sources */,
 				F43FAD9B19DD558300C620E8 /* LoginController.m in Sources */,
 				F4CC9EF019E586FE00B3388A /* MKAnnotationView+WebCache.m in Sources */,
+				F477216B19F15E9300C253B0 /* sha1.c in Sources */,
 				F43FADB219DD71A800C620E8 /* DashboardController.m in Sources */,
 				C3EBB69519F2526D00214EF0 /* UIImageView+WebCache.m in Sources */,
 				F4CC9EF219E586FE00B3388A /* SDImageCache.m in Sources */,
+				F477219919F15EA100C253B0 /* OARequestParameter.m in Sources */,
+				F477216719F15E9300C253B0 /* Base64Transcoder.c in Sources */,
+				F477219719F15EA100C253B0 /* OAProblem.m in Sources */,
 				F43FADDA19DD983000C620E8 /* MenuContainerVC.m in Sources */,
 				F43FADCA19DD93AE00C620E8 /* AMSlideMenuLeftTableViewController.m in Sources */,
 				F4C1E5CC19DEB8B6003C108A /* ProfileEditViewController.m in Sources */,
@@ -1248,7 +1478,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F477216A19F15E9300C253B0 /* hmac.c in Sources */,
 				F43FADB319DD71A800C620E8 /* DashboardController.m in Sources */,
+				F477215119F15B6E00C253B0 /* SocialConnectController.m in Sources */,
+				F47721A019F15EA100C253B0 /* OAToken.m in Sources */,
 				F4B6965819E3D4F50065BF4F /* TPKeyboardAvoidingScrollView.m in Sources */,
 				F4B6965619E3D4F50065BF4F /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				C3CD543019EBE08200C62E51 /* StatYourScore.m in Sources */,
@@ -1257,19 +1490,29 @@
 				F43FADC919DD93AE00C620E8 /* AMSlideMenuLeftMenuSegue.m in Sources */,
 				F43FAD6F19DD3C2400C620E8 /* FigureMeTests.m in Sources */,
 				F4B6965C19E3D4F50065BF4F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				F477215C19F15E8700C253B0 /* NSMutableURLRequest+Parameters.m in Sources */,
 				F4C1E5CD19DEB8B6003C108A /* ProfileEditViewController.m in Sources */,
 				F4CC9EF319E586FE00B3388A /* SDImageCache.m in Sources */,
 				F440AFCE19E2A19D008F7566 /* CommanFunctions.m in Sources */,
+				F477219219F15EA100C253B0 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
 				F4CC9EE019E5868D00B3388A /* UIImage+IIIThumb.m in Sources */,
+				F477219819F15EA100C253B0 /* OAProblem.m in Sources */,
 				F4C1E5D119DEC587003C108A /* TestController.m in Sources */,
+				F477218C19F15EA100C253B0 /* OACall.m in Sources */,
 				F4CC9ED819E5868D00B3388A /* IIIBaseData.m in Sources */,
 				F43FADD119DD93AE00C620E8 /* AMSlideMenuRightTableViewController.m in Sources */,
 				F4B6965A19E3D4F50065BF4F /* TPKeyboardAvoidingTableView.m in Sources */,
+				F477216C19F15E9300C253B0 /* sha1.c in Sources */,
+				F477219619F15EA100C253B0 /* OAPlaintextSignatureProvider.m in Sources */,
+				F477219419F15EA100C253B0 /* OAMutableURLRequest.m in Sources */,
 				F43FADCB19DD93AE00C620E8 /* AMSlideMenuLeftTableViewController.m in Sources */,
 				F4A9E5CA19ED5A83003865F5 /* BumpController.m in Sources */,
 				F4CC9EDC19E5868D00B3388A /* IIIFlowView.m in Sources */,
 				F43FADD719DD94A100C620E8 /* RightMenuVC.m in Sources */,
+				F477219C19F15EA100C253B0 /* OAServiceTicket.m in Sources */,
+				F47721A219F15EA100C253B0 /* OATokenManager.m in Sources */,
 				F4CC9E6E19E5164E00B3388A /* ECSNaigationItem.m in Sources */,
+				F477218E19F15EA100C253B0 /* OAConsumer.m in Sources */,
 				F43FADCF19DD93AE00C620E8 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				F43FADC719DD93AE00C620E8 /* AMSlideMenuContentSegue.m in Sources */,
 				F43FADD319DD93AE00C620E8 /* UIViewController+AMSlideMenu.m in Sources */,
@@ -1278,6 +1521,8 @@
 				F4CC9EDA19E5868D00B3388A /* IIIFlowCell.m in Sources */,
 				F4CC9EF119E586FE00B3388A /* MKAnnotationView+WebCache.m in Sources */,
 				F4CC9EF719E586FE00B3388A /* SDWebImageDownloader.m in Sources */,
+				F477219019F15EA100C253B0 /* OADataFetcher.m in Sources */,
+				F477218A19F15EA100C253B0 /* OAAttachment.m in Sources */,
 				F4C1E5C619DE880C003C108A /* NotificationController.m in Sources */,
 				F4CB48FD19EBD895000CC9D0 /* GalleryController.m in Sources */,
 				F43FADDB19DD983000C620E8 /* MenuContainerVC.m in Sources */,
@@ -1285,8 +1530,12 @@
 				F4CC9EF519E586FE00B3388A /* SDWebImageDecoder.m in Sources */,
 				C3E1E3E719EE61D700528AF8 /* DeletedFriendsController.m in Sources */,
 				F43FADA019DD55A700C620E8 /* RegisterController.m in Sources */,
+				F477219A19F15EA100C253B0 /* OARequestParameter.m in Sources */,
 				F4CC9EDE19E5868D00B3388A /* SDImageCache+IIIThumb.m in Sources */,
+				F477215E19F15E8700C253B0 /* NSString+URLEncoding.m in Sources */,
+				F477216019F15E8700C253B0 /* NSURL+Base.m in Sources */,
 				F4CC9E8819E54ADD00B3388A /* GalleryPhotoCell.m in Sources */,
+				F477216819F15E9300C253B0 /* Base64Transcoder.c in Sources */,
 				C3BC2F0519E8133A00295626 /* Score.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1355,6 +1604,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SDKROOT/usr/include/libxml2/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "04e80855-f35d-4a90-8e7f-0601d69491be";
@@ -1390,6 +1644,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SDKROOT/usr/include/libxml2/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PROVISIONING_PROFILE = "04e80855-f35d-4a90-8e7f-0601d69491be";
 				SDKROOT = iphoneos;
@@ -1406,6 +1665,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prashant Agravat (2YDAJEJ3M5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FigureMe/FigureMe-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SDKROOT/usr/include/libxml2/**",
+				);
 				INFOPLIST_FILE = "FigureMe/FigureMe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1424,6 +1688,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prashant Agravat (2YDAJEJ3M5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FigureMe/FigureMe-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$SDKROOT/usr/include/libxml2/**",
+				);
 				INFOPLIST_FILE = "FigureMe/FigureMe-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

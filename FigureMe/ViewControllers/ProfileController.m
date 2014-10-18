@@ -27,6 +27,10 @@
 {
     [super viewDidLoad];
     
+    self.viewLocationContainer.layer.cornerRadius =
+    self.viewDOBContainer.layer.cornerRadius =
+    self.viewScoreContainer.layer.cornerRadius =
+    self.viewAboutMeContainer.layer.cornerRadius =5.0f;
     
     
     

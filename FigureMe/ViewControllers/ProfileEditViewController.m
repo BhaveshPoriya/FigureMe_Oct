@@ -35,7 +35,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"modalSocialConnect"]) {
+        UIButton *tempbutton = (UIButton*)sender;
+        SocialConnectController *destViewController = segue.destinationViewController;
+        switch (tempbutton.tag) {
+            case 0:
+                
+                break;
+            case 1:
+                destViewController.network = NetworkTypeTwitter;
+                break;
+            case 2:
+                
+                break;
+            case 3:
+                
+                break;
+
+            default:
+                break;
+        }
+    }
+}
+
 - (IBAction)btnSaveProfileClicked:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (IBAction)btnFacebookClicked:(id)sender {
+    
+}
+
+- (IBAction)btnTwitterClicked:(id)sender {
+    [self performSegueWithIdentifier:@"modalSocialConnect" sender:sender];
 }
 @end
