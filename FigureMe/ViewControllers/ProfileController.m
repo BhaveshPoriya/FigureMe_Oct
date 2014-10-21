@@ -51,7 +51,31 @@
                  
                  NSDictionary *Profiles = [[greeting objectForKey:@"data"] objectForKey:@"user"];
                  
-                 lblDateOfBirthDetail.text =[Profiles objectForKey:@"BirthDate"];
+                 
+                 
+                 NSString *stringfortime = [Profiles objectForKey:@"BirthDate"];
+                 
+                 if ([stringfortime isEqualToString:@"0000-00-00"])
+                 {
+                     lblDateOfBirthDetail.text = @"Unavailable";
+                 }
+                 else
+                 {
+                     //  NSString *myString = @"2012-11-22";
+                     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+                     dateFormatter.dateFormat = @"yyyy-MM-dd";
+                     NSDate *yourDate = [dateFormatter dateFromString:stringfortime];
+                     dateFormatter.dateFormat = @"dd MMM, yyyy";
+                     NSLog(@"%@",[dateFormatter stringFromDate:yourDate]);
+                     NSString *output = [dateFormatter stringFromDate:yourDate];
+                     
+                     lblDateOfBirthDetail.text = output;
+                 }
+                 
+                 
+                 
+                 
+                 // lblDateOfBirthDetail.text =[Profiles objectForKey:@"BirthDate"];
                  lblLocationDetail.text = [NSString stringWithFormat:@"%@",[Profiles objectForKey:@"Location"]];
                  lblScoreDetail.text = @"120";
                  txtViewAboutMeDetail.text = [Profiles objectForKey:@"About_you"];
@@ -62,7 +86,7 @@
                  self.imgViewProfilePic.clipsToBounds = YES;
                  self.imgViewProfilePic.backgroundColor = [UIColor whiteColor];
                  [self.imgViewProfilePic setContentMode:UIViewContentModeScaleAspectFill];
-                
+                 
                  
              }
          }
