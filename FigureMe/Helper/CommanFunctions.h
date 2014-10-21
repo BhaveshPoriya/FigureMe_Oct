@@ -22,4 +22,7 @@
 +(NSMutableURLRequest *)getGalleryRequest:(NSString *)UserId;
 +(NSMutableURLRequest *)getScoreRequest:(NSString *)Score;
 +(NSMutableURLRequest *)getProfileRequest:(NSString *)UserId;
++(NSMutableURLRequest *)getPostTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken screteKey:(NSString *)screteKey;
++(NSMutableURLRequest *)getPostFacebookTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;
++(NSMutableURLRequest *)getPostInstagramTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;
 @end

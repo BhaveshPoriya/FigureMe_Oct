@@ -34,6 +34,10 @@
 #define kTwitterTokenKey @"kTwitterTokenKey"
 #define kTwitterSecretKey @"kTwitterSecretKey"
 
+#define kFacebookTokenKey @"kFacebookTokenKey"
+
+#define kInstagramTokenKey @"kInstagramTokenKey"
+
 
 #pragma mark - API
 

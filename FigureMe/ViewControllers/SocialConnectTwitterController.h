@@ -10,7 +10,7 @@
 #import "Constant.h"
 #import "OAuthConsumer.h"
 
-@interface SocialConnectController : UIViewController <UIWebViewDelegate>
+@interface SocialConnectTwitterController : UIViewController <UIWebViewDelegate,UIAlertViewDelegate>
 {
     IBOutlet UIWebView *webview;
     OAConsumer* consumer;
@@ -18,13 +18,13 @@
     OAToken* accessToken;
 }
 
-@property (nonatomic,strong) OAToken* accessToken;
 @property (nonatomic, retain) IBOutlet UIWebView *webview;
+
+@property (nonatomic,strong) OAToken* accessToken;
 @property (nonatomic, retain) NSString *isLogin;
 @property (nonatomic) enum NetworkType network;
-
-
 @property (weak, nonatomic) IBOutlet UIButton *btnClose;
+
 - (IBAction)btnCloseClicked:(id)sender;
 
 @end

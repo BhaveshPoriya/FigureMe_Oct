@@ -127,4 +127,40 @@
     
     return [self generateAPIRequest:_URL reqDist:reqDist];
 }
+
++(NSMutableURLRequest *)getPostTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken screteKey:(NSString *)screteKey
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:UserId forKey:@"userid"];
+    [reqDist setObject:accessToken forKey:@"access_token"];
+    [reqDist setObject:screteKey forKey:@"access_key"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"http://www.ecsprojects.com/figureme/twitters/index.php"];
+    //NSString *_URL =[NSString stringWithFormat:@"%@/edit_profile", @APIRootURL];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
+
++(NSMutableURLRequest *)getPostFacebookTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:UserId forKey:@"userid"];
+    [reqDist setObject:accessToken forKey:@"access_token"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"http://www.ecsprojects.com/figureme/facebooks/fblogin"];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
+
++(NSMutableURLRequest *)getPostInstagramTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:UserId forKey:@"userid"];
+    [reqDist setObject:accessToken forKey:@"access_token"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"http://www.ecsprojects.com/figureme/instagram/getcode"];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
+
 @end

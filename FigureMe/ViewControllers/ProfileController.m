@@ -33,7 +33,6 @@
     self.viewAboutMeContainer.layer.cornerRadius =5.0f;
     
     
-    
     NSMutableURLRequest *_request = [CommanFunctions getProfileRequest:@"12"];
     _request.timeoutInterval = 30;
     

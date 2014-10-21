@@ -42,9 +42,9 @@
 }
 
 - (void)dealloc {
-	//[key release];
-	//[secret release];
-	//[super dealloc];
+	[key release];
+	[secret release];
+	[super dealloc];
 }
 
 - (BOOL)isEqual:(id)object {

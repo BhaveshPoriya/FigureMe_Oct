@@ -33,41 +33,54 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    [self.scrollView contentSizeToFit];
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"modalSocialConnect"]) {
-        UIButton *tempbutton = (UIButton*)sender;
-        SocialConnectController *destViewController = segue.destinationViewController;
-        switch (tempbutton.tag) {
-            case 0:
-                
-                break;
-            case 1:
-                destViewController.network = NetworkTypeTwitter;
-                break;
-            case 2:
-                
-                break;
-            case 3:
-                
-                break;
-
-            default:
-                break;
-        }
-    }
-}
 
 - (IBAction)btnSaveProfileClicked:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+- (IBAction)btnEditProfilePicClicked:(id)sender {
+}
+
 - (IBAction)btnFacebookClicked:(id)sender {
-    
+    [self performSegueWithIdentifier:@"modalSocialConnectFB" sender:sender];
 }
 
 - (IBAction)btnTwitterClicked:(id)sender {
-    [self performSegueWithIdentifier:@"modalSocialConnect" sender:sender];
+    [self performSegueWithIdentifier:@"modalSocialConnectTwitter" sender:sender];
 }
+
+- (IBAction)btnInstalgramClicked:(id)sender {
+    [self performSegueWithIdentifier:@"modalSocialConnectInstagram" sender:sender];
+}
+
+- (IBAction)btnLinkedInClicked:(id)sender {
+    //[self performSegueWithIdentifier:@"modalSocialConnectLinkedIn" sender:sender];
+}
+
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
+#pragma mark - UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell;
+    return cell;
+}
+
 @end
