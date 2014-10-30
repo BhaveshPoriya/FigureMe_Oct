@@ -27,6 +27,17 @@
     return [emailTest evaluateWithObject:checkString];
 }
 
++(NSString*)imageToBase64:(UIImage *)inputimage
+{
+    if (inputimage)
+    {
+        NSData *imageData = UIImageJPEGRepresentation(inputimage, 1.0);
+        NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        return  encodedString;
+    }
+    return @"";
+}
+
 +(NSMutableURLRequest *)generateAPIRequest:(NSString *)APIUrl reqDist:(NSMutableDictionary* )reqDist{
     
     NSError *error;
@@ -53,13 +64,16 @@
     
     return request;
 }
-+(NSMutableURLRequest *)getLogInRequest:(NSString *)Username Password:(NSString* )Password{
++(NSMutableURLRequest *)getLogInRequest:(NSString *)Username Password:(NSString* )Password pushToken:(NSString* )pushToken {
     
     NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
     [reqDist setObject:@"login" forKey:@"action"];
     [reqDist setObject:Username forKey:@"username"];
     [reqDist setObject:Password forKey:@"password"];
+    [reqDist setObject:@"iOS" forKey:@"osType"];
+    [reqDist setObject:pushToken forKey:@"deviceID"];
 
+    
     NSString *_URL =[NSString stringWithFormat:@"%@/login", @APIRootURL];
     
     return [self generateAPIRequest:_URL reqDist:reqDist];
@@ -124,6 +138,23 @@
     [reqDist setObject:@"edit_profile" forKey:@"action"];
     
     NSString *_URL =[NSString stringWithFormat:@"%@/edit_profile", @APIRootURL];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
+
++(NSMutableURLRequest *)getUpdateProfileRequest:(NSString *)UserId userName:(NSString*)userName DOB:(NSString*)DOB interests:(NSString*)interests location:(NSString*)location aboutMe:(NSString*)aboutMe profilePic:(NSString*)profilePic
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:UserId forKey:@"userid"];
+    [reqDist setObject:@"update_profile" forKey:@"action"];
+    [reqDist setObject:userName forKey:@"username"];
+    [reqDist setObject:DOB forKey:@"birthdate"];
+    [reqDist setObject:interests forKey:@"interest"];
+    [reqDist setObject:location forKey:@"location"];
+    [reqDist setObject:aboutMe forKey:@"about"];
+    [reqDist setObject:profilePic forKey:@"image"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"%@/update_profile", @APIRootURL];
     
     return [self generateAPIRequest:_URL reqDist:reqDist];
 }

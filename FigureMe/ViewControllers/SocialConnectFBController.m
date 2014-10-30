@@ -35,7 +35,7 @@
     _apiKey = @"739811842722770";
     _requestedPermissions = @"publish_stream,user_friends";
     NSString *redirectUrlString = @"http://www.ecsprojects.com/figureme/facebooks/fblogin";
-    NSString *authFormatString = @"https://graph.facebook.com/oauth/authorize?client_id=%@&redirect_uri=%@&scope=%@&type=user_agent&display=touch";
+    NSString *authFormatString = @"https://graph.facebook.com/oauth/authorize?client_id=%@&redirect_uri=%@&scope=%@&type=user_agent&display=touch&scope=user_friends,friends_hometown,friends_location";
     
     NSString *urlString = [NSString stringWithFormat:authFormatString, _apiKey, redirectUrlString, _requestedPermissions];
     

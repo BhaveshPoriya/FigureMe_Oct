@@ -48,8 +48,8 @@ txtPassword = _txtPassword;
     }
     else
     {
-        self.txtUsername.text  = @"test3";
-        self.txtPassword.text  = @"test123";
+        self.txtUsername.text  = @"bhaveshporiya";
+        self.txtPassword.text  = @"ecs@123";
     }
 }
 
@@ -82,7 +82,14 @@ txtPassword = _txtPassword;
         NSString *username = self.txtUsername.text;
         NSString *password = self.txtPassword.text;
         
-        NSMutableURLRequest *_request = [CommanFunctions getLogInRequest:username Password:password];
+       NSString *pushToken =  [[NSUserDefaults standardUserDefaults] valueForKey:kDeviceTokenKey];
+        
+        NSMutableURLRequest *_request;
+        if(pushToken)
+            _request= [CommanFunctions getLogInRequest:username Password:password pushToken:pushToken];
+        else
+            _request= [CommanFunctions getLogInRequest:username Password:password pushToken:@""];
+        
         _request.timeoutInterval = 30;
         
         
@@ -97,12 +104,19 @@ txtPassword = _txtPassword;
                  NSString *status = [greeting objectForKey:@"status"];
                  if([status isEqualToString:@"success"])
                  {
+                     //{"action":"login","server":{"__comment":"Login","time":1414489492},"status":"success","data":{"Code":200,"message":"Login Successfully","UserID":"12"}}
+                     
+                     NSString *UID = [[greeting objectForKey:@"data"] objectForKey:@"UserID"];
+
+                     
                      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                      
                      [defaults setBool:YES forKey:@"isLoggedIn"];
-                     [defaults setObject:@"15" forKey:@"userID"];
+                     [defaults setObject:UID forKey:@"UID"];
                      
                      [defaults synchronize];
+                     
+
                      
                      [self performSegueWithIdentifier:@"PushLoginToDashboard" sender:Nil];
                  }

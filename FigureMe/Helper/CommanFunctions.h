@@ -13,15 +13,18 @@
 
 +(NSString *) URLEncodeString:(NSString *) str;
 +(BOOL)IsValidEmail:(NSString *)checkString;
++(NSString*)imageToBase64:(UIImage *)inputimage;
+
 
 +(NSMutableURLRequest *)generateAPIRequest:(NSString *)APIUrl reqDist:(NSMutableDictionary* )reqDist;
-+(NSMutableURLRequest *)getLogInRequest:(NSString *)Username Password:(NSString* )Password;
++(NSMutableURLRequest *)getLogInRequest:(NSString *)Username Password:(NSString* )Password pushToken:(NSString* )pushToken;
 +(NSMutableURLRequest *)getRegisterRequest:(NSString *)Username Email:(NSString* )Email Password:(NSString* )Password;
 +(NSMutableURLRequest *)getCheckUsernameRequest:(NSString *)Username;
 +(NSMutableURLRequest *)getCheckEmailRequest:(NSString *)Email;
 +(NSMutableURLRequest *)getGalleryRequest:(NSString *)UserId;
 +(NSMutableURLRequest *)getScoreRequest:(NSString *)Score;
 +(NSMutableURLRequest *)getProfileRequest:(NSString *)UserId;
++(NSMutableURLRequest *)getUpdateProfileRequest:(NSString *)UserId userName:(NSString*)userName DOB:(NSString*)DOB interests:(NSString*)interests location:(NSString*)location aboutMe:(NSString*)aboutMe profilePic:(NSString*)profilePic;
 +(NSMutableURLRequest *)getPostTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken screteKey:(NSString *)screteKey;
 +(NSMutableURLRequest *)getPostFacebookTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;
 +(NSMutableURLRequest *)getPostInstagramTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;

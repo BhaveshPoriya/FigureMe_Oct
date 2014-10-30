@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RPV-QX-8mU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RPV-QX-8mU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -712,7 +712,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SD-gL-Xd5">
-                                        <rect key="frame" x="247" y="84" width="44" height="35"/>
+                                        <rect key="frame" x="247" y="80" width="44" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                         <inset key="contentEdgeInsets" minX="25" minY="19" maxX="0.0" maxY="0.0"/>
@@ -788,7 +788,7 @@
                                 <rect key="frame" x="15" y="338" width="291" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-dT-Wa5">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-dT-Wa5">
                                         <rect key="frame" x="10" y="30" width="283" height="150"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
@@ -865,6 +865,7 @@
                         <outlet property="lblDateOfBirthDetail" destination="Jf0-Md-gfU" id="UyK-Rg-3Y5"/>
                         <outlet property="lblLocationDetail" destination="EDV-PR-0hO" id="liK-1n-DKH"/>
                         <outlet property="lblScoreDetail" destination="1uQ-xK-GHM" id="mS3-dy-NO4"/>
+                        <outlet property="lblUsername" destination="SOj-fk-LLF" id="HOy-PZ-LWg"/>
                         <outlet property="txtViewAboutMeDetail" destination="CgB-dT-Wa5" id="ubE-Ie-aZi"/>
                         <outlet property="viewAboutMeContainer" destination="c9p-Gj-ga5" id="but-fO-fOr"/>
                         <outlet property="viewDOBContainer" destination="IvP-OW-nP3" id="mqD-CB-vub"/>
@@ -1695,7 +1696,7 @@
         <image name="gray-bg-iphone.png" width="585" height="306"/>
         <image name="gray-bg.png" width="639" height="981"/>
         <image name="gray-texture-bg.png" width="1536" height="1786"/>
-        <image name="header-part.png" width="320" height="64"/>
+        <image name="header-part.png" width="320" height="44"/>
         <image name="home-hover.png" width="27" height="27"/>
         <image name="image-edit.png" width="153" height="43"/>
         <image name="instagramme.png" width="37" height="36"/>

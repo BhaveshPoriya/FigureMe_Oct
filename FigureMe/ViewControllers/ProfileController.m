@@ -13,7 +13,10 @@
 @end
 
 @implementation ProfileController
+
 @synthesize lblDateOfBirthDetail,lblLocationDetail,lblScoreDetail,txtViewAboutMeDetail,imgViewProfilePic;
+@synthesize objUserProfile;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +35,7 @@
     self.viewScoreContainer.layer.cornerRadius =
     self.viewAboutMeContainer.layer.cornerRadius =5.0f;
     
+    self.objUserProfile = [[UserProfile alloc] init];
     
     NSMutableURLRequest *_request = [CommanFunctions getProfileRequest:@"12"];
     _request.timeoutInterval = 30;
@@ -51,13 +55,12 @@
                  
                  NSDictionary *Profiles = [[greeting objectForKey:@"data"] objectForKey:@"user"];
                  
-                 
-                 
                  NSString *stringfortime = [Profiles objectForKey:@"BirthDate"];
                  
                  if ([stringfortime isEqualToString:@"0000-00-00"])
                  {
                      lblDateOfBirthDetail.text = @"Unavailable";
+                     self.objUserProfile.strDOB = @"Unavailable";
                  }
                  else
                  {
@@ -66,41 +69,41 @@
                      dateFormatter.dateFormat = @"yyyy-MM-dd";
                      NSDate *yourDate = [dateFormatter dateFromString:stringfortime];
                      dateFormatter.dateFormat = @"dd MMM, yyyy";
-                     NSLog(@"%@",[dateFormatter stringFromDate:yourDate]);
+
                      NSString *output = [dateFormatter stringFromDate:yourDate];
                      
                      lblDateOfBirthDetail.text = output;
+                     self.objUserProfile.strDOB = output;
                  }
                  
-                 
-                 
+                 self.lblUsername.text =[Profiles objectForKey:@"UserName"];
+                 self.objUserProfile.strUserName = [Profiles objectForKey:@"UserName"];
                  
                  // lblDateOfBirthDetail.text =[Profiles objectForKey:@"BirthDate"];
                  lblLocationDetail.text = [NSString stringWithFormat:@"%@",[Profiles objectForKey:@"Location"]];
+
                  lblScoreDetail.text = @"120";
-                 txtViewAboutMeDetail.text = [Profiles objectForKey:@"About_you"];
-                 imgViewProfilePic.image= [UIImage imageNamed:@"image2.jpg"];
+                 self.objUserProfile.strScore = @"120";
                  
+                 txtViewAboutMeDetail.text = [Profiles objectForKey:@"About_you"];
+                 self.objUserProfile.strAboutMe = [Profiles objectForKey:@"About_you"];
+                 
+                 [imgViewProfilePic setImageWithURL:[NSURL URLWithString:[Profiles objectForKey:@"Image"]] placeholderImage:[UIImage imageNamed:@"anon.jpg"]];
+                 self.objUserProfile.strProfilePic = [Profiles objectForKey:@"Image"];
                  
                  self.imgViewProfilePic.layer.cornerRadius = self.imgViewProfilePic.frame.size.width / 2;
                  self.imgViewProfilePic.clipsToBounds = YES;
                  self.imgViewProfilePic.backgroundColor = [UIColor whiteColor];
                  [self.imgViewProfilePic setContentMode:UIViewContentModeScaleAspectFill];
-                 
-                 
              }
          }
          
-         
      }];
-    
     
     [lblScoreDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
     [lblDateOfBirthDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
     [lblLocationDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
     [txtViewAboutMeDetail setFont:[UIFont fontWithName:@"OpenSans-Light" size:12.0]];
-    
-    
     
 }
 
@@ -119,11 +122,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ProfileEditViewController *profileEdit = segue.destinationViewController;
+    profileEdit.objUserProfile = self.objUserProfile;
+}
+
 - (IBAction)btnEditProfileClicked:(id)sender {
     [self performSegueWithIdentifier:@"PushToEditProfile" sender:self];
 }
-
-
-
 
 @end

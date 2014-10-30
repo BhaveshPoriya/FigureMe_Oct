@@ -99,10 +99,10 @@
         
         navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarView];
         
-        //if(![navBar backgroundImageForBarMetrics:UIBarMetricsDefault])
-            [navBar setBackgroundImage:[UIImage imageNamed:@"header-part.png"] forBarMetrics:UIBarMetricsDefault];
+        UIImage *backImage =[UIImage imageNamed:@"header-part"];
+        [[UINavigationBar appearance] setBackgroundImage:backImage forBarMetrics:UIBarMetricsDefault];
+        
     }
-
 
     //Waiting for calling viewWillApear in nvc
     double delayInSeconds = 0;

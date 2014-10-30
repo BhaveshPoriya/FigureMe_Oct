@@ -9,11 +9,22 @@
 #import <UIKit/UIKit.h>
 #import "SocialConnectTwitterController.h"
 #import "Constant.h"
+#import "UserProfile.h"
 
-@interface ProfileEditViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UITextViewDelegate>
+@interface ProfileEditViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UITextViewDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+{
+    UserProfile *objUserProfile;
+}
+
+@property (retain, nonatomic) UserProfile *objUserProfile;
+
 
 @property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 @property (retain, nonatomic) IBOutlet UIView *viewKeyboardToolbar;
+
+@property (retain, nonatomic) IBOutlet UIImage *imgUpdatedImage;
+@property (retain, nonatomic) IBOutlet UIView *viewCameraOverlay;
+@property (retain, nonatomic) IBOutlet UIView *viewCameraContainer;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *btnSaveProfile;
@@ -32,6 +43,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnFacebook;
 @property (weak, nonatomic) IBOutlet UIButton *btnTwitter;
 
+@property (strong, nonatomic) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
+@property (strong, nonatomic) AVCaptureStillImageOutput *stillImageOutput;
+@property (strong, nonatomic) AVCaptureSession *session;
 
 - (IBAction)btnSaveProfileClicked:(id)sender;
 - (IBAction)btnEditProfilePicClicked:(id)sender;

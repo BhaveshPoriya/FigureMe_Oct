@@ -161,7 +161,6 @@
 		F477214219F149CE00C253B0 /* google-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213A19F149CE00C253B0 /* google-plus.png */; };
 		F477214519F149CE00C253B0 /* instagramme.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213C19F149CE00C253B0 /* instagramme.png */; };
 		F477214619F149CE00C253B0 /* instagramme.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213C19F149CE00C253B0 /* instagramme.png */; };
-		F477214819F149CE00C253B0 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213D19F149CE00C253B0 /* twitter.png */; };
 		F477214919F149CE00C253B0 /* you-tube.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213E19F149CE00C253B0 /* you-tube.png */; };
 		F477214A19F149CE00C253B0 /* you-tube.png in Resources */ = {isa = PBXBuildFile; fileRef = F477213E19F149CE00C253B0 /* you-tube.png */; };
 		F477214C19F149E900C253B0 /* social-icon-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F477214B19F149E900C253B0 /* social-icon-bg.png */; };
@@ -210,6 +209,22 @@
 		F47721A419F15EA100C253B0 /* README in Resources */ = {isa = PBXBuildFile; fileRef = F477218819F15EA100C253B0 /* README */; };
 		F47721A619F15EC100C253B0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47721A519F15EC100C253B0 /* Security.framework */; };
 		F47721A819F15ED600C253B0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F47721A719F15ED600C253B0 /* libxml2.dylib */; };
+		F49DC24919F6832E00C1F64D /* anon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24819F6832E00C1F64D /* anon.jpg */; };
+		F49DC24A19F6832E00C1F64D /* anon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24819F6832E00C1F64D /* anon.jpg */; };
+		F49DC24C19F68BC500C1F64D /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24B19F68BC500C1F64D /* twitter.png */; };
+		F49DC24D19F68BC500C1F64D /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24B19F68BC500C1F64D /* twitter.png */; };
+		F49DC25419F698DC00C1F64D /* facebook-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24E19F698DC00C1F64D /* facebook-g.png */; };
+		F49DC25519F698DC00C1F64D /* facebook-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24E19F698DC00C1F64D /* facebook-g.png */; };
+		F49DC25619F698DC00C1F64D /* google-plus-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24F19F698DC00C1F64D /* google-plus-g.png */; };
+		F49DC25719F698DC00C1F64D /* google-plus-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC24F19F698DC00C1F64D /* google-plus-g.png */; };
+		F49DC25819F698DC00C1F64D /* instagramme-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25019F698DC00C1F64D /* instagramme-g.png */; };
+		F49DC25919F698DC00C1F64D /* instagramme-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25019F698DC00C1F64D /* instagramme-g.png */; };
+		F49DC25A19F698DC00C1F64D /* linkedin-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25119F698DC00C1F64D /* linkedin-g.png */; };
+		F49DC25B19F698DC00C1F64D /* linkedin-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25119F698DC00C1F64D /* linkedin-g.png */; };
+		F49DC25C19F698DC00C1F64D /* twitter-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25219F698DC00C1F64D /* twitter-g.png */; };
+		F49DC25D19F698DC00C1F64D /* twitter-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25219F698DC00C1F64D /* twitter-g.png */; };
+		F49DC25E19F698DC00C1F64D /* you-tube-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25319F698DC00C1F64D /* you-tube-g.png */; };
+		F49DC25F19F698DC00C1F64D /* you-tube-g.png in Resources */ = {isa = PBXBuildFile; fileRef = F49DC25319F698DC00C1F64D /* you-tube-g.png */; };
 		F4A9E5B319ED092D003865F5 /* devider.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A9E5B219ED092D003865F5 /* devider.png */; };
 		F4A9E5B419ED092D003865F5 /* devider.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A9E5B219ED092D003865F5 /* devider.png */; };
 		F4A9E5BA19ED283C003865F5 /* home-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A9E5B519ED283C003865F5 /* home-hover.png */; };
@@ -312,6 +327,10 @@
 		F4C1E5CD19DEB8B6003C108A /* ProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1E5CB19DEB8B6003C108A /* ProfileEditViewController.m */; };
 		F4C1E5D019DEC587003C108A /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1E5CF19DEC587003C108A /* TestController.m */; };
 		F4C1E5D119DEC587003C108A /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1E5CF19DEC587003C108A /* TestController.m */; };
+		F4C5486519FE784C00585282 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C5486419FE784C00585282 /* AVFoundation.framework */; };
+		F4C5486719FE814D00585282 /* Camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C5486619FE814D00585282 /* Camera-icon.png */; };
+		F4CB29E919F6499C006BD3FB /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB29E819F6499C006BD3FB /* UserProfile.m */; };
+		F4CB29EA19F6499C006BD3FB /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB29E819F6499C006BD3FB /* UserProfile.m */; };
 		F4CB48FC19EBD895000CC9D0 /* GalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB48FB19EBD895000CC9D0 /* GalleryController.m */; };
 		F4CB48FD19EBD895000CC9D0 /* GalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB48FB19EBD895000CC9D0 /* GalleryController.m */; };
 		F4CC9E6D19E5164E00B3388A /* ECSNaigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC9E6C19E5164E00B3388A /* ECSNaigationItem.m */; };
@@ -476,7 +495,6 @@
 		F477213919F149CE00C253B0 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = Resources/images/Profile/facebook.png; sourceTree = "<group>"; };
 		F477213A19F149CE00C253B0 /* google-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "google-plus.png"; path = "Resources/images/Profile/google-plus.png"; sourceTree = "<group>"; };
 		F477213C19F149CE00C253B0 /* instagramme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagramme.png; path = Resources/images/Profile/instagramme.png; sourceTree = "<group>"; };
-		F477213D19F149CE00C253B0 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Resources/images/Profile/twitter.png; sourceTree = "<group>"; };
 		F477213E19F149CE00C253B0 /* you-tube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "you-tube.png"; path = "Resources/images/Profile/you-tube.png"; sourceTree = "<group>"; };
 		F477214B19F149E900C253B0 /* social-icon-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "social-icon-bg.png"; path = "Resources/images/Profile/social-icon-bg.png"; sourceTree = "<group>"; };
 		F477214E19F15B6E00C253B0 /* SocialConnectTwitterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialConnectTwitterController.h; path = ViewControllers/SocialConnectTwitterController.h; sourceTree = "<group>"; };
@@ -523,6 +541,14 @@
 		F477218819F15EA100C253B0 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = "Helper/oauthconsumer-master/README"; sourceTree = "<group>"; };
 		F47721A519F15EC100C253B0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F47721A719F15ED600C253B0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		F49DC24819F6832E00C1F64D /* anon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = anon.jpg; sourceTree = "<group>"; };
+		F49DC24B19F68BC500C1F64D /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = Resources/images/Profile/twitter.png; sourceTree = "<group>"; };
+		F49DC24E19F698DC00C1F64D /* facebook-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook-g.png"; path = "Resources/images/Profile/facebook-g.png"; sourceTree = "<group>"; };
+		F49DC24F19F698DC00C1F64D /* google-plus-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "google-plus-g.png"; path = "Resources/images/Profile/google-plus-g.png"; sourceTree = "<group>"; };
+		F49DC25019F698DC00C1F64D /* instagramme-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "instagramme-g.png"; path = "Resources/images/Profile/instagramme-g.png"; sourceTree = "<group>"; };
+		F49DC25119F698DC00C1F64D /* linkedin-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "linkedin-g.png"; path = "Resources/images/Profile/linkedin-g.png"; sourceTree = "<group>"; };
+		F49DC25219F698DC00C1F64D /* twitter-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter-g.png"; path = "Resources/images/Profile/twitter-g.png"; sourceTree = "<group>"; };
+		F49DC25319F698DC00C1F64D /* you-tube-g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "you-tube-g.png"; path = "Resources/images/Profile/you-tube-g.png"; sourceTree = "<group>"; };
 		F4A9E5B219ED092D003865F5 /* devider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = devider.png; path = Resources/images/SideMenu/devider.png; sourceTree = "<group>"; };
 		F4A9E5B519ED283C003865F5 /* home-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-hover.png"; path = "Resources/images/SideMenu/home-hover.png"; sourceTree = "<group>"; };
 		F4A9E5B619ED283C003865F5 /* logout-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logout-hover.png"; path = "Resources/images/SideMenu/logout-hover.png"; sourceTree = "<group>"; };
@@ -599,6 +625,10 @@
 		F4C1E5CB19DEB8B6003C108A /* ProfileEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileEditViewController.m; path = ViewControllers/ProfileEditViewController.m; sourceTree = "<group>"; };
 		F4C1E5CE19DEC587003C108A /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestController.h; path = ViewControllers/TestController.h; sourceTree = "<group>"; };
 		F4C1E5CF19DEC587003C108A /* TestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestController.m; path = ViewControllers/TestController.m; sourceTree = "<group>"; };
+		F4C5486419FE784C00585282 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F4C5486619FE814D00585282 /* Camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Camera-icon.png"; path = "Resources/images/Profile/Camera-icon.png"; sourceTree = "<group>"; };
+		F4CB29E719F6499C006BD3FB /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserProfile.h; path = Models/UserProfile.h; sourceTree = "<group>"; };
+		F4CB29E819F6499C006BD3FB /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserProfile.m; path = Models/UserProfile.m; sourceTree = "<group>"; };
 		F4CB48FA19EBD895000CC9D0 /* GalleryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryController.h; path = ViewControllers/GalleryController.h; sourceTree = "<group>"; };
 		F4CB48FB19EBD895000CC9D0 /* GalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryController.m; path = ViewControllers/GalleryController.m; sourceTree = "<group>"; };
 		F4CC9E6B19E5164E00B3388A /* ECSNaigationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECSNaigationItem.h; path = CustomViews/ECSNaigationItem.h; sourceTree = "<group>"; };
@@ -645,6 +675,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C5486519FE784C00585282 /* AVFoundation.framework in Frameworks */,
 				F47721A819F15ED600C253B0 /* libxml2.dylib in Frameworks */,
 				F47721A619F15EC100C253B0 /* Security.framework in Frameworks */,
 				C3BCFEF519EEA616004B1181 /* QuartzCore.framework in Frameworks */,
@@ -670,6 +701,7 @@
 		C3235A9119E2DD3800263F98 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F49DC24819F6832E00C1F64D /* anon.jpg */,
 				F4FBF1DF19EC0C1200F51D4F /* notification.png */,
 				F4CC9E8119E53D5000B3388A /* gray-bg.png */,
 				F4C04CC519E6AA4C00556BA5 /* galler-scrore-count.png */,
@@ -752,6 +784,7 @@
 		F43FAD4819DD3C2300C620E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4C5486419FE784C00585282 /* AVFoundation.framework */,
 				F47721A719F15ED600C253B0 /* libxml2.dylib */,
 				F47721A519F15EC100C253B0 /* Security.framework */,
 				C3BCFEF419EEA616004B1181 /* QuartzCore.framework */,
@@ -973,6 +1006,14 @@
 		F477212919F1467A00C253B0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F4C5486619FE814D00585282 /* Camera-icon.png */,
+				F49DC24E19F698DC00C1F64D /* facebook-g.png */,
+				F49DC24F19F698DC00C1F64D /* google-plus-g.png */,
+				F49DC25019F698DC00C1F64D /* instagramme-g.png */,
+				F49DC25119F698DC00C1F64D /* linkedin-g.png */,
+				F49DC25219F698DC00C1F64D /* twitter-g.png */,
+				F49DC25319F698DC00C1F64D /* you-tube-g.png */,
+				F49DC24B19F68BC500C1F64D /* twitter.png */,
 				F4BE3D5319F55631007DAA3A /* update.png */,
 				F4BE3D5019F554CB007DAA3A /* image-edit.png */,
 				F4BE3D4D19F54FDC007DAA3A /* gray-bg-edit.png */,
@@ -980,7 +1021,6 @@
 				F477213919F149CE00C253B0 /* facebook.png */,
 				F477213A19F149CE00C253B0 /* google-plus.png */,
 				F477213C19F149CE00C253B0 /* instagramme.png */,
-				F477213D19F149CE00C253B0 /* twitter.png */,
 				F477213E19F149CE00C253B0 /* you-tube.png */,
 				F477212A19F147A500C253B0 /* gray-bg-iphone.png */,
 				F477212B19F147A500C253B0 /* PTO.png */,
@@ -1180,6 +1220,8 @@
 			children = (
 				C3BC2F0219E8133A00295626 /* Score.h */,
 				C3BC2F0319E8133A00295626 /* Score.m */,
+				F4CB29E719F6499C006BD3FB /* UserProfile.h */,
+				F4CB29E819F6499C006BD3FB /* UserProfile.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1338,6 +1380,7 @@
 			files = (
 				F4BE3D5419F55631007DAA3A /* update.png in Resources */,
 				F4A9E5C519ED2CEB003865F5 /* bump-hover.png in Resources */,
+				F49DC25C19F698DC00C1F64D /* twitter-g.png in Resources */,
 				C32FDBA119E7D30D00CD60BE /* cross.png in Resources */,
 				C3E1E3F019EE635200528AF8 /* MyIcon.png in Resources */,
 				F4BE3D4E19F54FDC007DAA3A /* gray-bg-edit.png in Resources */,
@@ -1362,6 +1405,7 @@
 				F4A9E5BA19ED283C003865F5 /* home-hover.png in Resources */,
 				C32FDBBF19E7E92A00CD60BE /* johndoe-last-nav.png in Resources */,
 				F477213F19F149CE00C253B0 /* facebook.png in Resources */,
+				F49DC24919F6832E00C1F64D /* anon.jpg in Resources */,
 				F4BE3CAE19F53761007DAA3A /* 01-refresh.png in Resources */,
 				C32FDBB319E7E92A00CD60BE /* deleted-friends.png in Resources */,
 				C32FDBC919E7E92A00CD60BE /* your score.png in Resources */,
@@ -1382,6 +1426,7 @@
 				F4B6966119E413700065BF4F /* wrong.png in Resources */,
 				F440B00619E2B5C4008F7566 /* cancel.png in Resources */,
 				F4BE3CB019F53761007DAA3A /* 01-refresh@2x.png in Resources */,
+				F4C5486719FE814D00585282 /* Camera-icon.png in Resources */,
 				C32FDBB519E7E92A00CD60BE /* footer-bg.png in Resources */,
 				F4C04CDD19E6C30C00556BA5 /* OpenSans-Light.ttf in Resources */,
 				F477213119F147A500C253B0 /* PTO.png in Resources */,
@@ -1391,6 +1436,7 @@
 				F440B01619E2B5C4008F7566 /* username-bg.png in Resources */,
 				F4C04CC619E6AA4C00556BA5 /* galler-scrore-count.png in Resources */,
 				C32FDBCB19E7E92A00CD60BE /* your-score-hover.png in Resources */,
+				F49DC25619F698DC00C1F64D /* google-plus-g.png in Resources */,
 				F440AFF619E2B5B7008F7566 /* screen-shot.jpg in Resources */,
 				F477212F19F147A500C253B0 /* gray-bg-iphone.png in Resources */,
 				F4C04CDF19E6C30C00556BA5 /* OpenSans-LightItalic.ttf in Resources */,
@@ -1398,17 +1444,20 @@
 				F43FAD5419DD3C2400C620E8 /* InfoPlist.strings in Resources */,
 				F4FBF1E019EC0C1200F51D4F /* notification.png in Resources */,
 				C3E1E3EC19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */,
+				F49DC25E19F698DC00C1F64D /* you-tube-g.png in Resources */,
 				F4CC9E7F19E53AF000B3388A /* header-part.png in Resources */,
 				C32FDBC119E7E92A00CD60BE /* middle-johndoe-bg.png in Resources */,
 				F440B01819E2B5C4008F7566 /* username.png in Resources */,
 				C3235A7D19E2C61900263F98 /* Reg-screen-shot.jpg in Resources */,
 				F4A9E5B319ED092D003865F5 /* devider.png in Resources */,
+				F49DC25819F698DC00C1F64D /* instagramme-g.png in Resources */,
 				F4C1E5B119DE7C16003C108A /* Storyboard-iPad.storyboard in Resources */,
 				F4BE3D5119F554CB007DAA3A /* image-edit.png in Resources */,
 				F4A9E5C219ED283C003865F5 /* stats-hover.png in Resources */,
 				F44C5F8419EC03CB00712016 /* bump.png in Resources */,
 				F43FAD9219DD500100C620E8 /* Storyboard.storyboard in Resources */,
 				F440AFEC19E2B5B7008F7566 /* login.png in Resources */,
+				F49DC25419F698DC00C1F64D /* facebook-g.png in Resources */,
 				F4C04CD719E6C30C00556BA5 /* OpenSans-ExtraBold.ttf in Resources */,
 				F4C04CE519E6C30C00556BA5 /* OpenSans-SemiboldItalic.ttf in Resources */,
 				C32FDBB719E7E92A00CD60BE /* footer-hover-bg.png in Resources */,
@@ -1416,8 +1465,10 @@
 				F4C04CDB19E6C30C00556BA5 /* OpenSans-Italic.ttf in Resources */,
 				C32FDBB119E7E92A00CD60BE /* deleted-friends-hover.png in Resources */,
 				C3235A7919E2B97C00263F98 /* logoRegister.png in Resources */,
+				F49DC24C19F68BC500C1F64D /* twitter.png in Resources */,
 				C32FDBC719E7E92A00CD60BE /* scroll.png in Resources */,
 				C32FDBBD19E7E92A00CD60BE /* johndoe-bg.png in Resources */,
+				F49DC25A19F698DC00C1F64D /* linkedin-g.png in Resources */,
 				C32FDBB919E7E92A00CD60BE /* gray-texture-bg.png in Resources */,
 				C3235A9919E2E00000263F98 /* passwordlogin.png in Resources */,
 				F43FAD5C19DD3C2400C620E8 /* Images.xcassets in Resources */,
@@ -1450,6 +1501,7 @@
 				C32FDBC819E7E92A00CD60BE /* scroll.png in Resources */,
 				C3E1E3ED19EE635200528AF8 /* Iphone-deleted-friends-hover.png in Resources */,
 				F477214619F149CE00C253B0 /* instagramme.png in Resources */,
+				F49DC24A19F6832E00C1F64D /* anon.jpg in Resources */,
 				F477219E19F15EA100C253B0 /* OATestServer.rb in Resources */,
 				C32FDBB219E7E92A00CD60BE /* deleted-friends-hover.png in Resources */,
 				F4BE3D4F19F54FDC007DAA3A /* gray-bg-edit.png in Resources */,
@@ -1467,6 +1519,7 @@
 				C32FDBCC19E7E92A00CD60BE /* your-score-hover.png in Resources */,
 				F47721A419F15EA100C253B0 /* README in Resources */,
 				F4A9E5C119ED283C003865F5 /* notificatrion-hover.png in Resources */,
+				F49DC25719F698DC00C1F64D /* google-plus-g.png in Resources */,
 				F4C04CE019E6C30C00556BA5 /* OpenSans-LightItalic.ttf in Resources */,
 				F477213019F147A500C253B0 /* gray-bg-iphone.png in Resources */,
 				F440B01919E2B5C4008F7566 /* username.png in Resources */,
@@ -1474,24 +1527,30 @@
 				F4BE3D5519F55631007DAA3A /* update.png in Resources */,
 				C3E1E3EF19EE635200528AF8 /* Iphone-deleted-friends.png in Resources */,
 				F440AFED19E2B5B7008F7566 /* login.png in Resources */,
+				F49DC25D19F698DC00C1F64D /* twitter-g.png in Resources */,
 				F477213219F147A500C253B0 /* PTO.png in Resources */,
 				C32FDBC019E7E92A00CD60BE /* johndoe-last-nav.png in Resources */,
 				F4FBF1E119EC0C1200F51D4F /* notification.png in Resources */,
+				F49DC25B19F698DC00C1F64D /* linkedin-g.png in Resources */,
 				F44C5F8919EC03CB00712016 /* logout.png in Resources */,
 				F4CC9E8019E53AF000B3388A /* header-part.png in Resources */,
 				F4C04CDC19E6C30C00556BA5 /* OpenSans-Italic.ttf in Resources */,
 				F477213619F147A500C253B0 /* social-usre-bg.png in Resources */,
+				F49DC25919F698DC00C1F64D /* instagramme-g.png in Resources */,
 				F440B01319E2B5C4008F7566 /* register.png in Resources */,
 				F440AFF119E2B5B7008F7566 /* password-hint.png in Resources */,
+				F49DC25519F698DC00C1F64D /* facebook-g.png in Resources */,
 				F4C1E5B219DE7C16003C108A /* Storyboard-iPad.storyboard in Resources */,
 				F4B6966219E413700065BF4F /* wrong.png in Resources */,
 				C3BC2F0A19E8170700295626 /* scrore.png in Resources */,
 				C32FDBB819E7E92A00CD60BE /* footer-hover-bg.png in Resources */,
 				C32FDBB619E7E92A00CD60BE /* footer-bg.png in Resources */,
+				F49DC25F19F698DC00C1F64D /* you-tube-g.png in Resources */,
 				F44C5F8F19EC03CB00712016 /* stats.png in Resources */,
 				F44C5F8D19EC03CB00712016 /* my-profile.png in Resources */,
 				F43FAD6D19DD3C2400C620E8 /* InfoPlist.strings in Resources */,
 				F4A9E5BF19ED283C003865F5 /* my-profile-hover.png in Resources */,
+				F49DC24D19F68BC500C1F64D /* twitter.png in Resources */,
 				F4CC9ECA19E5762500B3388A /* see-all.png in Resources */,
 				F4CC9E7D19E5286C00B3388A /* header-logo.png in Resources */,
 				F440B01119E2B5C4008F7566 /* reapeat-password.png in Resources */,
@@ -1505,7 +1564,6 @@
 				F477214A19F149CE00C253B0 /* you-tube.png in Resources */,
 				F4B6966019E413700065BF4F /* right.png in Resources */,
 				F477214D19F149E900C253B0 /* social-icon-bg.png in Resources */,
-				F477214819F149CE00C253B0 /* twitter.png in Resources */,
 				F4A9E5BD19ED283C003865F5 /* logout-hover.png in Resources */,
 				F4BE3CB119F53761007DAA3A /* 01-refresh@2x.png in Resources */,
 				F4C04CD619E6C30C00556BA5 /* OpenSans-BoldItalic.ttf in Resources */,
@@ -1545,6 +1603,7 @@
 				F43FAD5A19DD3C2400C620E8 /* AppDelegate.m in Sources */,
 				F43FADD219DD93AE00C620E8 /* UIViewController+AMSlideMenu.m in Sources */,
 				F4B6965B19E3D4F50065BF4F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				F4CB29E919F6499C006BD3FB /* UserProfile.m in Sources */,
 				F43FADD619DD94A100C620E8 /* RightMenuVC.m in Sources */,
 				F4C1E5C519DE880C003C108A /* NotificationController.m in Sources */,
 				F4BE3CF519F53EC1007DAA3A /* AFHTTPSessionManager.m in Sources */,
@@ -1689,6 +1748,7 @@
 				C3E1E3E719EE61D700528AF8 /* DeletedFriendsController.m in Sources */,
 				F43FADA019DD55A700C620E8 /* RegisterController.m in Sources */,
 				F477219A19F15EA100C253B0 /* OARequestParameter.m in Sources */,
+				F4CB29EA19F6499C006BD3FB /* UserProfile.m in Sources */,
 				F4CC9EDE19E5868D00B3388A /* SDImageCache+IIIThumb.m in Sources */,
 				F477215E19F15E8700C253B0 /* NSString+URLEncoding.m in Sources */,
 				F477216019F15E8700C253B0 /* NSURL+Base.m in Sources */,

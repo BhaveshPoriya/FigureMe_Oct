@@ -8,6 +8,11 @@
 
 #ifndef FigureMe_Constant_h
 #define FigureMe_Constant_h
+
+
+#pragma mark - Helper Classes
+
+#import <AVFoundation/AVFoundation.h>
 #import "AMSlideMenuMainViewController.h"
 #import "CommanFunctions.h"
 #import "IIIFlowView.h"
@@ -15,8 +20,19 @@
 #import "TPKeyboardAvoidingScrollView.h"
 @class TPKeyboardAvoidingScrollView;
 
+#pragma mark - ViewControllers
+
+#import "ProfileEditViewController.h"
+
+#pragma mark - Custom Classes
+
 #import "GalleryPhotoCell.h"
 
+
+#pragma mark - Models
+
+#import "Score.h"
+#import "UserProfile.h"
 
 #pragma mark - iOS Devices
 

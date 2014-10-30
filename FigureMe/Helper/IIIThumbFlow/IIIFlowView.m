@@ -597,6 +597,7 @@ const CGFloat INDICATOR_SIZE = 20;
     _downloadQueueCount--;
     if(!_downloadQueueCount==-1){
         [overlay removeFromSuperview];
+        //sleep(180);
     }
     
     NSString *urlStr = downloader.url.absoluteString;
