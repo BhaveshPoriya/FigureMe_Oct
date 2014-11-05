@@ -10,31 +10,31 @@
 	<string>FigureMe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>67ADAA16-289B-4B5B-9F7B-F7B7A0C2E08A</key>
+		<key>6E330FEA9A243437A07E292FD306ED9CE6894F16</key>
 		<string>https://github.com/BhaveshPoriya/FigureMe_Oct.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FigureMe.xcodeproj/project.xcworkspace</string>
+	<string>FigureMe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>67ADAA16-289B-4B5B-9F7B-F7B7A0C2E08A</key>
+		<key>6E330FEA9A243437A07E292FD306ED9CE6894F16</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/BhaveshPoriya/FigureMe_Oct.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>67ADAA16-289B-4B5B-9F7B-F7B7A0C2E08A</string>
+	<string>6E330FEA9A243437A07E292FD306ED9CE6894F16</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>67ADAA16-289B-4B5B-9F7B-F7B7A0C2E08A</string>
+			<string>6E330FEA9A243437A07E292FD306ED9CE6894F16</string>
 			<key>IDESourceControlWCCName</key>
-			<string>FigureMe_Oct</string>
+			<string>FigureMeOct</string>
 		</dict>
 	</array>
 </dict>

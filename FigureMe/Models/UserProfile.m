@@ -9,6 +9,6 @@
 #import "UserProfile.h"
 
 @implementation UserProfile
-@synthesize strUserName,strProfilePic,strLocationCity,strLocationState,strScore,strAboutMe,strDOB;
+@synthesize strUserName,strProfilePic,strLocationCity,strLocationState,strScore,strAboutMe,strDOB,strInterest;
 
 @end

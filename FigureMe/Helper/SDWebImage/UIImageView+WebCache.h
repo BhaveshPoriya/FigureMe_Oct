@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "SDWebImageManagerDelegate.h"
+#import "UIImage+animatedGIF.h"
 
 @interface UIImageView (WebCache) <SDWebImageManagerDelegate>
+
+@property (nonatomic,retain) UIActivityIndicatorView *activity;
 
 - (void)setImageWithURL:(NSURL *)url;
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder;

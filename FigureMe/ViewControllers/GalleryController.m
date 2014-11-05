@@ -47,8 +47,9 @@
     [self.galleryFlowview.layer setShadowOffset:CGSizeMake(5.0, 5.0)];
     
     [self addOverLay];
-    
-    NSMutableURLRequest *_request = [CommanFunctions getGalleryRequest:@"12"];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString*UID=[defaults objectForKey:@"UID"];
+    NSMutableURLRequest *_request = [CommanFunctions getGalleryRequest:UID];
     _request.timeoutInterval = 30;
     
     
@@ -67,7 +68,7 @@
                  
                  self.dataSource = [NSMutableArray arrayWithCapacity:0];
                  
-                 NSDictionary *dicGallery = [[greeting objectForKey:@"data"] objectForKey:@"galary"];
+                 NSDictionary *dicGallery = [[greeting objectForKey:@"data"] objectForKey:@"gallary"];
                  
                  for (NSDictionary *dicGalleryObject in dicGallery)
                  {

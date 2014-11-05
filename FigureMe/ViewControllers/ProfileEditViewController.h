@@ -7,17 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "SocialConnectTwitterController.h"
 #import "Constant.h"
 #import "UserProfile.h"
+#import "ProfileController.h"
+#import "TPKeyboardAvoidingScrollView.h"
 
-@interface ProfileEditViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UITextViewDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface ProfileEditViewController : UIViewController <UIScrollViewDelegate,UITextFieldDelegate,UITextViewDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 {
     UserProfile *objUserProfile;
 }
 
-@property (retain, nonatomic) UserProfile *objUserProfile;
+@property (strong, nonatomic) IBOutlet UIView *spinnerOverlay;
+@property (strong, nonatomic) UIActivityIndicatorView *spinner;
 
+@property (retain, nonatomic) UserProfile *objUserProfile;
 
 @property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 @property (retain, nonatomic) IBOutlet UIView *viewKeyboardToolbar;
@@ -40,12 +45,25 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtDOB;
 @property (weak, nonatomic) IBOutlet UITextView *txtViewAboutUs;
 
+@property (nonatomic, retain) IBOutlet UIToolbar *accessoryView;
+@property (nonatomic, retain) IBOutlet UIDatePicker *customInput;
+
 @property (weak, nonatomic) IBOutlet UIButton *btnFacebook;
 @property (weak, nonatomic) IBOutlet UIButton *btnTwitter;
+@property (weak, nonatomic) IBOutlet UIButton *btnSocialConnectGPlus;
+@property (weak, nonatomic) IBOutlet UIButton *btnSocialConnectLinkedIn;
+@property (weak, nonatomic) IBOutlet UIButton *btnSocialConnectYT;
+@property (weak, nonatomic) IBOutlet UIButton *btnSocialConnectInstagram;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollViewInterest;
+@property (nonatomic, strong) NSMutableArray *checkboxes;
 
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *captureVideoPreviewLayer;
 @property (strong, nonatomic) AVCaptureStillImageOutput *stillImageOutput;
 @property (strong, nonatomic) AVCaptureSession *session;
+
+- (IBAction)dateChanged:(id)sender;
+- (IBAction)doneEditing:(id)sender;
 
 - (IBAction)btnSaveProfileClicked:(id)sender;
 - (IBAction)btnEditProfilePicClicked:(id)sender;

@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FigureMe/ViewControllers/ProfileEditViewController.m"
-            timestampString = "436189911.764436"
+            filePath = "FigureMe/ViewControllers/TestController.m"
+            timestampString = "436885305.602132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "-btnSaveProfileClicked:"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "-btnNextQuestionClicked:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

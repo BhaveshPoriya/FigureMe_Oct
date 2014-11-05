@@ -52,5 +52,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblLogout;
 
 - (id)init;
+- (IBAction)unwindToLogin:(UIStoryboardSegue *)unwindSegue;
 
 @end
