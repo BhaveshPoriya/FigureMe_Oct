@@ -19,6 +19,7 @@
     NSString *strScore;
     NSString *strDOB;
     NSString *strAboutMe;
+    NSString *strInterest;
     
 }
 
@@ -29,5 +30,6 @@
 @property(nonatomic,retain)NSString *strScore;
 @property(nonatomic,retain)NSString *strDOB;
 @property(nonatomic,retain)NSString *strAboutMe;
+@property(nonatomic,retain)NSString *strInterest;
 
 @end

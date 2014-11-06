@@ -9,10 +9,19 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-
+@synthesize sharedArray;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    sharedArray = [[NSMutableArray alloc]init];
+    [sharedArray addObject:@"Biking"];
+    [sharedArray addObject:@"Movies"];
+    [sharedArray addObject:@"Music"];
+    [sharedArray addObject:@"Painting"];
+    [sharedArray addObject:@"Photography"];
+    [sharedArray addObject:@"Writing"];
+    [sharedArray addObject:@"Sports"];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
@@ -81,7 +90,7 @@
         NSLog(@"Active");
     }
     
-    //NSLog(@"%@",userInfo);
+    NSLog(@"%@",userInfo);
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification

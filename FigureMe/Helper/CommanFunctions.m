@@ -31,9 +31,12 @@
 {
     if (inputimage)
     {
-        NSData *imageData = UIImageJPEGRepresentation(inputimage, 1.0);
-        NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        NSData *imageData = UIImagePNGRepresentation(inputimage);
+        NSString *encodedString = [imageData base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
         return  encodedString;
+
+        //NSData * data = [UIImagePNGRepresentation(inputimage) base64EncodedDataWithOptions:NSDataBase64Encoding64CharacterLineLength];
+        //return [NSString stringWithUTF8String:[data bytes]];
     }
     return @"";
 }
@@ -114,10 +117,10 @@
 +(NSMutableURLRequest *)getGalleryRequest:(NSString *)UserId{
     
     NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
-    [reqDist setObject:@"get_galary" forKey:@"action"];
+    [reqDist setObject:@"get_gallary" forKey:@"action"];
     [reqDist setObject:UserId forKey:@"userid"];
     
-    NSString *_URL =[NSString stringWithFormat:@"%@/get_galary", @APIRootURL];
+    NSString *_URL =[NSString stringWithFormat:@"%@/get_gallary", @APIRootURL];
     
     return [self generateAPIRequest:_URL reqDist:reqDist];
 }
@@ -138,6 +141,30 @@
     [reqDist setObject:@"edit_profile" forKey:@"action"];
     
     NSString *_URL =[NSString stringWithFormat:@"%@/edit_profile", @APIRootURL];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
+
++(NSMutableURLRequest *)getTest:(NSString *)TestId
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:TestId forKey:@"testid"];
+    [reqDist setObject:@"get_test" forKey:@"action"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"%@/get_test", @APIRootURL];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
+
++(NSMutableURLRequest *)submitTest:(NSString *)UserId TestId:(NSString *)TestId Score:(NSString *)Score
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:UserId forKey:@"userid"];
+    [reqDist setObject:TestId forKey:@"testid"];
+    [reqDist setObject:Score forKey:@"score"];
+    [reqDist setObject:@"submit_test" forKey:@"action"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"%@/submit_test", @APIRootURL];
     
     return [self generateAPIRequest:_URL reqDist:reqDist];
 }

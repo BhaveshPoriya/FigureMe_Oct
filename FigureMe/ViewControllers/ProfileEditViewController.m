@@ -38,13 +38,103 @@
         self.txtState.text = self.objUserProfile.strLocationState;
         self.txtViewAboutUs.text = self.objUserProfile.strAboutMe;
         
+        self.txtViewAboutUs.editable = YES;
+        self.txtViewAboutUs.layer.cornerRadius = 10;
+        self.txtViewAboutUs.layer.borderColor = [[UIColor grayColor] CGColor];
+        self.txtViewAboutUs.layer.borderWidth = 1;
+        
+        self.txtDOB.inputView = self.customInput;
+        self.txtDOB.inputAccessoryView = self.accessoryView;
+        
         [self.imgViewProfile setImageWithURL:[NSURL URLWithString:self.objUserProfile.strProfilePic] placeholderImage:[UIImage imageNamed:@"anon.jpg"]];
         self.imgViewProfile.layer.cornerRadius = self.self.imgViewProfile.frame.size.width / 2;
         self.imgViewProfile.clipsToBounds = YES;
         self.imgViewProfile.backgroundColor = [UIColor whiteColor];
         [self.imgViewProfile setContentMode:UIViewContentModeScaleAspectFill];
+        
+       AppDelegate *mainDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
+        
+        NSMutableArray *a = [[NSMutableArray alloc] initWithCapacity:10];
+        self.checkboxes = a;
+        
+        SSCheckBoxView *cbv = nil;
+        CGRect frame = CGRectMake(5, 5, 150, 30);
+        
+        self.scrollViewInterest.contentSize = CGSizeMake(frame.size.width, frame.size.height);
+        self.scrollViewInterest.layer.cornerRadius = 3.0f;
+        
+        for (int i = 0; i < mainDelegate.sharedArray.count; ++i) {
+            
+            SSCheckBoxViewStyle style = 1;
+            NSString *intsText = [mainDelegate.sharedArray objectAtIndex:i];
+            
+            BOOL checked = NO;
+            if([self.objUserProfile.strInterest rangeOfString:intsText].location == NSNotFound)
+                checked = NO;
+            else
+                checked = YES;
+
+            cbv = [[SSCheckBoxView alloc] initWithFrame:frame
+                                                  style:style
+                                                checked:checked];
+            
+            [cbv setText:intsText];
+            
+            [self.scrollViewInterest addSubview:cbv];
+            [self.checkboxes addObject:cbv];
+            
+            float newHeight = self.scrollViewInterest.contentSize.height+17;
+            self.scrollViewInterest.contentSize = CGSizeMake(frame.size.width, newHeight);
+            frame.origin.y += 20;
+        
+        }
     }
     
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:kTwitterTokenKey])
+        self.btnTwitter.imageView.image = [UIImage imageNamed:@"twitter-g"];
+    else
+        self.btnTwitter.imageView.image = [UIImage imageNamed:@"twitter"];
+    
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:kFacebookTokenKey])
+        self.btnFacebook.imageView.image = [UIImage imageNamed:@"facebook-g"];
+    else
+        self.btnFacebook.imageView.image = [UIImage imageNamed:@"facebook"];
+    
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:kInstagramTokenKey])
+        self.btnSocialConnectInstagram.imageView.image = [UIImage imageNamed:@"instagramme-g"];
+    else
+        self.btnSocialConnectInstagram.imageView.image = [UIImage imageNamed:@"instagramme"];
+    
+    /*
+     if([[NSUserDefaults standardUserDefaults] objectForKey:kTwitterTokenKey])
+     self.btnSocialConnectTwitter.imageView.image = [UIImage imageNamed:@"twitter-g"];
+     else
+     self.btnSocialConnectTwitter.imageView.image = [UIImage imageNamed:@"twitter"];
+     
+     
+     if([[NSUserDefaults standardUserDefaults] objectForKey:kTwitterTokenKey])
+     self.btnSocialConnectTwitter.imageView.image = [UIImage imageNamed:@"twitter-g"];
+     else
+     self.btnSocialConnectTwitter.imageView.image = [UIImage imageNamed:@"twitter"];
+     
+     
+     if([[NSUserDefaults standardUserDefaults] objectForKey:kTwitterTokenKey])
+     self.btnSocialConnectTwitter.imageView.image = [UIImage imageNamed:@"twitter-g"];
+     else
+     self.btnSocialConnectTwitter.imageView.image = [UIImage imageNamed:@"twitter"];
+     */
+
+}
+
+- (void)viewDidLayoutSubviews
+{
+    self.scrollViewInterest.contentSize = self.scrollViewInterest.contentSize;
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,31 +144,73 @@
     [self.scrollView contentSizeToFit];
 }
 
+#pragma mark - Custom Delegates
+
+- (void)addOverLay
+{
+    self.spinnerOverlay = [[UIView alloc] initWithFrame:self.view.frame];
+    self.spinnerOverlay.backgroundColor = [UIColor blackColor];
+    self.spinnerOverlay.alpha = 0.50f;
+    
+    self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [self.spinner setCenter:CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)];
+    [self.spinnerOverlay addSubview:self.spinner];
+    [self.spinner startAnimating];
+    
+    [self.view addSubview:self.spinnerOverlay];
+    [self.view bringSubviewToFront:self.spinnerOverlay];
+}
+
+- (void)removeOverLay
+{
+    [self.spinner stopAnimating];
+    [self.spinnerOverlay removeFromSuperview];
+}
 
 - (IBAction)btnSaveProfileClicked:(id)sender {
 
-    NSString *username = self.txtUsername.text;
+    NSString *username = [self.txtUsername.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     NSString *dob = self.txtDOB.text;
-    NSString *interets = @"";
-    NSString *location = [NSString stringWithFormat:@"%@,%@",self.txtCity.text,self.txtState.text];
+    NSString *location = [NSString stringWithFormat:@"%@,%@",[self.txtCity.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]],[self.txtState.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]];
     NSString *aboutme = self.txtViewAboutUs.text;
+    
+    if(![username isEqualToString:@""])
+    {
+    
+    [self addOverLay];
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+    
+    NSString *interests = @"";
+    for (SSCheckBoxView *tempCheckbox in self.checkboxes) {
+        if(tempCheckbox.checked)
+            interests = [NSString stringWithFormat:@"%@,%@",interests,tempCheckbox.textLabel.text];
+    }
+    
     NSString *profilePic = [CommanFunctions imageToBase64:self.imgUpdatedImage];
     
-    
-    NSMutableURLRequest *_request = [CommanFunctions getUpdateProfileRequest:@"12" userName:username DOB:dob interests:interets location:location aboutMe:aboutme profilePic:profilePic];
-    _request.timeoutInterval = 30;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString*UID=[defaults objectForKey:@"UID"];
+    NSMutableURLRequest *_request = [CommanFunctions getUpdateProfileRequest:UID userName:username DOB:dob interests:interests location:location aboutMe:aboutme profilePic:profilePic];
+    _request.timeoutInterval = 120;
     
     [NSURLConnection sendAsynchronousRequest:_request
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response,
                                                NSData *data, NSError *connectionError)
      {
+        [self.navigationItem setHidesBackButton:NO animated:YES];
          if (data.length > 0 && connectionError == nil)
          {
              NSDictionary *greeting = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
              NSString *status = [[greeting  objectForKey:@"data"] objectForKey:@"status"];
              if([status isEqualToString:@"success"])
              {
+                 NSArray *viewControllers = self.navigationController.viewControllers;
+                 ProfileController *profileControllerObject = [viewControllers objectAtIndex:viewControllers.count -2];
+                 profileControllerObject.updatedImage = self.imgUpdatedImage;
+                 
+                 [self removeOverLay];
+                 
                  [self.navigationController popToRootViewControllerAnimated:YES];
              }
              else
@@ -87,7 +219,15 @@
              }
          }
      }];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Username cannot be blank" delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:Nil, nil];
+        [alert show];
+        [self.txtUsername becomeFirstResponder];
+    }
 }
+
 
 - (IBAction)btnEditProfilePicClicked:(id)sender {
     
@@ -101,6 +241,16 @@
     
     
     
+}
+
+- (IBAction)dateChanged:(id)sender {
+    UIDatePicker *picker = (UIDatePicker *)sender;
+    
+    self.txtDOB.text = [NSString stringWithFormat:@"%@", picker.date];
+}
+
+- (IBAction)doneEditing:(id)sender {
+    [self.txtDOB resignFirstResponder];
 }
 
 - (IBAction)btnFacebookClicked:(id)sender {
@@ -122,24 +272,52 @@
 
 #pragma mark - UITextFieldDelegate
 
+- (void) textFieldDidBeginEditing:(UITextField *)textField {
+    
+    if ([textField isEqual:self.txtDOB])
+    {
+        self.customInput = [[UIDatePicker alloc] init];
+        self.customInput.datePickerMode = UIDatePickerModeDate;
+        self.customInput.maximumDate = [NSDate date];
+        [self.customInput addTarget:self action:@selector(datePickerValueChanged:) forControlEvents:UIControlEventValueChanged];
+        textField.inputView = self.customInput;
+
+        if(![self.objUserProfile.strDOB isEqualToString:@"Unavailable"])
+        {
+            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+            [formatter setDateFormat:@"dd MMM, yyyy"];
+            NSDate *dob = [formatter dateFromString:self.objUserProfile.strDOB];
+            [self.customInput setDate:dob animated:YES];
+        }
+        
+        self.accessoryView= [[UIToolbar alloc] initWithFrame:CGRectMake(0,0,320,44)];
+        [self.accessoryView setBarStyle:UIBarStyleBlackOpaque];
+        UIBarButtonItem *barButtonDone = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+                                                                          style:UIBarButtonItemStyleBordered target:self action:@selector(changeDateFromLabel:)];
+        self.accessoryView.items = [[NSArray alloc] initWithObjects:barButtonDone,nil];
+        barButtonDone.tintColor=[UIColor blackColor];
+        
+        self.txtDOB.inputAccessoryView = self.accessoryView;
+    }
+}
+
+-(void) datePickerValueChanged:(id)sender {
+    UIDatePicker *temp = (UIDatePicker*)sender;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd MMM, yyyy"];
+    NSString *stringFromDate = [formatter stringFromDate:temp.date];
+    self.txtDOB.text = stringFromDate;
+}
+
+-(void)changeDateFromLabel:(id)sender
+{
+    [self.txtDOB resignFirstResponder];
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
-}
-
-
-#pragma mark - UITableViewDelegate
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell;
-    return cell;
 }
 
 #pragma mark - UIActionSheet Delegates
@@ -184,26 +362,17 @@
 
 - (void) initializeCamera
 {
-    
+    self.navigationController.navigationBarHidden = YES;
     self.viewCameraOverlay = [[UIView alloc] initWithFrame:self.view.frame];
     self.viewCameraOverlay.backgroundColor = [UIColor blackColor];
     self.viewCameraOverlay.alpha = 0.8f;
     [self.view addSubview:self.viewCameraOverlay];
     
-    self.viewCameraContainer = [[UIView alloc] initWithFrame:CGRectMake(15, 15, self.view.frame.size.width-30, self.view.frame.size.height-30)];
-    self.viewCameraContainer.backgroundColor = [UIColor yellowColor];
+    self.viewCameraContainer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    //self.viewCameraContainer.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:self.viewCameraContainer];
     
     
-    UIButton *btnClick = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnClick.frame = CGRectMake(15, 15, 25, 25);
-    [btnClick addTarget:self
-               action:@selector(capImage)
-     forControlEvents:UIControlEventTouchUpInside];
-    [btnClick setImage:[UIImage imageNamed:@"Camera-icon.png"] forState:UIControlStateNormal];
-    [self.viewCameraContainer addSubview:btnClick];
-
-    /*
     self.session = [[AVCaptureSession alloc] init];
 	self.session.sessionPreset = AVCaptureSessionPresetPhoto;
     
@@ -253,11 +422,22 @@
 	[self.session startRunning];
     
     //self.isCameraActive = YES;
-     */
+    
+    UIButton *btnClick = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnClick.frame = CGRectMake(125, 490, 70, 70);
+    [btnClick addTarget:self
+                 action:@selector(capImage)
+       forControlEvents:UIControlEventTouchUpInside];
+    [btnClick setImage:[UIImage imageNamed:@"Camera-icon.png"] forState:UIControlStateNormal];
+    [self.viewCameraContainer addSubview:btnClick];
 }
 
 - (void) capImage
 {
+    self.navigationController.navigationBarHidden = NO;
+    [self.viewCameraOverlay removeFromSuperview];
+    [self.viewCameraContainer removeFromSuperview];
+    
     //method to capture image from AVCaptureSession video feed
     AVCaptureConnection *videoConnection = nil;
     for (AVCaptureConnection *connection in self.stillImageOutput.connections) {

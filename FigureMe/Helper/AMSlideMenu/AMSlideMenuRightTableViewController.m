@@ -95,7 +95,7 @@
                     break;
                     
                 case 1:
-                    imgView.image = [UIImage imageNamed:@""];
+                    imgView.image = [UIImage imageNamed:@"gallery-hover"];
                     break;
                     
                 case 2:
@@ -121,12 +121,11 @@
                 default:
                     break;
             }
-
             
             if(![segueIdentifier isEqualToString:@"logout"])
                 [self performSegueWithIdentifier:segueIdentifier sender:self];
             else
-                [self performSegueWithIdentifier:@"UnwindToLoginSegueID" sender:self];
+                [self performSegueWithIdentifier:@"PushLogOut" sender:self];
         }
     }
 }
@@ -156,7 +155,7 @@
                 break;
             
             case 1:
-                imgView.image = [UIImage imageNamed:@""];
+                imgView.image = [UIImage imageNamed:@"gallery"];
                 break;
                 
             case 2:

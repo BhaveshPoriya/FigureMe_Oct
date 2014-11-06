@@ -74,6 +74,7 @@
     
     if (mainVC.rightMenu)
     {
+        
         UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [mainVC configureRightMenuButton:rightBtn];
         [rightBtn addTarget:mainVC action:@selector(openRightMenu) forControlEvents:UIControlEventTouchUpInside];
@@ -90,7 +91,7 @@
         
         navItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:barView];
         
-        UIView *leftBarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 150, 33)];
+        UIView *leftBarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 170, 37)];
         [leftBarView setBackgroundColor:[UIColor clearColor]];
         
         UIImageView *_imgViewHeaderLogo = [[UIImageView alloc] initWithFrame:leftBarView.frame];

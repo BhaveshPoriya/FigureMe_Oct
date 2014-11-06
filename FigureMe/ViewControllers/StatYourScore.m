@@ -105,11 +105,12 @@
     // Dispose of any resources that can be recreated.
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
-
-
 {
+    if(arrScores.count > 10)
+        tableView.scrollEnabled = YES;
+    else
+        tableView.scrollEnabled = NO;
      return arrScores.count;
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;

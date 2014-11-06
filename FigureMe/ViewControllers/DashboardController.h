@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Constant.h"
+#import "AppDelegate.h"
+#import "TestPopUpViewController.h"
+#import "IIIFlowViewDelegate.h"
 
 @interface DashboardController : UIViewController <IIIFlowViewDelegate>
 
@@ -16,11 +19,14 @@
 @property (strong, nonatomic)NSMutableArray *dataSource;
 @property (strong, nonatomic)NSMutableArray *testA;
 
+@property (strong, nonatomic)NSMutableArray *results;
+
 @property (weak, nonatomic) IBOutlet UIButton *btnSeeAll;
 
 @property (strong, nonatomic) IBOutlet UIView *spinnerOverlay;
 @property (strong, nonatomic) UIActivityIndicatorView *spinner;
 
 - (IBAction)btnSeeAllClicked:(id)sender;
+- (IBAction)btnPushItClicked:(id)sender;
 
 @end

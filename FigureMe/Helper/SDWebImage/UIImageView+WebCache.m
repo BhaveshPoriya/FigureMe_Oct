@@ -12,6 +12,8 @@
 
 @implementation UIImageView (WebCache)
 
+@dynamic activity;
+
 - (void)setImageWithURL:(NSURL *)url
 {
     [self setImageWithURL:url placeholderImage:nil];
@@ -39,6 +41,10 @@
     {
         if (placeholder)
         {
+            /*
+            NSURL *url = [[NSBundle mainBundle] URLForResource:@"loading" withExtension:@"gif"];
+            self.image = [UIImage animatedImageWithAnimatedGIFURL:url];
+            self.contentMode = UIViewContentModeCenter;*/
             self.image = placeholder;
         }
 
@@ -48,6 +54,7 @@
         }
     }
 }
+
 /*
 - (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder
 {

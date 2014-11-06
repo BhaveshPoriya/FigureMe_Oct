@@ -25,6 +25,9 @@
 +(NSMutableURLRequest *)getScoreRequest:(NSString *)Score;
 +(NSMutableURLRequest *)getProfileRequest:(NSString *)UserId;
 +(NSMutableURLRequest *)getUpdateProfileRequest:(NSString *)UserId userName:(NSString*)userName DOB:(NSString*)DOB interests:(NSString*)interests location:(NSString*)location aboutMe:(NSString*)aboutMe profilePic:(NSString*)profilePic;
++(NSMutableURLRequest *)getTest:(NSString *)TestId;
++(NSMutableURLRequest *)submitTest:(NSString *)UserId TestId:(NSString *)TestId Score:(NSString *)Score;
+
 +(NSMutableURLRequest *)getPostTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken screteKey:(NSString *)screteKey;
 +(NSMutableURLRequest *)getPostFacebookTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;
 +(NSMutableURLRequest *)getPostInstagramTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;

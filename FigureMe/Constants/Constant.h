@@ -9,6 +9,11 @@
 #ifndef FigureMe_Constant_h
 #define FigureMe_Constant_h
 
+#import "AppDelegate.h"
+
+#pragma mark - ViewControllers
+
+#import "ProfileEditViewController.h"
 
 #pragma mark - Helper Classes
 
@@ -19,14 +24,22 @@
 #import "UIImageView+WebCache.h"
 #import "TPKeyboardAvoidingScrollView.h"
 @class TPKeyboardAvoidingScrollView;
+#import "SSCheckBoxView.h"
+#import "UIHelpers.h"
 
-#pragma mark - ViewControllers
 
-#import "ProfileEditViewController.h"
+#pragma mark - Categories
+
+#import "NSString+Score.h"
+
 
 #pragma mark - Custom Classes
 
 #import "GalleryPhotoCell.h"
+
+#pragma mark - Custom View
+
+#import "ResultView.h"
 
 
 #pragma mark - Models
@@ -59,7 +72,7 @@
 #pragma mark - API
 
 #define APIRootURL "http://www.ecsprojects.com/figureme/api"
-#define APIRootURL_LOCAL "http://192.168.1.116:82/figureme/api"
+//#define APIRootURL "http://192.168.1.105:82/figureme/api"
 
 enum NetworkType {
     NetworkTypeFacebook = 0,
