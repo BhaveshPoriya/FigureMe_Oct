@@ -25,12 +25,25 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert) categories:nil];
+            [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        } else {
+            [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+        }
+#else
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+#endif
     
     // Handle launching from a notification
      //[[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     application.applicationIconBadgeNumber = 0;
 
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"footer-bg"]];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"footer-hover-bg"]];
+    
+    
     return YES;
 }
 
@@ -91,25 +104,6 @@
     }
     
     NSLog(@"%@",userInfo);
-}
-
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
-{
-    UIApplicationState state = [application applicationState];
-    if (state == UIApplicationStateActive) {
-        
-        UIView *customView = [[UIView alloc] initWithFrame:self.window.frame];
-        customView.backgroundColor = [UIColor blackColor];
-        customView.alpha = 0.6f;
-        
-        [self.window addSubview:customView];
-    }
-    
-    // Request to reload table view data
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
-    
-    // Set icon badge number to zero
-    application.applicationIconBadgeNumber = 0;
 }
 
 

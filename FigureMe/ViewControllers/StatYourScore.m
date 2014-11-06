@@ -30,8 +30,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString*UID=[defaults objectForKey:@"UID"];
     
-    NSMutableURLRequest *_request = [CommanFunctions getScoreRequest:@"12"];
+    NSMutableURLRequest *_request = [CommanFunctions getScoreRequest:UID];
     _request.timeoutInterval = 30;
     
     [NSURLConnection sendAsynchronousRequest:_request
@@ -82,11 +84,10 @@
     self.tblViewStatYourScore.layer.cornerRadius = 5.0f;
     
     
-    
+    //[tabbarItemScore setFinishedSelectedImage:[UIImage imageNamed:@"home_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"home.png"]];
     
     UIImage *unselectedImage = [[UIImage imageNamed:@"score.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     tabbarItemScore.selectedImage = unselectedImage;
-    
     
     UIImage *selectedImage = [[UIImage imageNamed:@"score.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     tabbarItemScore.selectedImage = selectedImage;
@@ -132,13 +133,14 @@
     NSString *strImageUrl = score.image;
     
     NSURL *urlStatImage = [NSURL URLWithString:strImageUrl];
-    [cell.imgviewStatInfoCell setImageWithURL:urlStatImage placeholderImage:[UIImage imageNamed:@"bgBump.png"]];
-    
+    [cell.imgviewStatInfoCell setImageWithURL:urlStatImage placeholderImage:[UIImage imageNamed:@"anon.png"]];
+    cell.imgviewStatInfoCell.layer.cornerRadius = cell.imgviewStatInfoCell.frame.size.width / 2;
+    cell.imgviewStatInfoCell.clipsToBounds = YES;
+    cell.imgviewStatInfoCell.backgroundColor = [UIColor whiteColor];
+    [cell.imgviewStatInfoCell setContentMode:UIViewContentModeScaleAspectFill];
     
     cell.lblNameStatInfoCell.text = score.Name;
     cell.lblScoreStatInfoCell.text = score.Score;
-    
-    
     
     [cell.lblNameStatInfoCell setFont:[UIFont fontWithName:@"OpenSans-Light" size:14.0]];
     [cell.lblScoreStatInfoCell setFont:[UIFont fontWithName:@"OpenSans-Light" size:14.0]];
@@ -154,6 +156,10 @@
     
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
 
 -(void)yourButtonClicked:(UIButton*)sender
 {

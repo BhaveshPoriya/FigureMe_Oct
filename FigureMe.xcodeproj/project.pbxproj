@@ -44,8 +44,8 @@
 		C32FDBC619E7E92A00CD60BE /* screen-shot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBAD19E7E92A00CD60BE /* screen-shot.jpg */; };
 		C32FDBC719E7E92A00CD60BE /* scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBAE19E7E92A00CD60BE /* scroll.png */; };
 		C32FDBC819E7E92A00CD60BE /* scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBAE19E7E92A00CD60BE /* scroll.png */; };
-		C32FDBC919E7E92A00CD60BE /* your score.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBAF19E7E92A00CD60BE /* your score.png */; };
-		C32FDBCA19E7E92A00CD60BE /* your score.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBAF19E7E92A00CD60BE /* your score.png */; };
+		C32FDBC919E7E92A00CD60BE /* your-score.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBAF19E7E92A00CD60BE /* your-score.png */; };
+		C32FDBCA19E7E92A00CD60BE /* your-score.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBAF19E7E92A00CD60BE /* your-score.png */; };
 		C32FDBCB19E7E92A00CD60BE /* your-score-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBB019E7E92A00CD60BE /* your-score-hover.png */; };
 		C32FDBCC19E7E92A00CD60BE /* your-score-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = C32FDBB019E7E92A00CD60BE /* your-score-hover.png */; };
 		C33A14701A0A42E600908CAA /* Notification-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C33A146F1A0A42E600908CAA /* Notification-bg.png */; };
@@ -390,6 +390,12 @@
 		F4C1E5D119DEC587003C108A /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1E5CF19DEC587003C108A /* TestController.m */; };
 		F4C5486519FE784C00585282 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C5486419FE784C00585282 /* AVFoundation.framework */; };
 		F4C5486719FE814D00585282 /* Camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F4C5486619FE814D00585282 /* Camera-icon.png */; };
+		F4C748881A0B8A1F00B1D026 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C748831A0B8A1F00B1D026 /* RDVTabBar.m */; };
+		F4C748891A0B8A1F00B1D026 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C748831A0B8A1F00B1D026 /* RDVTabBar.m */; };
+		F4C7488A1A0B8A1F00B1D026 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C748851A0B8A1F00B1D026 /* RDVTabBarController.m */; };
+		F4C7488B1A0B8A1F00B1D026 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C748851A0B8A1F00B1D026 /* RDVTabBarController.m */; };
+		F4C7488C1A0B8A1F00B1D026 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C748871A0B8A1F00B1D026 /* RDVTabBarItem.m */; };
+		F4C7488D1A0B8A1F00B1D026 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C748871A0B8A1F00B1D026 /* RDVTabBarItem.m */; };
 		F4CB29E919F6499C006BD3FB /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB29E819F6499C006BD3FB /* UserProfile.m */; };
 		F4CB29EA19F6499C006BD3FB /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB29E819F6499C006BD3FB /* UserProfile.m */; };
 		F4CB48FC19EBD895000CC9D0 /* GalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CB48FB19EBD895000CC9D0 /* GalleryController.m */; };
@@ -474,7 +480,7 @@
 		C32FDBAC19E7E92A00CD60BE /* score-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "score-hover.png"; sourceTree = "<group>"; };
 		C32FDBAD19E7E92A00CD60BE /* screen-shot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "screen-shot.jpg"; sourceTree = "<group>"; };
 		C32FDBAE19E7E92A00CD60BE /* scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scroll.png; sourceTree = "<group>"; };
-		C32FDBAF19E7E92A00CD60BE /* your score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "your score.png"; sourceTree = "<group>"; };
+		C32FDBAF19E7E92A00CD60BE /* your-score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "your-score.png"; sourceTree = "<group>"; };
 		C32FDBB019E7E92A00CD60BE /* your-score-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "your-score-hover.png"; sourceTree = "<group>"; };
 		C33A146F1A0A42E600908CAA /* Notification-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Notification-bg.png"; path = "Resources/images/Notification/Notification-bg.png"; sourceTree = "<group>"; };
 		C3BC2F0219E8133A00295626 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Score.h; path = Models/Score.h; sourceTree = "<group>"; };
@@ -733,6 +739,12 @@
 		F4C1E5CF19DEC587003C108A /* TestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestController.m; path = ViewControllers/TestController.m; sourceTree = "<group>"; };
 		F4C5486419FE784C00585282 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F4C5486619FE814D00585282 /* Camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Camera-icon.png"; path = "Resources/images/Profile/Camera-icon.png"; sourceTree = "<group>"; };
+		F4C748821A0B8A1F00B1D026 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDVTabBar.h; path = Helper/RDVTabBarController/RDVTabBar.h; sourceTree = "<group>"; };
+		F4C748831A0B8A1F00B1D026 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDVTabBar.m; path = Helper/RDVTabBarController/RDVTabBar.m; sourceTree = "<group>"; };
+		F4C748841A0B8A1F00B1D026 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDVTabBarController.h; path = Helper/RDVTabBarController/RDVTabBarController.h; sourceTree = "<group>"; };
+		F4C748851A0B8A1F00B1D026 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarController.m; path = Helper/RDVTabBarController/RDVTabBarController.m; sourceTree = "<group>"; };
+		F4C748861A0B8A1F00B1D026 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDVTabBarItem.h; path = Helper/RDVTabBarController/RDVTabBarItem.h; sourceTree = "<group>"; };
+		F4C748871A0B8A1F00B1D026 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDVTabBarItem.m; path = Helper/RDVTabBarController/RDVTabBarItem.m; sourceTree = "<group>"; };
 		F4CB29E719F6499C006BD3FB /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserProfile.h; path = Models/UserProfile.h; sourceTree = "<group>"; };
 		F4CB29E819F6499C006BD3FB /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserProfile.m; path = Models/UserProfile.m; sourceTree = "<group>"; };
 		F4CB48FA19EBD895000CC9D0 /* GalleryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryController.h; path = ViewControllers/GalleryController.h; sourceTree = "<group>"; };
@@ -849,7 +861,7 @@
 				C32FDBAC19E7E92A00CD60BE /* score-hover.png */,
 				C32FDBAD19E7E92A00CD60BE /* screen-shot.jpg */,
 				C32FDBAE19E7E92A00CD60BE /* scroll.png */,
-				C32FDBAF19E7E92A00CD60BE /* your score.png */,
+				C32FDBAF19E7E92A00CD60BE /* your-score.png */,
 				C32FDBB019E7E92A00CD60BE /* your-score-hover.png */,
 				C32FDBA019E7D30D00CD60BE /* cross.png */,
 			);
@@ -1076,6 +1088,7 @@
 		F43FADA119DD714B00C620E8 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F4C748811A0B8A1100B1D026 /* RDVTabBarController */,
 				F43636BF1A04C6EA00876E5B /* SSCheckBoxView */,
 				F4BE3CDD19F53EB3007DAA3A /* AFNetworking */,
 				F4BE3C9A19F53720007DAA3A /* IOSLinkedInAPI */,
@@ -1401,6 +1414,19 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		F4C748811A0B8A1100B1D026 /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F4C748821A0B8A1F00B1D026 /* RDVTabBar.h */,
+				F4C748831A0B8A1F00B1D026 /* RDVTabBar.m */,
+				F4C748841A0B8A1F00B1D026 /* RDVTabBarController.h */,
+				F4C748851A0B8A1F00B1D026 /* RDVTabBarController.m */,
+				F4C748861A0B8A1F00B1D026 /* RDVTabBarItem.h */,
+				F4C748871A0B8A1F00B1D026 /* RDVTabBarItem.m */,
+			);
+			name = RDVTabBarController;
+			sourceTree = "<group>";
+		};
 		F4C7CA6D19E009E10072610B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -1607,7 +1633,7 @@
 				F4BE3CAE19F53761007DAA3A /* 01-refresh.png in Resources */,
 				C32FDBB319E7E92A00CD60BE /* deleted-friends.png in Resources */,
 				F436370B1A04CFF400876E5B /* new_cb_dark_on.png in Resources */,
-				C32FDBC919E7E92A00CD60BE /* your score.png in Resources */,
+				C32FDBC919E7E92A00CD60BE /* your-score.png in Resources */,
 				F477214519F149CE00C253B0 /* instagramme.png in Resources */,
 				C3BC2F0C19E8178A00295626 /* your-scrore-hover.png in Resources */,
 				C3BD87BE1A021EA800E3F4E2 /* linkedin.png in Resources */,
@@ -1747,7 +1773,7 @@
 				F41CC1B71A0A6B9900E23A2B /* gallery-hover.png in Resources */,
 				F4C04CC719E6AA4C00556BA5 /* galler-scrore-count.png in Resources */,
 				F4C04CDA19E6C30C00556BA5 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				C32FDBCA19E7E92A00CD60BE /* your score.png in Resources */,
+				C32FDBCA19E7E92A00CD60BE /* your-score.png in Resources */,
 				C32FDBCC19E7E92A00CD60BE /* your-score-hover.png in Resources */,
 				F47721A419F15EA100C253B0 /* README in Resources */,
 				F4A9E5C119ED283C003865F5 /* notificatrion-hover.png in Resources */,
@@ -1850,6 +1876,7 @@
 				F4CC9E6D19E5164E00B3388A /* ECSNaigationItem.m in Sources */,
 				F4F943481A0A1C0300696AC0 /* ResultView.m in Sources */,
 				F43FADC819DD93AE00C620E8 /* AMSlideMenuLeftMenuSegue.m in Sources */,
+				F4C748881A0B8A1F00B1D026 /* RDVTabBar.m in Sources */,
 				F4C1E5C119DE87DF003C108A /* ProfileController.m in Sources */,
 				F43FAD9F19DD55A700C620E8 /* RegisterController.m in Sources */,
 				F43FAD5A19DD3C2400C620E8 /* AppDelegate.m in Sources */,
@@ -1922,6 +1949,7 @@
 				F43FADDA19DD983000C620E8 /* MenuContainerVC.m in Sources */,
 				F43FADCA19DD93AE00C620E8 /* AMSlideMenuLeftTableViewController.m in Sources */,
 				F4BE3CFF19F53EC1007DAA3A /* AFURLResponseSerialization.m in Sources */,
+				F4C7488A1A0B8A1F00B1D026 /* RDVTabBarController.m in Sources */,
 				F4C1E5CC19DEB8B6003C108A /* ProfileEditViewController.m in Sources */,
 				F43637011A04C72000876E5B /* UIHelpers.m in Sources */,
 				F4BE3CAA19F53756007DAA3A /* NSString+LIAEncode.m in Sources */,
@@ -1935,6 +1963,7 @@
 				F41CC1BC1A0A708500E23A2B /* UIImage+animatedGIF.m in Sources */,
 				F43FADCC19DD93AE00C620E8 /* AMSlideMenuMainViewController.m in Sources */,
 				F4D979F119F29D4600FEEE3E /* SocialConnectFBController.m in Sources */,
+				F4C7488C1A0B8A1F00B1D026 /* RDVTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1958,6 +1987,7 @@
 				F4CC9EF919E586FE00B3388A /* SDWebImageManager.m in Sources */,
 				F43FADC919DD93AE00C620E8 /* AMSlideMenuLeftMenuSegue.m in Sources */,
 				F43FAD6F19DD3C2400C620E8 /* FigureMeTests.m in Sources */,
+				F4C7488D1A0B8A1F00B1D026 /* RDVTabBarItem.m in Sources */,
 				F4B6965C19E3D4F50065BF4F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				F41CC1BD1A0A708500E23A2B /* UIImage+animatedGIF.m in Sources */,
 				F477215C19F15E8700C253B0 /* NSMutableURLRequest+Parameters.m in Sources */,
@@ -1970,6 +2000,7 @@
 				F4BE3CA719F53756007DAA3A /* LIALinkedInAuthorizationViewController.m in Sources */,
 				F4BE3CA919F53756007DAA3A /* LIALinkedInHttpClient.m in Sources */,
 				F477219819F15EA100C253B0 /* OAProblem.m in Sources */,
+				F4C7488B1A0B8A1F00B1D026 /* RDVTabBarController.m in Sources */,
 				F4BE3CA519F53756007DAA3A /* LIALinkedInApplication.m in Sources */,
 				F4C1E5D119DEC587003C108A /* TestController.m in Sources */,
 				F4BE3CAB19F53756007DAA3A /* NSString+LIAEncode.m in Sources */,
@@ -1994,6 +2025,7 @@
 				F43FADD719DD94A100C620E8 /* RightMenuVC.m in Sources */,
 				F477219C19F15EA100C253B0 /* OAServiceTicket.m in Sources */,
 				F43637061A04C72A00876E5B /* SSCheckBoxView.m in Sources */,
+				F4C748891A0B8A1F00B1D026 /* RDVTabBar.m in Sources */,
 				F47721A219F15EA100C253B0 /* OATokenManager.m in Sources */,
 				F4CC9E6E19E5164E00B3388A /* ECSNaigationItem.m in Sources */,
 				F4A9624A1A07C041001BF1A7 /* NSString+Score.m in Sources */,
