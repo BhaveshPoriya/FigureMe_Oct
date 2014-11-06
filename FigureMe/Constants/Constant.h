@@ -33,6 +33,7 @@
 
 #import "Score.h"
 #import "UserProfile.h"
+#import "Notification.h"
 
 #pragma mark - iOS Devices
 

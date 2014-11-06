@@ -2,12 +2,12 @@
 //  NotificationController.h
 //  FigureMe
 //
-//  Created by ECSMac2 on 10/3/14.
+//  Created by GauravPC on 10/31/14.
 //  Copyright (c) 2014 ECS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
-@interface NotificationController : UITableViewController
-
+#import "Notification.h"
+@interface NotificationController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tblviewNotification;
 @end

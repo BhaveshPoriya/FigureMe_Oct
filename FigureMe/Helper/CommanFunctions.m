@@ -193,5 +193,25 @@
     
     return [self generateAPIRequest:_URL reqDist:reqDist];
 }
-
++(NSMutableURLRequest *)getNotificationRequest:(NSString *)UserId;
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:UserId forKey:@"userid"];
+    [reqDist setObject:@"get_notification" forKey:@"action"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"%@/get_notification", @APIRootURL];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
++(NSMutableURLRequest *)changeNotificationRequest:(NSString *)UserId NotificationId:(NSString *)NotificationId;
+{
+    NSMutableDictionary *reqDist = [[NSMutableDictionary alloc] init];
+    [reqDist setObject:UserId forKey:@"userid"];
+    [reqDist setObject:NotificationId forKey:@"notificationid"];
+    [reqDist setObject:@"change_notification" forKey:@"action"];
+    
+    NSString *_URL =[NSString stringWithFormat:@"%@/change_notification", @APIRootURL];
+    
+    return [self generateAPIRequest:_URL reqDist:reqDist];
+}
 @end

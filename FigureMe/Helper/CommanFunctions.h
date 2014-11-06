@@ -28,4 +28,6 @@
 +(NSMutableURLRequest *)getPostTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken screteKey:(NSString *)screteKey;
 +(NSMutableURLRequest *)getPostFacebookTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;
 +(NSMutableURLRequest *)getPostInstagramTokenRequest:(NSString *)UserId accessToken:(NSString *)accessToken;
++(NSMutableURLRequest *)getNotificationRequest:(NSString *)UserId;
++(NSMutableURLRequest *)changeNotificationRequest:(NSString *)UserId NotificationId:(NSString *)NotificationId;
 @end

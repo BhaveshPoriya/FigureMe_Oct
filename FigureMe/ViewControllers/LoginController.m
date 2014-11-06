@@ -101,7 +101,7 @@ txtPassword = _txtPassword;
              if (data.length > 0 && connectionError == nil)
              {
                  NSDictionary *greeting = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-                 NSString *status = [greeting objectForKey:@"status"];
+                 NSString *status = [[greeting objectForKey:@"data"]objectForKey:@"status"];
                  if([status isEqualToString:@"success"])
                  {
                      //{"action":"login","server":{"__comment":"Login","time":1414489492},"status":"success","data":{"Code":200,"message":"Login Successfully","UserID":"12"}}
